@@ -1,0 +1,69 @@
+{
+  "best_epoch": 1,
+  "epochs": [
+    {
+      "epoch": 1,
+      "learning_rate": 0.001,
+      "train_loss": 1.1051837656233046,
+      "validation_noisy_accuracy": 0.3641666666666667,
+      "validation_noisy_nll": 1.0941651201248168
+    },
+    {
+      "epoch": 2,
+      "learning_rate": 0.0009938441702975688,
+      "train_loss": 1.0950681887732612,
+      "validation_noisy_accuracy": 0.3630555555555556,
+      "validation_noisy_nll": 1.0955584727393257
+    },
+    {
+      "epoch": 3,
+      "learning_rate": 0.0009755282581475768,
+      "train_loss": 1.0942788770463732,
+      "validation_noisy_accuracy": 0.3597222222222222,
+      "validation_noisy_nll": 1.100792064666748
+    },
+    {
+      "epoch": 4,
+      "learning_rate": 0.0009455032620941839,
+      "train_loss": 1.093642349772983,
+      "validation_noisy_accuracy": 0.3794444444444444,
+      "validation_noisy_nll": 1.0966721238030328
+    },
+    {
+      "epoch": 5,
+      "learning_rate": 0.0009045084971874737,
+      "train_loss": 1.0939132918251886,
+      "validation_noisy_accuracy": 0.35944444444444446,
+      "validation_noisy_nll": 1.094694224463569
+    },
+    {
+      "epoch": 6,
+      "learning_rate": 0.0008535533905932737,
+      "train_loss": 1.0934559440612792,
+      "validation_noisy_accuracy": 0.38666666666666666,
+      "validation_noisy_nll": 1.095124782986111
+    },
+    {
+      "epoch": 7,
+      "learning_rate": 0.0007938926261462366,
+      "train_loss": 1.0926235251956515,
+      "validation_noisy_accuracy": 0.38472222222222224,
+      "validation_noisy_nll": 1.0942145840326944
+    },
+    {
+      "epoch": 8,
+      "learning_rate": 0.0007269952498697733,
+      "train_loss": 1.0914119964175755,
+      "validation_noisy_accuracy": 0.38222222222222224,
+      "validation_noisy_nll": 1.0949347962273492
+    },
+    {
+      "epoch": 9,
+      "learning_rate": 0.0006545084971874737,
+      "train_loss": 1.0912682422002156,
+      "validation_noisy_accuracy": 0.3811111111111111,
+      "validation_noisy_nll": 1.0956448247697619
+    }
+  ],
+  "method": "ce"
+}

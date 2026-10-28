@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "stage": "training",
+  "status": "implemented",
+  "final_ready": true,
+  "datasets": [
+    "FashionMNIST0.3",
+    "FashionMNIST0.6",
+    "CIFAR"
+  ],
+  "methods": [
+    "forward",
+    "gce"
+  ],
+  "split_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "initialization_seeds": [
+    1000,
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009
+  ],
+  "data_dir": "data",
+  "results_dir": "results/final",
+  "device": "auto",
+  "train_fraction": 0.8,
+  "batch_size": 128,
+  "epochs": 30,
+  "optimizer": "adam",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "architecture": {
+    "name": "small_cnn",
+    "channels": [
+      32,
+      64,
+      128
+    ],
+    "num_classes": 3
+  },
+  "method_parameters": {
+    "gce": {
+      "gamma": 0.7,
+      "reweight": true,
+      "max_weight": 10.0,
+      "warmup_epochs": 3
+    },
+    "forward": {
+      "transition_convention": "T[i,j]=P(S=j|Y=i)"
+    }
+  },
+  "estimator": {
+    "name": "noisy_ce_anchor",
+    "pool": "current_training_partition_only",
+    "epochs": 20,
+    "top_fraction": 0.01,
+    "quantile": 1.0
+  },
+  "preprocessing": {
+    "scaling": "divide_by_255",
+    "standardization": false,
+    "augmentation": "none"
+  },
+  "test_evaluation": "after_validation_selection",
+  "course_coverage_confirmed": false,
+  "patience": 8,
+  "cpu_threads": 4,
+  "debug": false
+}

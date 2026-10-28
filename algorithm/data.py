@@ -1,7 +1,7 @@
 """Strict supplied-data loading; training callers receive Xtr/Str only.
 
 Clean test arrays have a separate API, reserved for integrity audits and the
-future final evaluator. No fitted normalization or stochastic augmentation is
+final evaluator. No fitted normalization or stochastic augmentation is
 used in the initial design.
 """
 

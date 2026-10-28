@@ -1,0 +1,11 @@
+{
+  "state": "completed",
+  "started_unix": 1793181504.8776956,
+  "pid": 3794,
+  "datasets": [
+    "FashionMNIST0.3",
+    "FashionMNIST0.6",
+    "CIFAR"
+  ],
+  "finished_unix": 1793182626.0126874
+}

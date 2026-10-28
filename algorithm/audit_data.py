@@ -68,7 +68,7 @@ def audit_dataset(name: str, data_dir: Path, output_dir: Path, *, seed: int, bat
 def environment() -> dict:
     return {"python": platform.python_version(), "numpy": np.__version__,
             "Pillow": pillow_version, "platform": platform.platform(),
-            "device": "cpu", "framework": "NumPy data pipeline; neural framework deferred to Part 7"}
+            "device": "cpu", "framework": "NumPy data integrity audit"}
 
 
 def main():

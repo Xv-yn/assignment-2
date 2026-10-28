@@ -1,9 +1,4 @@
-"""Run data smoke checks or inspect the planned training grid.
-
-Parts 6–10 implement the future training backend. Training configurations
-currently fail explicitly unless --plan is requested; no synthetic scores or
-completed classifier records are produced.
-"""
+"""Run data audits or paired noise-robust classification experiments."""
 
 import argparse
 from pathlib import Path
@@ -20,7 +15,7 @@ def resolve_path(value: str) -> Path:
 
 
 def read_config(path: Path) -> dict:
-    config = json.loads(path.read_text())
+    config = json.loads(path.read_text(encoding="utf-8"))
     if config.get("schema_version") != 1:
         raise ValueError("Expected configuration schema_version 1")
     datasets = config.get("datasets", [])
@@ -34,15 +29,56 @@ def read_config(path: Path) -> dict:
         raise ValueError("Only the documented deterministic preprocessing is implemented")
     if config["stage"] == "training":
         seeds = config.get("split_seeds", [])
-        if len(seeds) < 10 or len(set(seeds)) != len(seeds) or any(type(s) is not int or s < 0 for s in seeds):
+        minimum = 1 if config.get("debug", False) else 10
+        if len(seeds) < minimum or len(set(seeds)) != len(seeds) or any(type(s) is not int or s < 0 for s in seeds):
             raise ValueError("Training plan needs at least ten distinct nonnegative split seeds")
         if len(config.get("initialization_seeds", [])) != len(seeds):
             raise ValueError("Provide one initialization seed per split seed")
-        if set(config.get("methods", [])) != {"forward", "gce"}:
+        if len(config.get("methods", [])) != 2 or set(config.get("methods", [])) != {"forward", "gce"}:
             raise ValueError("Expected both proposed robust methods: forward and gce")
+        validate_training_config(config)
     elif type(config.get("audit_seed")) is not int or config["audit_seed"] < 0:
         raise ValueError("audit_seed must be a nonnegative integer")
     return config
+
+
+def validate_training_config(config):
+    import math
+    if config.get("device") not in ("cpu", "cuda", "auto"):
+        raise ValueError("device must be cpu, cuda or auto")
+    if config.get("train_fraction") != 0.8:
+        raise ValueError("train_fraction must be 0.8")
+    for key in ("epochs", "patience", "cpu_threads"):
+        if type(config.get(key)) is not int or config[key] < 1:
+            raise ValueError(f"{key} must be a positive integer")
+    for key in ("learning_rate", "weight_decay"):
+        value = config.get(key)
+        if not isinstance(value, (float, int)) or not math.isfinite(value) or value < 0 or (key == "learning_rate" and value == 0):
+            raise ValueError(f"Invalid {key}")
+    if config.get("optimizer") != "adam":
+        raise ValueError("Only Adam is supported")
+    if any(type(s) is not int or not 0 <= s < 2**32 - 100000 for s in config["initialization_seeds"]):
+        raise ValueError("Invalid initialization seed")
+    architecture = config["architecture"]
+    channels = architecture["channels"]
+    if (architecture["name"] != "small_cnn" or architecture["num_classes"] != 3
+            or not 1 <= len(channels) <= 3 or any(type(c) is not int or c < 1 for c in channels)):
+        raise ValueError("Invalid small_cnn architecture")
+    params = config["method_parameters"]["gce"]
+    if not 0 < params["gamma"] <= 1 or type(params["reweight"]) is not bool or params["max_weight"] <= 0:
+        raise ValueError("Invalid GCE parameters")
+    if type(params["warmup_epochs"]) is not int or params["warmup_epochs"] < 0:
+        raise ValueError("Invalid warmup_epochs")
+    estimator = config["estimator"]
+    if (estimator["name"] != "noisy_ce_anchor" or estimator["pool"] != "current_training_partition_only"
+            or type(estimator["epochs"]) is not int or estimator["epochs"] < 1
+            or not 0 <= estimator["top_fraction"] <= 1 or not 0 < estimator["quantile"] <= 1):
+        raise ValueError("Invalid anchor estimator configuration")
+    if config.get("test_evaluation") != "after_validation_selection":
+        raise ValueError("Test evaluation must follow validation selection")
+    for key in ("debug_train_limit", "debug_val_limit"):
+        if config.get("debug") and (type(config.get(key)) is not int or config[key] < 3):
+            raise ValueError(f"Invalid {key}")
 
 
 def reusable_record(destination: Path, expected: dict) -> bool:
@@ -67,7 +103,8 @@ def main():
     parser.add_argument("--dataset", choices=DATASETS)
     parser.add_argument("--method", choices=("forward", "gce"))
     parser.add_argument("--seed", type=int)
-    parser.add_argument("--device", choices=("cpu",))
+    parser.add_argument("--device", choices=("cpu", "cuda", "auto"))
+    parser.add_argument("--data-dir", type=Path)
     parser.add_argument("--results-dir", type=Path)
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--plan", action="store_true")
@@ -75,16 +112,14 @@ def main():
     config = read_config(resolve_path(str(args.config)))
     if args.device:
         config["device"] = args.device
-    if config.get("device") != "cpu":
-        parser.error("The Parts 1–5 data pipeline supports CPU; GPU training is deferred")
+    if args.data_dir:
+        config["data_dir"] = str(args.data_dir.resolve())
     if args.results_dir:
         config["results_dir"] = str(args.results_dir)
     selected = [args.dataset] if args.dataset else config["datasets"]
     if not set(selected) <= set(config["datasets"]):
         parser.error("Selected dataset is not present in the configuration")
     if config["stage"] == "training":
-        if not args.plan:
-            parser.error("Training is not implemented through Part 5. Use --plan to inspect the draft grid; implement Parts 6–10 before training.")
         seeds = [args.seed] if args.seed is not None else config["split_seeds"]
         if not set(seeds) <= set(config["split_seeds"]):
             parser.error("Selected seed is not in split_seeds")
@@ -92,7 +127,12 @@ def main():
         jobs = [{"dataset": d, "method": m, "split_seed": s,
                  "initialization_seed": config["initialization_seeds"][config["split_seeds"].index(s)]}
                 for d in selected for m in methods for s in seeds]
-        print(json.dumps({"status": "planned_only", "job_count": len(jobs), "jobs": jobs}, indent=2))
+        if args.plan:
+            print(json.dumps({"status": "planned_only", "debug": config.get("debug", False), "job_count": len(jobs), "jobs": jobs}, indent=2))
+            return
+        from .experiments import run_training
+        run_training(config, selected, methods, seeds, resolve_path(config["results_dir"]),
+                     resolve_path(config["data_dir"]), args.resume)
         return
     if args.method is not None or args.seed is not None:
         parser.error("--method and --seed select training-plan jobs; smoke uses audit_seed and trains no method")

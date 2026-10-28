@@ -1,0 +1,132 @@
+{
+  "best_epoch": 10,
+  "epochs": [
+    {
+      "epoch": 1,
+      "learning_rate": 0.001,
+      "train_loss": 1.0989359113905164,
+      "validation_noisy_accuracy": 0.3477777777777778,
+      "validation_noisy_nll": 1.101488439771864
+    },
+    {
+      "epoch": 2,
+      "learning_rate": 0.0009972609476841367,
+      "train_loss": 1.0952270385954115,
+      "validation_noisy_accuracy": 0.39194444444444443,
+      "validation_noisy_nll": 1.090316120783488
+    },
+    {
+      "epoch": 3,
+      "learning_rate": 0.0009890738003669028,
+      "train_loss": 1.092199461195204,
+      "validation_noisy_accuracy": 0.39305555555555555,
+      "validation_noisy_nll": 1.0899736838870577
+    },
+    {
+      "epoch": 4,
+      "learning_rate": 0.0009755282581475768,
+      "train_loss": 1.0919576983981663,
+      "validation_noisy_accuracy": 0.39416666666666667,
+      "validation_noisy_nll": 1.0902227115631105
+    },
+    {
+      "epoch": 5,
+      "learning_rate": 0.0009567727288213003,
+      "train_loss": 1.0921960173712837,
+      "validation_noisy_accuracy": 0.39166666666666666,
+      "validation_noisy_nll": 1.0899824894799126
+    },
+    {
+      "epoch": 6,
+      "learning_rate": 0.0009330127018922195,
+      "train_loss": 1.0916895135243734,
+      "validation_noisy_accuracy": 0.38305555555555554,
+      "validation_noisy_nll": 1.0919716877407497
+    },
+    {
+      "epoch": 7,
+      "learning_rate": 0.0009045084971874739,
+      "train_loss": 1.0915877559449938,
+      "validation_noisy_accuracy": 0.38861111111111113,
+      "validation_noisy_nll": 1.091317710876465
+    },
+    {
+      "epoch": 8,
+      "learning_rate": 0.0008715724127386972,
+      "train_loss": 1.0912589285108778,
+      "validation_noisy_accuracy": 0.3952777777777778,
+      "validation_noisy_nll": 1.0903831476635404
+    },
+    {
+      "epoch": 9,
+      "learning_rate": 0.0008345653031794292,
+      "train_loss": 1.0906986072328355,
+      "validation_noisy_accuracy": 0.38055555555555554,
+      "validation_noisy_nll": 1.0926520432366265
+    },
+    {
+      "epoch": 10,
+      "learning_rate": 0.0007938926261462366,
+      "train_loss": 1.0900699684354993,
+      "validation_noisy_accuracy": 0.3925,
+      "validation_noisy_nll": 1.0899464140997992
+    },
+    {
+      "epoch": 11,
+      "learning_rate": 0.00075,
+      "train_loss": 1.0897371345096165,
+      "validation_noisy_accuracy": 0.3869444444444444,
+      "validation_noisy_nll": 1.0912470531463623
+    },
+    {
+      "epoch": 12,
+      "learning_rate": 0.0007033683215379003,
+      "train_loss": 1.0882317505942452,
+      "validation_noisy_accuracy": 0.3838888888888889,
+      "validation_noisy_nll": 1.0921500598059761
+    },
+    {
+      "epoch": 13,
+      "learning_rate": 0.0006545084971874739,
+      "train_loss": 1.0880531395806206,
+      "validation_noisy_accuracy": 0.3825,
+      "validation_noisy_nll": 1.092556823624505
+    },
+    {
+      "epoch": 14,
+      "learning_rate": 0.0006039558454088797,
+      "train_loss": 1.0870231660207113,
+      "validation_noisy_accuracy": 0.38222222222222224,
+      "validation_noisy_nll": 1.0921816953023276
+    },
+    {
+      "epoch": 15,
+      "learning_rate": 0.0005522642316338269,
+      "train_loss": 1.0858838420444066,
+      "validation_noisy_accuracy": 0.37916666666666665,
+      "validation_noisy_nll": 1.092561485502455
+    },
+    {
+      "epoch": 16,
+      "learning_rate": 0.0005000000000000002,
+      "train_loss": 1.0843742407692802,
+      "validation_noisy_accuracy": 0.3786111111111111,
+      "validation_noisy_nll": 1.0934073797861734
+    },
+    {
+      "epoch": 17,
+      "learning_rate": 0.0004477357683661734,
+      "train_loss": 1.0834515645768907,
+      "validation_noisy_accuracy": 0.3927777777777778,
+      "validation_noisy_nll": 1.090634347067939
+    },
+    {
+      "epoch": 18,
+      "learning_rate": 0.00039604415459112036,
+      "train_loss": 1.0807026529312134,
+      "validation_noisy_accuracy": 0.38805555555555554,
+      "validation_noisy_nll": 1.0914991479449803
+    }
+  ],
+  "method": "forward"
+}

@@ -1,0 +1,3569 @@
+{
+  "all_original_artifact_hashes_verified": true,
+  "classifier_runs": 60,
+  "estimator_runs": 30,
+  "kind": "compact_formal_experiment_evidence",
+  "omitted_from_public_evidence": [
+    "datasets",
+    "checkpoints",
+    "predictions",
+    "split arrays",
+    "remote operation scripts"
+  ],
+  "published_file_sha256": {
+    "CIFAR/seed_000/estimator/history.json": "03a60f4df71a429dbeb630ed9627cfdabc7feccd1875bb19573b4b426a857567",
+    "CIFAR/seed_000/estimator/transition.json": "3632accb8753cfb304f8abca5e7df544aca4cda4c3a93668d39c84c35c5c9e39",
+    "CIFAR/seed_000/forward/history.json": "d213c57153a60a2799cb2d9558432f0b565b35c10b3864ef858ef8dc28f99af1",
+    "CIFAR/seed_000/forward/learning_curve.png": "d66fc52a0464bbc6c3f54a7b4b79b667d934c8191de184b664198dc37e596c0f",
+    "CIFAR/seed_000/forward/metrics.json": "c77d4f6c2b9797d294951d5250e5065d53d3dbb4fd495cbcd1248ace5cf39d24",
+    "CIFAR/seed_000/gce/history.json": "43db1aa543adb1d1904c0e9a410dd12005d5ab833cd4c1cc6316dd5e1c711271",
+    "CIFAR/seed_000/gce/learning_curve.png": "6ec4bb672a86fcbeb980ed140def780b7c680eea89f2ff526ea958cb177e68e6",
+    "CIFAR/seed_000/gce/metrics.json": "7f79e3cd308a081fe970c5470ad449a052af1704a77a15d382dbe30c5780c8c5",
+    "CIFAR/seed_001/estimator/history.json": "10288ff2949e6f0c58ea2fa49432997c58449c72c4c07d1088f9b65b3d73f016",
+    "CIFAR/seed_001/estimator/transition.json": "4fa3629d37471bd4471591b748f0fd312ede9acb88b9d5ecc7b758dcbd7f9a35",
+    "CIFAR/seed_001/forward/history.json": "5b2291456034de280f5e76a5c46e5196e30a81288767da5d234f42535e4bd88a",
+    "CIFAR/seed_001/forward/learning_curve.png": "2963baa75b0f6675ec75068e6b45c0eec53fe7498ac3478bf6094d8193ee988b",
+    "CIFAR/seed_001/forward/metrics.json": "3c75b4035a3b19e49d3350d38cede1afb7bbe45a467fa23549770183f5d00e23",
+    "CIFAR/seed_001/gce/history.json": "7786922609cc68590fa61e4f5ee9cf695cf6fdfaed32596db0f22caa4ffb8109",
+    "CIFAR/seed_001/gce/learning_curve.png": "dd96f672f7cdfdcaa94d8cacf7b8c79d7cbc32ae46af7e2cc93f691df8dd0d84",
+    "CIFAR/seed_001/gce/metrics.json": "7f2807d08633d8ddf5b8c0136ec81c4c8c20140954f9aedf6add022c3082ed8e",
+    "CIFAR/seed_002/estimator/history.json": "2d5c825ff6578a6035565e1d2cb3820a7b87d9ef5a5e6fad92118ea69897ec26",
+    "CIFAR/seed_002/estimator/transition.json": "600ff86ddd417d7352285e22204c695a740a38c6e85c9166073fc86e41a4b1d7",
+    "CIFAR/seed_002/forward/history.json": "3afbf92c37882d5b49a80dba485fd5a1d12cbd4b38a0a920fec6d8987bc418a4",
+    "CIFAR/seed_002/forward/learning_curve.png": "fb435cb635099149ca813d2f6b483f664732b74b5adb8a46f42377bf977e8672",
+    "CIFAR/seed_002/forward/metrics.json": "11121b40ecf7c3fb02b865478cefaf2278a0928038711346a46a348537d4e23d",
+    "CIFAR/seed_002/gce/history.json": "a00513148ea20e86ed08e925afcde293e4e93d11df43895d0d0deb7515c41432",
+    "CIFAR/seed_002/gce/learning_curve.png": "034230598ef6d6609930103ca15bbbce1b285893a661943334e9a0ba24495dd9",
+    "CIFAR/seed_002/gce/metrics.json": "20616d3090dc1e0828f2ced7c86833c302c6a5f1822c80d5f6349df2fcf2059c",
+    "CIFAR/seed_003/estimator/history.json": "f1181e46ab1182eee4ed86ed5f479ea7a230786bd1d55589ccefdef2622d3472",
+    "CIFAR/seed_003/estimator/transition.json": "1b2ea84ea7d9a5374566b9a9652bb0fc4006adc8e4074103cf285c8a3b2a3cb1",
+    "CIFAR/seed_003/forward/history.json": "790165f070619ab38761a3e6741d9b389931654bc9c558fc0291f57b52f23b35",
+    "CIFAR/seed_003/forward/learning_curve.png": "4e53703d9397adfb0783c95936c2846e76ae8534bd4277372b62ea79afeb222f",
+    "CIFAR/seed_003/forward/metrics.json": "0f0770070e55983e99138f56de151706993571f2375517131096d7f45c3138e6",
+    "CIFAR/seed_003/gce/history.json": "e71537e70462b8d3a83819d27e81c6eaa88e86e41717c2fb064ede184ce8a541",
+    "CIFAR/seed_003/gce/learning_curve.png": "692dd309484ac23987335c6c32c2418497036acc75fca62b8fe7788a49dacbce",
+    "CIFAR/seed_003/gce/metrics.json": "8fbd99afa6fbbf83f1d9cdbd36588fe0acb26b16bb6a3927addd0822d4c7899f",
+    "CIFAR/seed_004/estimator/history.json": "6bb8c4b939c81cde4cb2ac69b0b1f956cc93deccfc486b68fe00012ad014c622",
+    "CIFAR/seed_004/estimator/transition.json": "c3b832429cc3f69029dc291c953b391810b561a1d6f0cdac36cd9cb831e29c63",
+    "CIFAR/seed_004/forward/history.json": "de3fad5985ece31df013ec1b9642e58b5103f5f24a409ae53836d3e0a5c071a8",
+    "CIFAR/seed_004/forward/learning_curve.png": "0a1e2e9f31edcaf2f3f9b7f37233e6f5b236ed45d004f6c58baa677eca5302e0",
+    "CIFAR/seed_004/forward/metrics.json": "16a3c7a1aa8791455f76a2d54c439237e162867579058a35dd1232778e77e725",
+    "CIFAR/seed_004/gce/history.json": "6262641a346dee9ae6d0ed5d58ab944bad999838f3be9f4bb3d43ae21dc2aaa5",
+    "CIFAR/seed_004/gce/learning_curve.png": "208f0c8e8ad8bb5435446dd58bf2033fdccd35a69a99f279d69c366d9beb6ea0",
+    "CIFAR/seed_004/gce/metrics.json": "82ddc3c96bd584e444796ba5d371a9448f9d550150d904540b75bbf07067cd4a",
+    "CIFAR/seed_005/estimator/history.json": "b29ca507e64f850148b7ef22225909314faafa2ed2b0743db31115f85c67b6ed",
+    "CIFAR/seed_005/estimator/transition.json": "a37cf9c32d0a4eadc213574e1f376e349abc51e799073d683af07c005d8f8098",
+    "CIFAR/seed_005/forward/history.json": "9278faf3597efd32053515277a839b9a7af2c605cd4e8be4c496b01ee5ad559d",
+    "CIFAR/seed_005/forward/learning_curve.png": "84487c92292ca8166b6bec4b6f73f1b20eeb5517f1954b9a62e4ba6dda6240cf",
+    "CIFAR/seed_005/forward/metrics.json": "9fa374a202acccc310e1b1530f95f2b33f3497977e3f7cc0354073bafb468f1c",
+    "CIFAR/seed_005/gce/history.json": "a9aef6d06567edeef70d0cac9e23c4b277ffd6ec845059e3ab5cecf2bef18c13",
+    "CIFAR/seed_005/gce/learning_curve.png": "2c657714d9fe2aafd88943551b9bb5d5c0bdc70eea9e48679e7936bd4e467bbf",
+    "CIFAR/seed_005/gce/metrics.json": "ba623e6569c05be8b616f58e3791b3af280b461948ca0f9cf10ff0f4db630be0",
+    "CIFAR/seed_006/estimator/history.json": "f412c574f6faf81ea40b59e0618201f83e0ae9ea59bfa708144dcde85484c82d",
+    "CIFAR/seed_006/estimator/transition.json": "475f79685c896c395b8193bb18c202a3efe6c08c03964128d21f03f61147fb82",
+    "CIFAR/seed_006/forward/history.json": "068c3cf17805ecbb1b341548bdbca2039fe83c7ae2f7973fe09783deb1da4307",
+    "CIFAR/seed_006/forward/learning_curve.png": "83a6c1f320fdf42f1409cca70d977dc5549d7a51c2c47cf1eb6e3c3fc008025a",
+    "CIFAR/seed_006/forward/metrics.json": "b3497b556ffa5123c9dc7ff61a55043d8e9f8b0d9d1e65908d70f32b5defa4ea",
+    "CIFAR/seed_006/gce/history.json": "5b81498863d4f02aaa398681b7456fbb981366e5ff19527704b534be2583cf49",
+    "CIFAR/seed_006/gce/learning_curve.png": "9a49fce482bc080baa0df1585bf47f1af63540401506625b02454d497fa3ad24",
+    "CIFAR/seed_006/gce/metrics.json": "fe860dc19e9146c93f6da2d4a7d1023fa7e84498e84ac7fc09595c74ff227d29",
+    "CIFAR/seed_007/estimator/history.json": "05bcd0bdf1bddcfc88e6ddb8ce98fbbbf14de71389120c8c5bbd1f58c4497bae",
+    "CIFAR/seed_007/estimator/transition.json": "e8b77ecb977765d41ba5119e94bb4a57a08c1b098d07fe7cb9d62c1a645c5042",
+    "CIFAR/seed_007/forward/history.json": "8fb554588fc604df84708c5a6ada5e128aaa6aed8e7b1d20b0948ca664dae3f5",
+    "CIFAR/seed_007/forward/learning_curve.png": "94333e55f73c14c66ed044e9d39cd0efcd5c5d490a667031ff30d832c13932c4",
+    "CIFAR/seed_007/forward/metrics.json": "cdf92dce5863430f2a317098a4d34e35784821e4e8cc361abbc6ecb84a3bc2c7",
+    "CIFAR/seed_007/gce/history.json": "7351f5ce501b65272844f7c13c69a43763c27207f2dca569878b2bea5a3f71aa",
+    "CIFAR/seed_007/gce/learning_curve.png": "8ac5a60f55ebcbf03e2a2d14ce7ee77147b449a52c63ba7510bdf78e9886dfb2",
+    "CIFAR/seed_007/gce/metrics.json": "d6a8cf18d5aad7389ad8d54544540ea41be54ba3d96376c493f2e9c323b406c3",
+    "CIFAR/seed_008/estimator/history.json": "d23b49a9a7351d6ccbd9b20253075fb504b48e845943706f5d681f93e68e63a0",
+    "CIFAR/seed_008/estimator/transition.json": "6f8cd7938c793093c09db7904a066d3ed205605f47f31901ab82af7385633dc5",
+    "CIFAR/seed_008/forward/history.json": "cfa2f71ba69bc514122cf9df141505cbb931ee3af180de97d6e5ad70a3922a7c",
+    "CIFAR/seed_008/forward/learning_curve.png": "2147d26dd41f48d6b8bdaf220982c62492238406ef9bbe010769c318d5bd5e26",
+    "CIFAR/seed_008/forward/metrics.json": "49ebf35038aafcb53ba63ae0b47e103f1c9a1629a3587259355a5a39787094e5",
+    "CIFAR/seed_008/gce/history.json": "af64cbfa4166008d88ca69e5dace468dedf437487cdb5e60df0959200b2c6c25",
+    "CIFAR/seed_008/gce/learning_curve.png": "66b10424e63df4302fa0ac3a46de2bcd365d99c76258f964f8514421d8c6e88f",
+    "CIFAR/seed_008/gce/metrics.json": "40fc5d7a329c6870c2dc011039d364618b1e9e8d0925588544b1709ade4ae82b",
+    "CIFAR/seed_009/estimator/history.json": "528725031a1f3aaaf49c2db767a881dc02d5475fbd5462175e363a9ccb0f3d87",
+    "CIFAR/seed_009/estimator/transition.json": "7f6bf04f3c9058b86322a7330985125d664fc6613a77565fe17fc87b800a7384",
+    "CIFAR/seed_009/forward/history.json": "d82d7bb2f99045cbe57e407ae84926e88aca56b04b41193e9d93e56cb0a12492",
+    "CIFAR/seed_009/forward/learning_curve.png": "1fbda3973b08def8d64845a0d5a239ed1f0bca23312e21de6e7a65a75fd801c4",
+    "CIFAR/seed_009/forward/metrics.json": "63beb20d720b194971c44a13c6a2d9d462ac54acc9706dc7e996d283ed3c089a",
+    "CIFAR/seed_009/gce/history.json": "220c658d169e3efa42c468b2151bff3c87317078c2e61165814588c23f011c8d",
+    "CIFAR/seed_009/gce/learning_curve.png": "d95f1287bb51a7a7e86b68cad8e64a88c2e9f0942cf42b98627240ecf4035302",
+    "CIFAR/seed_009/gce/metrics.json": "d4e1ed1228136717e81d477b91c99c96afe0b84db4dfecfda111a7fa2dbfeebd",
+    "CIFAR_transition.png": "656162cd7638dc1a1e1a56e7af883ddc5c86098d3fb7d329ca4346f0a2759273",
+    "FashionMNIST0.3/seed_000/estimator/history.json": "7bd15ceb478d9223c7ea468bfcba2fc7f59f327f858db55e091ac8e958fc64ec",
+    "FashionMNIST0.3/seed_000/estimator/transition.json": "7aef62ebd453b3eb32a3ba59ab66c82f94ee657eecde61f03fe84248a730bcf6",
+    "FashionMNIST0.3/seed_000/forward/history.json": "e5226c35d773959b76076e5f937fc29a5b529c05abfaf2e1f7344af0bd90e640",
+    "FashionMNIST0.3/seed_000/forward/learning_curve.png": "a3c7acf1af4adbc61354e08568fd2e739ea5460f3f4332e508c150a45a77b375",
+    "FashionMNIST0.3/seed_000/forward/metrics.json": "a6b0d375aa0826fd00919742f4560357a6768406a6666cdf85a76b6f7d177f89",
+    "FashionMNIST0.3/seed_000/gce/history.json": "b2c98ac35e74cfe2be409c15a7a4e9d16845d4d40b7139ee62cc617cbe44856f",
+    "FashionMNIST0.3/seed_000/gce/learning_curve.png": "e9e6f568c513d65d965b24ae5619519e2b1d8eb1e873c330940d2718275e7bc1",
+    "FashionMNIST0.3/seed_000/gce/metrics.json": "a83c696c1fa4a25b590c8e5d5349213db973996c9cadca7fc4518643b6f34407",
+    "FashionMNIST0.3/seed_001/estimator/history.json": "b0fca5c711570508dd2726ead842d697cc8fa7f143c15ace50c75426a2a135ec",
+    "FashionMNIST0.3/seed_001/estimator/transition.json": "dcf8bff61a7b92efcf9fbb5a2993978b7c2ba149ddd4364c9a6d9026514e6f72",
+    "FashionMNIST0.3/seed_001/forward/history.json": "dafdc3840a37d3aa8fc988f37b6e76249e49e5cb6f7660ebe6c633802ed8c484",
+    "FashionMNIST0.3/seed_001/forward/learning_curve.png": "3c9b360103c189737570c57b6b4123ff68aa3cb88161020d6f7ee5774c6b1291",
+    "FashionMNIST0.3/seed_001/forward/metrics.json": "ac7620744f014dc86b4ab038203724be4533b80e1023eb1ca09bc775df183b31",
+    "FashionMNIST0.3/seed_001/gce/history.json": "797efd3bf6731722bd4d17c1c9c3312075e2bcee0bd527a2f965c7e6567f8947",
+    "FashionMNIST0.3/seed_001/gce/learning_curve.png": "c32fd0f293f569eeec99825fcc1362602d65f7934c8e3e4e0eb245f6786acdae",
+    "FashionMNIST0.3/seed_001/gce/metrics.json": "e0a9fbd53023f790809dea9b03ffc08006dfe25e138bffce6fe065fb7b06f8db",
+    "FashionMNIST0.3/seed_002/estimator/history.json": "b3a0ab71464295a6dc9a637bcd0d89ad9ef466d4786560551af89249c0458371",
+    "FashionMNIST0.3/seed_002/estimator/transition.json": "67aab3473d9493f8b3f4db3b9ff30e9241817f811559202afe5327fdf7de6f40",
+    "FashionMNIST0.3/seed_002/forward/history.json": "eb1b17d1cf5e1b739b52c11b6936c41b6ffb760d31bf354a8a7cf5b220d15498",
+    "FashionMNIST0.3/seed_002/forward/learning_curve.png": "496b44dc72fb16d887855310a42c59d97cd2820f63dd3af9a771590a33df21ce",
+    "FashionMNIST0.3/seed_002/forward/metrics.json": "b84ccea0be99883f5151402f62390ef797ba9972d766fdb602a8fc31660db527",
+    "FashionMNIST0.3/seed_002/gce/history.json": "f165a7e259d2079216b8ac02df02f07b55ba106d56a48019efbb54b655b606a3",
+    "FashionMNIST0.3/seed_002/gce/learning_curve.png": "ce6127e92584758dbf198167815c9d996dbed697396e2544f115d89acaa268d5",
+    "FashionMNIST0.3/seed_002/gce/metrics.json": "56c67ddafc9f256c802666751824b5f514b4a0fa9d80ace52bddc3165c7c1dce",
+    "FashionMNIST0.3/seed_003/estimator/history.json": "8d8e700041ac89c0c6db63ae5958e2a9dd9d94b9a238791d04fba36dd95144e4",
+    "FashionMNIST0.3/seed_003/estimator/transition.json": "00c6697d910aac217eb7ce93ecee170fcf0afe5cc858a52d52db1282f96fcfc1",
+    "FashionMNIST0.3/seed_003/forward/history.json": "c0a948455732a031bddbde4b7ed30f74502af7e91f83e7a29bfdb2e9190099ac",
+    "FashionMNIST0.3/seed_003/forward/learning_curve.png": "cc033f24b10a613b1cf700ceee10f3eafc182c8ee67c18ed9b886dd1c9458ef1",
+    "FashionMNIST0.3/seed_003/forward/metrics.json": "f0c94893366fa1f72a02600609f0533e45b9c4b31f5cb542f18c1e407e3179b4",
+    "FashionMNIST0.3/seed_003/gce/history.json": "739dacbaf4afc983b6be9cf7dc311eb3bcf8799dcef4f0db0c5f10acb46905bf",
+    "FashionMNIST0.3/seed_003/gce/learning_curve.png": "297d7070aaf67669f89a9b5c3f0d5bf2c14e2fa438bc665a434359068788b443",
+    "FashionMNIST0.3/seed_003/gce/metrics.json": "ae01b496b62d2c3fd2a642b9be481740f41e94325643b7ac9686cc3b698865b7",
+    "FashionMNIST0.3/seed_004/estimator/history.json": "20fe2838e0663378a9ae2f0d5ee114e30ec05b1973f79cf98c4a1ee390d9f63f",
+    "FashionMNIST0.3/seed_004/estimator/transition.json": "8cb28ac8866d49c30360409f0b3c614ed40284d7ea6bcd8ab2d1dee030b8bcaa",
+    "FashionMNIST0.3/seed_004/forward/history.json": "53cbf33a30b95c5e35204891ff399d5b30cf08a57088928a891db76a020ed197",
+    "FashionMNIST0.3/seed_004/forward/learning_curve.png": "b2caf18c15c2fa4bf4b2130aca0aae3672adb927ce8c003dff360618a418045b",
+    "FashionMNIST0.3/seed_004/forward/metrics.json": "5f27d5dea3f0b3e25e43c8b105f64a05bbbd99dd4209f627f9153b07c06ee0b1",
+    "FashionMNIST0.3/seed_004/gce/history.json": "6d0b5f466071d902ce59718d090cf18f26101b427f868b2115669424c44ce359",
+    "FashionMNIST0.3/seed_004/gce/learning_curve.png": "3c85ef28836abbeed8d7b92e685dfdce11f893bfca4db8af4374212c640e00ee",
+    "FashionMNIST0.3/seed_004/gce/metrics.json": "c0e130bd21826d03afe8a513004e55ff1fad1552c153ccf9638fc0d6cc88d0c5",
+    "FashionMNIST0.3/seed_005/estimator/history.json": "2e65b14af51a3679a9f0c5e79a920a215fbab7bc2c6b1f1463a6af883914adaa",
+    "FashionMNIST0.3/seed_005/estimator/transition.json": "06af19833ff13b0141e8a506cafcc6e9ac57fdb39a30746ab84fdaf29f37afbb",
+    "FashionMNIST0.3/seed_005/forward/history.json": "c670c24432cb7056209d448f6b58b95dad6443011c92778e08df28b71c8b4756",
+    "FashionMNIST0.3/seed_005/forward/learning_curve.png": "e2f049594eac6ec2ff065c52e677e042fc7d5fa7a94512dacbafc7fdc6c191e0",
+    "FashionMNIST0.3/seed_005/forward/metrics.json": "a94e606b93e0587d8d6e18b50d65b15dc79d7a1abeba76595a54bd2a30f53326",
+    "FashionMNIST0.3/seed_005/gce/history.json": "09dd3a552891cb1a9dbaf3d5534ce420d94a5b4fd00e6eb42eb84d4c74c375b5",
+    "FashionMNIST0.3/seed_005/gce/learning_curve.png": "799deea92100e16b66396842f949d3593d0531b762cf88680471a6eb6848076e",
+    "FashionMNIST0.3/seed_005/gce/metrics.json": "8e277be4b5bc82409280df99f66cb314e8a759ca578058b58c2d43276eda97dc",
+    "FashionMNIST0.3/seed_006/estimator/history.json": "33365704da096d0a46ba39948f517f994698e24671a8fc6162275c95a3d5ac01",
+    "FashionMNIST0.3/seed_006/estimator/transition.json": "b41c9892983bb580bb45cab0a5a9bb7a35fb0fc18f5d888533226d90ad7d28b1",
+    "FashionMNIST0.3/seed_006/forward/history.json": "4799f0ad8dcbc4b1466f7586294abe146f2b4403eb3bc70aba7ecb49bb6c76a7",
+    "FashionMNIST0.3/seed_006/forward/learning_curve.png": "2a8c1547d0efd7599343193fb2ae0a91943c8a64297d49ac30b5d604bc7f0aea",
+    "FashionMNIST0.3/seed_006/forward/metrics.json": "bd67d7a3530f26725343f6e8db7ae62896356c9de9b70817484f092e3927bf9f",
+    "FashionMNIST0.3/seed_006/gce/history.json": "e44a80f951b8bf53653573776a664ee12a3769ffc00d05fae981e407bea67a9c",
+    "FashionMNIST0.3/seed_006/gce/learning_curve.png": "b045cd15165c6e434169eb91769e26836cd9049db87de8f17dce4627160ea07b",
+    "FashionMNIST0.3/seed_006/gce/metrics.json": "a7d78d2fd255fe7adbc549045a9bdf7369ed183b9a9a82e57f7128e5d02b8ce1",
+    "FashionMNIST0.3/seed_007/estimator/history.json": "97dc3296ac2990e4e36bd6e913606d2befc9a960ef675011b38b6212865c5377",
+    "FashionMNIST0.3/seed_007/estimator/transition.json": "5c802f5869e6b5f8e386f71c597e409fe0a581e3a0fcc5020e561c31ad3d2b9f",
+    "FashionMNIST0.3/seed_007/forward/history.json": "9a5867a6ae010212d1b31bd6798d0e3154cdf234a4858ec7ca2d026e38ff38ea",
+    "FashionMNIST0.3/seed_007/forward/learning_curve.png": "18acba0612f941825a7c3c3cd7f5bf30ea7b9cfc3374d229c8e398f2c37f0dc3",
+    "FashionMNIST0.3/seed_007/forward/metrics.json": "d04d5c7fb2a7675a97a9b421b1e8bc38d7cc9a0fcbb9d72b32927cd83263d0eb",
+    "FashionMNIST0.3/seed_007/gce/history.json": "fbce243b7dc775e732ec56d634d4fe8635bcbc859d4545f38a0df91815babca5",
+    "FashionMNIST0.3/seed_007/gce/learning_curve.png": "eea9f134b605debf22377b9df89c2394d674f5bd36e3e4bde525b734f9ceaaf1",
+    "FashionMNIST0.3/seed_007/gce/metrics.json": "126ba7ede430832e66b7ab9c26efe0ddd910683d8681aad15614dc7b5884f213",
+    "FashionMNIST0.3/seed_008/estimator/history.json": "a3126bbdabb5923563d672f0e2f53bd4ff91783a17e70541c757ac09a65b9988",
+    "FashionMNIST0.3/seed_008/estimator/transition.json": "6be73a00fb52014800699b2d93be9b93cac235dad67e49477c224223e7de7ff5",
+    "FashionMNIST0.3/seed_008/forward/history.json": "16ada3cff86836ae1ccbd688d737769e0dbecc86f13fb86f1a51aac2d9369078",
+    "FashionMNIST0.3/seed_008/forward/learning_curve.png": "4a61110e950bfa6666b20fdd45798832c7f6d3208ac4ac83ad7a6b08af935c66",
+    "FashionMNIST0.3/seed_008/forward/metrics.json": "5bf2e1f32da5bad737bb73a9d109c6a36877a3e9fe6e07b17d655ca45edc7d1a",
+    "FashionMNIST0.3/seed_008/gce/history.json": "70b2d1a9658eb1c722ae7e61c1c4f2f917109c6ec7dedb202be928dacac81817",
+    "FashionMNIST0.3/seed_008/gce/learning_curve.png": "63664fdeca1d390f4507aeff4d7e330faa6f438f119ccb23d85399e49040e592",
+    "FashionMNIST0.3/seed_008/gce/metrics.json": "79d9ae4603d57979464e6cdf696c959c03dc809ccc026726f5454a3c60b2b316",
+    "FashionMNIST0.3/seed_009/estimator/history.json": "2e5b9012ec40a4c69d7fe474f42b3b1e1a3adbe9b0acb0c5339eaaaf4524ff88",
+    "FashionMNIST0.3/seed_009/estimator/transition.json": "cfc55289a32e74b6c937681022c9d426588e8f4128baac50a5665eef62279382",
+    "FashionMNIST0.3/seed_009/forward/history.json": "2e68345d48c911c2bcdc92ff47b83010f291788067cbc3c2e11d1cc5f19a74ad",
+    "FashionMNIST0.3/seed_009/forward/learning_curve.png": "92fc53379a8aa8722912ae45f5e40aa2a7ab3c5647bd159b98d3177e0a80d184",
+    "FashionMNIST0.3/seed_009/forward/metrics.json": "e63ce8d76332d74b5087f2e78681326a858da270fc0a8755d0192ef4da38d3e2",
+    "FashionMNIST0.3/seed_009/gce/history.json": "049ebb24bb286aaa1ce30305e1a8fd5e01f9369e5d5e338315694c83c480a6c8",
+    "FashionMNIST0.3/seed_009/gce/learning_curve.png": "4cd23828d3ef11d4fa23a03fca30985ab4b5f0b282a1897deed994d18d6161e7",
+    "FashionMNIST0.3/seed_009/gce/metrics.json": "966c52e854119ddacb9e469e46c16982dff753483313c9390f0e67e5bff8f9a3",
+    "FashionMNIST0.3_transition.png": "69ff47c5c24f60f21496dc1bba6980cd8e206c9bf6393abdbc90ec653e79299a",
+    "FashionMNIST0.6/seed_000/estimator/history.json": "f20d5f7127f7f84c3ab824c57240343d18d883454e957a6d50e9cb1ed3247a1e",
+    "FashionMNIST0.6/seed_000/estimator/transition.json": "589e3d87b5bdeaa5ee34693627f8e45cd0ebafb95e70cadd22433a1943f7d008",
+    "FashionMNIST0.6/seed_000/forward/history.json": "395adff72c93b1f0e654ed7e33c5cb9d4379718a61c812d9b3da89acc2d184ae",
+    "FashionMNIST0.6/seed_000/forward/learning_curve.png": "acef92952f83ce9ec3e14617061d9435b9532a4154b0e53c2e561f78c8d351c4",
+    "FashionMNIST0.6/seed_000/forward/metrics.json": "ee4a74a5fb792d86190bed923dafeb7f2aeb9c18ba046b47a4391202c641ccbf",
+    "FashionMNIST0.6/seed_000/gce/history.json": "e2d871c23362d76ac94b68214ca86ee1526a4208177842c887a5f0f86f3f7e59",
+    "FashionMNIST0.6/seed_000/gce/learning_curve.png": "23b7e64ae2fd6a6ae274c53dec0f068641c8b80fc0a0f157574f0883704f40d2",
+    "FashionMNIST0.6/seed_000/gce/metrics.json": "2a15853c8b9453372f95902a0757669a2fb70b17ccf41b899a363addf97097c6",
+    "FashionMNIST0.6/seed_001/estimator/history.json": "0f1690c30186e8b963ccce7ad83b0d29a731c87d279ac2909e848cc9a617e728",
+    "FashionMNIST0.6/seed_001/estimator/transition.json": "9e1b8c76ecaee6e20581788753835c971e9c366f373d46fd90c07b043656a7c6",
+    "FashionMNIST0.6/seed_001/forward/history.json": "aff67e2c838ab139b92dd42b4dfeb70b22990c370329ca5514b441550908b7da",
+    "FashionMNIST0.6/seed_001/forward/learning_curve.png": "c20ec21ee52ae8b95b1b1356d527bf701558e4c03c0588afcb98b38486c2d45a",
+    "FashionMNIST0.6/seed_001/forward/metrics.json": "10ee1db2b4f6f4f8d8c3d4a33ce36a52b02dde937e6b680e95e72c9bba427c53",
+    "FashionMNIST0.6/seed_001/gce/history.json": "4a7793a889fe0dcb2b560e269c72d569ca585372ff6ce7e09937244232b506e5",
+    "FashionMNIST0.6/seed_001/gce/learning_curve.png": "c1e9bd23240d273afd7041cb0a3e574cb86339b8a70ea4e5c1d657cb4a9fe759",
+    "FashionMNIST0.6/seed_001/gce/metrics.json": "5fa01db22389b1a876b59a9c288aaef932027edc0cc0338d815781beb4844d62",
+    "FashionMNIST0.6/seed_002/estimator/history.json": "6db4e7e1896ea0210b2f541e109d83bc590ca8b12ee3f0edd6a248760081aba1",
+    "FashionMNIST0.6/seed_002/estimator/transition.json": "1e1cfef8671f5cf16145106beb136783d1a8dc7271bbc5e95d266d480cd09f67",
+    "FashionMNIST0.6/seed_002/forward/history.json": "40ed2118c9b9533a9255df2d3a73313dfb95e36d6e9418dcb77d353d66fb61c9",
+    "FashionMNIST0.6/seed_002/forward/learning_curve.png": "96e86c4921010ce8dc477ce878824dd562efd88ce49c4948a66abb23efcd3ca4",
+    "FashionMNIST0.6/seed_002/forward/metrics.json": "dd2c739af57096ba1d1682c1f4c865f05d9582981862d8937960c0c7a8ab284d",
+    "FashionMNIST0.6/seed_002/gce/history.json": "6bdb50fa238c85c4ce1fb9aac73485fdfb7819733823d1558a95f47f31fec82e",
+    "FashionMNIST0.6/seed_002/gce/learning_curve.png": "20465995abe66085f4a0e01bd84dd2fbab46c443d2b4b3af84c52ef6e70f8970",
+    "FashionMNIST0.6/seed_002/gce/metrics.json": "eb418aa82fc3edc6cd6c24d2e6af754aae13828d1eca5e486f6a2b9dd69b25c6",
+    "FashionMNIST0.6/seed_003/estimator/history.json": "fea48390bfad376754b94b1e8f9549b621515f35c51254d82435354a55df4127",
+    "FashionMNIST0.6/seed_003/estimator/transition.json": "0f9747373d153fc22e0fc4a6aae8feb043473db765c63b3df211cb2d17961626",
+    "FashionMNIST0.6/seed_003/forward/history.json": "0280710e4745d91d7267948cb52d716baa2f38000133ed34862b6eea62866156",
+    "FashionMNIST0.6/seed_003/forward/learning_curve.png": "284c4ef541a49bcef260a390bd9084c876c6624f1b3875fdedceaa3ca4c6f856",
+    "FashionMNIST0.6/seed_003/forward/metrics.json": "60befa7414fe481ab4f2a2c5c064e51cdeb7fbe10930e90b9fc6cbd446ae4e76",
+    "FashionMNIST0.6/seed_003/gce/history.json": "ac5d1cd42c1cbc3412435b566df512a9988b7db20d3398dc09cc2bbfe604e43d",
+    "FashionMNIST0.6/seed_003/gce/learning_curve.png": "a77c2b38478899381434564c376f49f9186e79764394f0b315fa31d9a1ae58e0",
+    "FashionMNIST0.6/seed_003/gce/metrics.json": "89c7590a810c345d1360ace401f8c7fcb526ef025e4264662e6315d6c482176e",
+    "FashionMNIST0.6/seed_004/estimator/history.json": "08aad19bf906d14816d6c1c3ada42e33b522ab2fcbe5bd6cd476a44cc76da9b0",
+    "FashionMNIST0.6/seed_004/estimator/transition.json": "ff383efffa20b7ca9aaf7a52e519e43152eab9f515a1049de265797f8906a189",
+    "FashionMNIST0.6/seed_004/forward/history.json": "d8ff64ba567d5184094f41c31d8b2e566cc0d6fb23f91ca006fa09de0789ddfa",
+    "FashionMNIST0.6/seed_004/forward/learning_curve.png": "61a1c9926549e284e25f93ca45c2030c83af207ac61768ac06d17c41a0183768",
+    "FashionMNIST0.6/seed_004/forward/metrics.json": "919d6416d268784c2b120cbedbda2454630dbc52b553d00350c412298f58aeab",
+    "FashionMNIST0.6/seed_004/gce/history.json": "ce8d89064a472736e81e76ed056b12c6df1d34b45c25a1f95874f743f3211db8",
+    "FashionMNIST0.6/seed_004/gce/learning_curve.png": "edb8f99e4891ae488be017c43520a89470251ec8280ed6d12d66f698cbe3c73f",
+    "FashionMNIST0.6/seed_004/gce/metrics.json": "f9a07dbb26586a49c3b3bf74c6072c919ec715a98b2493e46f21ca2e921ddfd1",
+    "FashionMNIST0.6/seed_005/estimator/history.json": "7fd28466b059f49c6e0b4d220a6289c73b408062a522b8e5d60439ac9e732c59",
+    "FashionMNIST0.6/seed_005/estimator/transition.json": "3805eb96d9297ca8185546dddc5d4757fc1a9b6c1755e9d5a7d459f883bffc86",
+    "FashionMNIST0.6/seed_005/forward/history.json": "9e1154aa95d4d71324f677de0e803c6b3e8f818670ed235ead76ff08ed150dc3",
+    "FashionMNIST0.6/seed_005/forward/learning_curve.png": "6a10546e2c99f56da93c09752d65794f77c032427c2872a65be65cf1b4c890bc",
+    "FashionMNIST0.6/seed_005/forward/metrics.json": "9796e5d1e161433e121ef04dd940676fc51e7cd3909c976efe2edfcc4ae60bf4",
+    "FashionMNIST0.6/seed_005/gce/history.json": "f8673f95cf5b10dac32f9d177d2847e41f2c123d2b9a28e8e79ddb9d21fe8fa0",
+    "FashionMNIST0.6/seed_005/gce/learning_curve.png": "431f7ccde294f8004eef6badb862af29fb742247c2c95a360ab6d429592297a9",
+    "FashionMNIST0.6/seed_005/gce/metrics.json": "5daee2271642edcc330d6dde6b6cb32891b056c95d91cf7918b03e1864adb478",
+    "FashionMNIST0.6/seed_006/estimator/history.json": "84dca605bf510f6927dd866d0e93130e894e7040af786053a7277c57c1be228d",
+    "FashionMNIST0.6/seed_006/estimator/transition.json": "8c14b7d06f9c85e98abed72736bd98b3bde41c7d3974ce449d274f11e0abc94e",
+    "FashionMNIST0.6/seed_006/forward/history.json": "79cb1ad48d481a9b5bc1672314eaef37a616de15365d8fac89fcb69d24237ca0",
+    "FashionMNIST0.6/seed_006/forward/learning_curve.png": "c672c91559fded488cd022993d429af8b1d04cf88b4762b093d64a42be4a0f29",
+    "FashionMNIST0.6/seed_006/forward/metrics.json": "9ad3be0203f44b9a46791cc75e3fc163103ecbdc0883a4f2828671ee22154a4f",
+    "FashionMNIST0.6/seed_006/gce/history.json": "f7f1aaa3fd033acd83801602b55f31f1c740a9d1ea6dbeaecef3e4992b8c1e32",
+    "FashionMNIST0.6/seed_006/gce/learning_curve.png": "5f6f4fb100f2340b8cda2b8109612bf72a6e084319b1462184056b7a74320ced",
+    "FashionMNIST0.6/seed_006/gce/metrics.json": "fe033b57e0e5aa045d6005753fbf09626c84f520ab17446b218abf02228b2edc",
+    "FashionMNIST0.6/seed_007/estimator/history.json": "0e2d524f4374079599787ef8816031c5f65c2e1c17c611a7b84acd59982fe53a",
+    "FashionMNIST0.6/seed_007/estimator/transition.json": "92f622cd8f7404be05e1b6c2d0f2eda33ab3b1733fc44785792aeeda7b8fd685",
+    "FashionMNIST0.6/seed_007/forward/history.json": "76910702bba2fade278f114f0ab100f7ed8772205b36b74d850a19fe7ecad3d5",
+    "FashionMNIST0.6/seed_007/forward/learning_curve.png": "ecb970fb36070908c8b928d6742f910b602caee6755be3af66ecab9164604057",
+    "FashionMNIST0.6/seed_007/forward/metrics.json": "319e4d4bf2c3d3c8d7d9adbc2f8aafe51585c17bb231a24b418ae225d0b1f017",
+    "FashionMNIST0.6/seed_007/gce/history.json": "51d45c7ae15d682bb94e2457586bd69b34323d2497d1d3519af8e6c0133562d6",
+    "FashionMNIST0.6/seed_007/gce/learning_curve.png": "b28bd481b9f7b0971a04451469c3753d9a12be9fd2e258ca7b90edcb677382ba",
+    "FashionMNIST0.6/seed_007/gce/metrics.json": "8c53b19fce41ac3c4a86e8d4fac20861fb8bf6568f27da3b6585a7f546ad4ac1",
+    "FashionMNIST0.6/seed_008/estimator/history.json": "457a17bf2866fcdd982d8c31cefde5cf2dc6f3e57843a4747dd2072431f26b2d",
+    "FashionMNIST0.6/seed_008/estimator/transition.json": "f38f156c8f61cb16e6f3ab885307ec563a8caba4eb6949ad39d735ad59401f60",
+    "FashionMNIST0.6/seed_008/forward/history.json": "198baa02622d97601c34f58c9867ba2002ddbf6b61b7870384314f0d1da5391d",
+    "FashionMNIST0.6/seed_008/forward/learning_curve.png": "32cc4906ff70f29e5efdfe26f8d29c8ba0366eab3bfa05f3f0e35dd1b169437c",
+    "FashionMNIST0.6/seed_008/forward/metrics.json": "579bd5d843e1b3a0b70984bf8c47ffa6443f4b601c765eee54f7aedcf6f3daaa",
+    "FashionMNIST0.6/seed_008/gce/history.json": "93ff97275a9d586ac6b6ed72532829630e59d7fe1e4c64d44cebcfe39882f331",
+    "FashionMNIST0.6/seed_008/gce/learning_curve.png": "db10dae92a629fb9e1259384facba94d3cae9a073c2e038b97221354b634603d",
+    "FashionMNIST0.6/seed_008/gce/metrics.json": "2af0174a904850c5eca64dd72ac563aa267a38f3a1849f1f064deb56304d1d86",
+    "FashionMNIST0.6/seed_009/estimator/history.json": "9e900169d29cbe752f9ac31bd594d75f3bca6a5c6c1d106fb34e51019c728484",
+    "FashionMNIST0.6/seed_009/estimator/transition.json": "5c9b1f3167b8e2bc8d883f68334af42c87417a58cb0db07788c7dfe03ea382aa",
+    "FashionMNIST0.6/seed_009/forward/history.json": "cc4c5d105748498effa2382fdaad969299c27fb03a535f82a1ac9550fc80cd10",
+    "FashionMNIST0.6/seed_009/forward/learning_curve.png": "a353285eac0cf6ab814e60ef3b0654488e05fad075fea9aed2c138f2644e1fae",
+    "FashionMNIST0.6/seed_009/forward/metrics.json": "50797a4107126e42d1da29a7271cdedc69e2bede75c7abdf487affcac90dc934",
+    "FashionMNIST0.6/seed_009/gce/history.json": "a440230771f06f7ad7da26e0b668c0640772100c615cc06c49fd45ae53140c97",
+    "FashionMNIST0.6/seed_009/gce/learning_curve.png": "345ccb4d22ecbbf9873517a097ca4d3daeaacc2a5ec5526ce053ec0f316d70f5",
+    "FashionMNIST0.6/seed_009/gce/metrics.json": "9e45eb5e798bb756ce72db67b6e42f5d4ab82492132d5a0760f1d9f7f899d6bb",
+    "FashionMNIST0.6_transition.png": "001e5f42ff0c838d43c7800fbcc519631309e0a93abcc623adfa017f22366103",
+    "accuracy_comparison.png": "6eaa8a0c572141ab2bf4fdcd56b60487595a9fcd8c3e2a50e53492b34ab59476",
+    "execution_status.json": "108fed65df5e6c6f0522e6d39b7917081a71249af33405e25db5d7b9b3a722ca",
+    "final.json": "45554d7a223d3aecb0eb03d096929597a81594b0c58e0c0bb4157b4a75809ac7",
+    "preflight.json": "a744a4c033ee20b6b042e49f0ed2fde4eecd08572debe268c5e0d4efb115ca31",
+    "runs.csv": "361655827f6cf4b449994bf8332e040407f520b2c20fdaf3af737f7925c57c18",
+    "summary.csv": "eab69a16d571e1d534859c7fbb1ad6507f97fc2ba503e9de605e3896f23e5baa",
+    "summary.json": "9f7a23b65585beb3dde3961be3f01f3840527a2f9889248275e9e9b6b430e346",
+    "summary.md": "8bfd637c7d87570f076c548005365a85d9c66c192f65e12a8b944d1ce87e87ab",
+    "tests.log": "275a074fa2a72040a012dab4e3d068c2555fdb681d8164627879a26bf49da4c3"
+  },
+  "run_index": [
+    {
+      "component": "estimator",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1000,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 0
+      },
+      "original_artifact_sha256": {
+        "best.pt": "a5d29a9473a24e795f1aa7b51457f829b6ad82cfbd95ad0c476447c2b9c60d43",
+        "history.json": "7bd15ceb478d9223c7ea468bfcba2fc7f59f327f858db55e091ac8e958fc64ec",
+        "transition.json": "7aef62ebd453b3eb32a3ba59ab66c82f94ee657eecde61f03fe84248a730bcf6"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_000/estimator/history.json": "7bd15ceb478d9223c7ea468bfcba2fc7f59f327f858db55e091ac8e958fc64ec",
+        "FashionMNIST0.3/seed_000/estimator/transition.json": "7aef62ebd453b3eb32a3ba59ab66c82f94ee657eecde61f03fe84248a730bcf6"
+      },
+      "split_seed": 0,
+      "split_sha256": "eea30a533f1c7b26a578679d146373a906ecf4ebabe90d32bd7b34591b04353b",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1000,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 0,
+        "split_sha256": "eea30a533f1c7b26a578679d146373a906ecf4ebabe90d32bd7b34591b04353b",
+        "transition_sha256": "7aef62ebd453b3eb32a3ba59ab66c82f94ee657eecde61f03fe84248a730bcf6"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "32bb2f81c40df0a85270be910f688f129855d75e9539f0cb6b38cddeb60bb150",
+        "history.json": "e5226c35d773959b76076e5f937fc29a5b529c05abfaf2e1f7344af0bd90e640",
+        "metrics.json": "a6b0d375aa0826fd00919742f4560357a6768406a6666cdf85a76b6f7d177f89",
+        "predictions.npz": "089b1580173d403b9ebb8dd1a1e2037db1ffc076414d76ed1adc94885ccc3f97"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_000/forward/history.json": "e5226c35d773959b76076e5f937fc29a5b529c05abfaf2e1f7344af0bd90e640",
+        "FashionMNIST0.3/seed_000/forward/learning_curve.png": "a3c7acf1af4adbc61354e08568fd2e739ea5460f3f4332e508c150a45a77b375",
+        "FashionMNIST0.3/seed_000/forward/metrics.json": "a6b0d375aa0826fd00919742f4560357a6768406a6666cdf85a76b6f7d177f89"
+      },
+      "split_seed": 0,
+      "split_sha256": "eea30a533f1c7b26a578679d146373a906ecf4ebabe90d32bd7b34591b04353b",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1000,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 0,
+        "split_sha256": "eea30a533f1c7b26a578679d146373a906ecf4ebabe90d32bd7b34591b04353b",
+        "transition_sha256": "7aef62ebd453b3eb32a3ba59ab66c82f94ee657eecde61f03fe84248a730bcf6"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "ba7fd2c98f878e421ae6d5121a61d7afa516591759ad4924c93e0a4efb96cda9",
+        "history.json": "b2c98ac35e74cfe2be409c15a7a4e9d16845d4d40b7139ee62cc617cbe44856f",
+        "metrics.json": "a83c696c1fa4a25b590c8e5d5349213db973996c9cadca7fc4518643b6f34407",
+        "predictions.npz": "73837d6b9b2284438818a9849b68b7fab9aface8399e7c29b9cd5e40212a856d"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_000/gce/history.json": "b2c98ac35e74cfe2be409c15a7a4e9d16845d4d40b7139ee62cc617cbe44856f",
+        "FashionMNIST0.3/seed_000/gce/learning_curve.png": "e9e6f568c513d65d965b24ae5619519e2b1d8eb1e873c330940d2718275e7bc1",
+        "FashionMNIST0.3/seed_000/gce/metrics.json": "a83c696c1fa4a25b590c8e5d5349213db973996c9cadca7fc4518643b6f34407"
+      },
+      "split_seed": 0,
+      "split_sha256": "eea30a533f1c7b26a578679d146373a906ecf4ebabe90d32bd7b34591b04353b",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1001,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 1
+      },
+      "original_artifact_sha256": {
+        "best.pt": "6c1453e792409be2d8784592d262caa77ff5d8051c2b08c170dc8ced03d17d44",
+        "history.json": "b0fca5c711570508dd2726ead842d697cc8fa7f143c15ace50c75426a2a135ec",
+        "transition.json": "dcf8bff61a7b92efcf9fbb5a2993978b7c2ba149ddd4364c9a6d9026514e6f72"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_001/estimator/history.json": "b0fca5c711570508dd2726ead842d697cc8fa7f143c15ace50c75426a2a135ec",
+        "FashionMNIST0.3/seed_001/estimator/transition.json": "dcf8bff61a7b92efcf9fbb5a2993978b7c2ba149ddd4364c9a6d9026514e6f72"
+      },
+      "split_seed": 1,
+      "split_sha256": "d91073413e509ad2cfc0a5ea1042095b94435c0a9fb53dd1dcb0005ab51274b4",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1001,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 1,
+        "split_sha256": "d91073413e509ad2cfc0a5ea1042095b94435c0a9fb53dd1dcb0005ab51274b4",
+        "transition_sha256": "dcf8bff61a7b92efcf9fbb5a2993978b7c2ba149ddd4364c9a6d9026514e6f72"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "8d8784475353243c2dd97b81500d624dba6049be41c6037a939ad034e27f8655",
+        "history.json": "dafdc3840a37d3aa8fc988f37b6e76249e49e5cb6f7660ebe6c633802ed8c484",
+        "metrics.json": "ac7620744f014dc86b4ab038203724be4533b80e1023eb1ca09bc775df183b31",
+        "predictions.npz": "266b49be121ed8111091aab1748e491df6f3986c77de9087ed2c7f12628847f3"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_001/forward/history.json": "dafdc3840a37d3aa8fc988f37b6e76249e49e5cb6f7660ebe6c633802ed8c484",
+        "FashionMNIST0.3/seed_001/forward/learning_curve.png": "3c9b360103c189737570c57b6b4123ff68aa3cb88161020d6f7ee5774c6b1291",
+        "FashionMNIST0.3/seed_001/forward/metrics.json": "ac7620744f014dc86b4ab038203724be4533b80e1023eb1ca09bc775df183b31"
+      },
+      "split_seed": 1,
+      "split_sha256": "d91073413e509ad2cfc0a5ea1042095b94435c0a9fb53dd1dcb0005ab51274b4",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1001,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 1,
+        "split_sha256": "d91073413e509ad2cfc0a5ea1042095b94435c0a9fb53dd1dcb0005ab51274b4",
+        "transition_sha256": "dcf8bff61a7b92efcf9fbb5a2993978b7c2ba149ddd4364c9a6d9026514e6f72"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "310a2e30b6386f445fd2465dcf33002f0d45990bcd148e3ceaca61e799c6bc12",
+        "history.json": "797efd3bf6731722bd4d17c1c9c3312075e2bcee0bd527a2f965c7e6567f8947",
+        "metrics.json": "e0a9fbd53023f790809dea9b03ffc08006dfe25e138bffce6fe065fb7b06f8db",
+        "predictions.npz": "558dcbf7e653cea3e5d7254759d8a706e44f140e62415ba445eccb338fa93ff2"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_001/gce/history.json": "797efd3bf6731722bd4d17c1c9c3312075e2bcee0bd527a2f965c7e6567f8947",
+        "FashionMNIST0.3/seed_001/gce/learning_curve.png": "c32fd0f293f569eeec99825fcc1362602d65f7934c8e3e4e0eb245f6786acdae",
+        "FashionMNIST0.3/seed_001/gce/metrics.json": "e0a9fbd53023f790809dea9b03ffc08006dfe25e138bffce6fe065fb7b06f8db"
+      },
+      "split_seed": 1,
+      "split_sha256": "d91073413e509ad2cfc0a5ea1042095b94435c0a9fb53dd1dcb0005ab51274b4",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1002,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 2
+      },
+      "original_artifact_sha256": {
+        "best.pt": "8b48d38f9370c9711a719ce559f4ef630857a9c029ae49779494bce9758b4e98",
+        "history.json": "b3a0ab71464295a6dc9a637bcd0d89ad9ef466d4786560551af89249c0458371",
+        "transition.json": "67aab3473d9493f8b3f4db3b9ff30e9241817f811559202afe5327fdf7de6f40"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_002/estimator/history.json": "b3a0ab71464295a6dc9a637bcd0d89ad9ef466d4786560551af89249c0458371",
+        "FashionMNIST0.3/seed_002/estimator/transition.json": "67aab3473d9493f8b3f4db3b9ff30e9241817f811559202afe5327fdf7de6f40"
+      },
+      "split_seed": 2,
+      "split_sha256": "e3f46699570459e9eb06b6bb4a49d649db1e0e288118b34d5fd298aec79b4d23",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1002,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 2,
+        "split_sha256": "e3f46699570459e9eb06b6bb4a49d649db1e0e288118b34d5fd298aec79b4d23",
+        "transition_sha256": "67aab3473d9493f8b3f4db3b9ff30e9241817f811559202afe5327fdf7de6f40"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "50845bbaef485184239827d7f6c857c99d7fc7853b760faa69d73bcae60f2aa5",
+        "history.json": "eb1b17d1cf5e1b739b52c11b6936c41b6ffb760d31bf354a8a7cf5b220d15498",
+        "metrics.json": "b84ccea0be99883f5151402f62390ef797ba9972d766fdb602a8fc31660db527",
+        "predictions.npz": "307445d7af48d90b69c34ca30ca00ad2c031eb5d71155142a49bf2c56fd40f53"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_002/forward/history.json": "eb1b17d1cf5e1b739b52c11b6936c41b6ffb760d31bf354a8a7cf5b220d15498",
+        "FashionMNIST0.3/seed_002/forward/learning_curve.png": "496b44dc72fb16d887855310a42c59d97cd2820f63dd3af9a771590a33df21ce",
+        "FashionMNIST0.3/seed_002/forward/metrics.json": "b84ccea0be99883f5151402f62390ef797ba9972d766fdb602a8fc31660db527"
+      },
+      "split_seed": 2,
+      "split_sha256": "e3f46699570459e9eb06b6bb4a49d649db1e0e288118b34d5fd298aec79b4d23",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1002,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 2,
+        "split_sha256": "e3f46699570459e9eb06b6bb4a49d649db1e0e288118b34d5fd298aec79b4d23",
+        "transition_sha256": "67aab3473d9493f8b3f4db3b9ff30e9241817f811559202afe5327fdf7de6f40"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "53ac93ceb9a5c40d5dec53b86560bb4eecb394ba31f23fe37fcab6815d374cdd",
+        "history.json": "f165a7e259d2079216b8ac02df02f07b55ba106d56a48019efbb54b655b606a3",
+        "metrics.json": "56c67ddafc9f256c802666751824b5f514b4a0fa9d80ace52bddc3165c7c1dce",
+        "predictions.npz": "a80d5756ee18b3da9b18d237fe6bfd738865aba0eb0b5b9225c3ae8c9e152d8e"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_002/gce/history.json": "f165a7e259d2079216b8ac02df02f07b55ba106d56a48019efbb54b655b606a3",
+        "FashionMNIST0.3/seed_002/gce/learning_curve.png": "ce6127e92584758dbf198167815c9d996dbed697396e2544f115d89acaa268d5",
+        "FashionMNIST0.3/seed_002/gce/metrics.json": "56c67ddafc9f256c802666751824b5f514b4a0fa9d80ace52bddc3165c7c1dce"
+      },
+      "split_seed": 2,
+      "split_sha256": "e3f46699570459e9eb06b6bb4a49d649db1e0e288118b34d5fd298aec79b4d23",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1003,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 3
+      },
+      "original_artifact_sha256": {
+        "best.pt": "2fb9fb99c1787bbabbe7c8681c2eee0251e5ae90129b54b11f0ee655bac5590b",
+        "history.json": "8d8e700041ac89c0c6db63ae5958e2a9dd9d94b9a238791d04fba36dd95144e4",
+        "transition.json": "00c6697d910aac217eb7ce93ecee170fcf0afe5cc858a52d52db1282f96fcfc1"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_003/estimator/history.json": "8d8e700041ac89c0c6db63ae5958e2a9dd9d94b9a238791d04fba36dd95144e4",
+        "FashionMNIST0.3/seed_003/estimator/transition.json": "00c6697d910aac217eb7ce93ecee170fcf0afe5cc858a52d52db1282f96fcfc1"
+      },
+      "split_seed": 3,
+      "split_sha256": "de71b8916df9d1afc541a1caa1f2aeb411912c2f0941b78b75a3569dcd0d9f5d",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1003,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 3,
+        "split_sha256": "de71b8916df9d1afc541a1caa1f2aeb411912c2f0941b78b75a3569dcd0d9f5d",
+        "transition_sha256": "00c6697d910aac217eb7ce93ecee170fcf0afe5cc858a52d52db1282f96fcfc1"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "34ecdc8ebbc1fc9bffd2fe73c88b4d7a9759689ff3f63b032512476cbb431127",
+        "history.json": "c0a948455732a031bddbde4b7ed30f74502af7e91f83e7a29bfdb2e9190099ac",
+        "metrics.json": "f0c94893366fa1f72a02600609f0533e45b9c4b31f5cb542f18c1e407e3179b4",
+        "predictions.npz": "105806bd9965f39df64da2e87c396b084719fe70af767ef3518baa6a7223544b"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_003/forward/history.json": "c0a948455732a031bddbde4b7ed30f74502af7e91f83e7a29bfdb2e9190099ac",
+        "FashionMNIST0.3/seed_003/forward/learning_curve.png": "cc033f24b10a613b1cf700ceee10f3eafc182c8ee67c18ed9b886dd1c9458ef1",
+        "FashionMNIST0.3/seed_003/forward/metrics.json": "f0c94893366fa1f72a02600609f0533e45b9c4b31f5cb542f18c1e407e3179b4"
+      },
+      "split_seed": 3,
+      "split_sha256": "de71b8916df9d1afc541a1caa1f2aeb411912c2f0941b78b75a3569dcd0d9f5d",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1003,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 3,
+        "split_sha256": "de71b8916df9d1afc541a1caa1f2aeb411912c2f0941b78b75a3569dcd0d9f5d",
+        "transition_sha256": "00c6697d910aac217eb7ce93ecee170fcf0afe5cc858a52d52db1282f96fcfc1"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "0b399d9c09263fa5abb346dc16d7fbaad4a5ea7e60e1c7d1c0dfe601f92c91bb",
+        "history.json": "739dacbaf4afc983b6be9cf7dc311eb3bcf8799dcef4f0db0c5f10acb46905bf",
+        "metrics.json": "ae01b496b62d2c3fd2a642b9be481740f41e94325643b7ac9686cc3b698865b7",
+        "predictions.npz": "105806bd9965f39df64da2e87c396b084719fe70af767ef3518baa6a7223544b"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_003/gce/history.json": "739dacbaf4afc983b6be9cf7dc311eb3bcf8799dcef4f0db0c5f10acb46905bf",
+        "FashionMNIST0.3/seed_003/gce/learning_curve.png": "297d7070aaf67669f89a9b5c3f0d5bf2c14e2fa438bc665a434359068788b443",
+        "FashionMNIST0.3/seed_003/gce/metrics.json": "ae01b496b62d2c3fd2a642b9be481740f41e94325643b7ac9686cc3b698865b7"
+      },
+      "split_seed": 3,
+      "split_sha256": "de71b8916df9d1afc541a1caa1f2aeb411912c2f0941b78b75a3569dcd0d9f5d",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1004,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 4
+      },
+      "original_artifact_sha256": {
+        "best.pt": "1338c5c1decc9d2c69906595596c6c281d0953f0e722b9f7bbf302cfdc988080",
+        "history.json": "20fe2838e0663378a9ae2f0d5ee114e30ec05b1973f79cf98c4a1ee390d9f63f",
+        "transition.json": "8cb28ac8866d49c30360409f0b3c614ed40284d7ea6bcd8ab2d1dee030b8bcaa"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_004/estimator/history.json": "20fe2838e0663378a9ae2f0d5ee114e30ec05b1973f79cf98c4a1ee390d9f63f",
+        "FashionMNIST0.3/seed_004/estimator/transition.json": "8cb28ac8866d49c30360409f0b3c614ed40284d7ea6bcd8ab2d1dee030b8bcaa"
+      },
+      "split_seed": 4,
+      "split_sha256": "0f74932bb6eb25fc1a4cd12c0394a24936b2131ba5a094bcaebbbae026f97049",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1004,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 4,
+        "split_sha256": "0f74932bb6eb25fc1a4cd12c0394a24936b2131ba5a094bcaebbbae026f97049",
+        "transition_sha256": "8cb28ac8866d49c30360409f0b3c614ed40284d7ea6bcd8ab2d1dee030b8bcaa"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "a36c93379ec3a22a3837e3825a98fddba0dac4002c2ef8ff75906a66cd070f84",
+        "history.json": "53cbf33a30b95c5e35204891ff399d5b30cf08a57088928a891db76a020ed197",
+        "metrics.json": "5f27d5dea3f0b3e25e43c8b105f64a05bbbd99dd4209f627f9153b07c06ee0b1",
+        "predictions.npz": "861d19797845176ef7b675941ee0740589c0fbabae67d06348fe3406191b0421"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_004/forward/history.json": "53cbf33a30b95c5e35204891ff399d5b30cf08a57088928a891db76a020ed197",
+        "FashionMNIST0.3/seed_004/forward/learning_curve.png": "b2caf18c15c2fa4bf4b2130aca0aae3672adb927ce8c003dff360618a418045b",
+        "FashionMNIST0.3/seed_004/forward/metrics.json": "5f27d5dea3f0b3e25e43c8b105f64a05bbbd99dd4209f627f9153b07c06ee0b1"
+      },
+      "split_seed": 4,
+      "split_sha256": "0f74932bb6eb25fc1a4cd12c0394a24936b2131ba5a094bcaebbbae026f97049",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1004,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 4,
+        "split_sha256": "0f74932bb6eb25fc1a4cd12c0394a24936b2131ba5a094bcaebbbae026f97049",
+        "transition_sha256": "8cb28ac8866d49c30360409f0b3c614ed40284d7ea6bcd8ab2d1dee030b8bcaa"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "55414b3b148dfcd52d7bd558e636fc84e16447eb6ea190b5133998b4e0444d66",
+        "history.json": "6d0b5f466071d902ce59718d090cf18f26101b427f868b2115669424c44ce359",
+        "metrics.json": "c0e130bd21826d03afe8a513004e55ff1fad1552c153ccf9638fc0d6cc88d0c5",
+        "predictions.npz": "278ddbae8d905282ec7beb1c5062c06f6aee05b010caa6e3f9d8dfc8a07f7dcc"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_004/gce/history.json": "6d0b5f466071d902ce59718d090cf18f26101b427f868b2115669424c44ce359",
+        "FashionMNIST0.3/seed_004/gce/learning_curve.png": "3c85ef28836abbeed8d7b92e685dfdce11f893bfca4db8af4374212c640e00ee",
+        "FashionMNIST0.3/seed_004/gce/metrics.json": "c0e130bd21826d03afe8a513004e55ff1fad1552c153ccf9638fc0d6cc88d0c5"
+      },
+      "split_seed": 4,
+      "split_sha256": "0f74932bb6eb25fc1a4cd12c0394a24936b2131ba5a094bcaebbbae026f97049",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1005,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 5
+      },
+      "original_artifact_sha256": {
+        "best.pt": "6f33aeaaa498725df8f5efaaf6ceda5d8f7c11f65279e928757ff93213195387",
+        "history.json": "2e65b14af51a3679a9f0c5e79a920a215fbab7bc2c6b1f1463a6af883914adaa",
+        "transition.json": "06af19833ff13b0141e8a506cafcc6e9ac57fdb39a30746ab84fdaf29f37afbb"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_005/estimator/history.json": "2e65b14af51a3679a9f0c5e79a920a215fbab7bc2c6b1f1463a6af883914adaa",
+        "FashionMNIST0.3/seed_005/estimator/transition.json": "06af19833ff13b0141e8a506cafcc6e9ac57fdb39a30746ab84fdaf29f37afbb"
+      },
+      "split_seed": 5,
+      "split_sha256": "8baf34e2d6dc8ce372ff95b57138ca596739871a0fd0759cc9a2d632ea7206d5",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1005,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 5,
+        "split_sha256": "8baf34e2d6dc8ce372ff95b57138ca596739871a0fd0759cc9a2d632ea7206d5",
+        "transition_sha256": "06af19833ff13b0141e8a506cafcc6e9ac57fdb39a30746ab84fdaf29f37afbb"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "d17cc676617b276f7bb904951ce96219bf09af85ab65e9ddfb9eb1e77815ccc4",
+        "history.json": "c670c24432cb7056209d448f6b58b95dad6443011c92778e08df28b71c8b4756",
+        "metrics.json": "a94e606b93e0587d8d6e18b50d65b15dc79d7a1abeba76595a54bd2a30f53326",
+        "predictions.npz": "dfc7ced2be91eb0a5504caeeb7cf4a5e0e57675a75e71fcd68f95b2fef898f9c"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_005/forward/history.json": "c670c24432cb7056209d448f6b58b95dad6443011c92778e08df28b71c8b4756",
+        "FashionMNIST0.3/seed_005/forward/learning_curve.png": "e2f049594eac6ec2ff065c52e677e042fc7d5fa7a94512dacbafc7fdc6c191e0",
+        "FashionMNIST0.3/seed_005/forward/metrics.json": "a94e606b93e0587d8d6e18b50d65b15dc79d7a1abeba76595a54bd2a30f53326"
+      },
+      "split_seed": 5,
+      "split_sha256": "8baf34e2d6dc8ce372ff95b57138ca596739871a0fd0759cc9a2d632ea7206d5",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1005,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 5,
+        "split_sha256": "8baf34e2d6dc8ce372ff95b57138ca596739871a0fd0759cc9a2d632ea7206d5",
+        "transition_sha256": "06af19833ff13b0141e8a506cafcc6e9ac57fdb39a30746ab84fdaf29f37afbb"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "c38cc94cc921e8b04730de04b07b85c6f2225566467bc1d6c14faba2ef66c363",
+        "history.json": "09dd3a552891cb1a9dbaf3d5534ce420d94a5b4fd00e6eb42eb84d4c74c375b5",
+        "metrics.json": "8e277be4b5bc82409280df99f66cb314e8a759ca578058b58c2d43276eda97dc",
+        "predictions.npz": "dfc7ced2be91eb0a5504caeeb7cf4a5e0e57675a75e71fcd68f95b2fef898f9c"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_005/gce/history.json": "09dd3a552891cb1a9dbaf3d5534ce420d94a5b4fd00e6eb42eb84d4c74c375b5",
+        "FashionMNIST0.3/seed_005/gce/learning_curve.png": "799deea92100e16b66396842f949d3593d0531b762cf88680471a6eb6848076e",
+        "FashionMNIST0.3/seed_005/gce/metrics.json": "8e277be4b5bc82409280df99f66cb314e8a759ca578058b58c2d43276eda97dc"
+      },
+      "split_seed": 5,
+      "split_sha256": "8baf34e2d6dc8ce372ff95b57138ca596739871a0fd0759cc9a2d632ea7206d5",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1006,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 6
+      },
+      "original_artifact_sha256": {
+        "best.pt": "2e65c79596bd5dbbdce274a865f3416365d09b4ae84aa69b2f92f32693eaa453",
+        "history.json": "33365704da096d0a46ba39948f517f994698e24671a8fc6162275c95a3d5ac01",
+        "transition.json": "b41c9892983bb580bb45cab0a5a9bb7a35fb0fc18f5d888533226d90ad7d28b1"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_006/estimator/history.json": "33365704da096d0a46ba39948f517f994698e24671a8fc6162275c95a3d5ac01",
+        "FashionMNIST0.3/seed_006/estimator/transition.json": "b41c9892983bb580bb45cab0a5a9bb7a35fb0fc18f5d888533226d90ad7d28b1"
+      },
+      "split_seed": 6,
+      "split_sha256": "1d49283bd809773f64040103c221c74e1f6490f3a4a043a0b8be96372792d2f5",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1006,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 6,
+        "split_sha256": "1d49283bd809773f64040103c221c74e1f6490f3a4a043a0b8be96372792d2f5",
+        "transition_sha256": "b41c9892983bb580bb45cab0a5a9bb7a35fb0fc18f5d888533226d90ad7d28b1"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "c6bc6f995c4c47fcf5c203309842a6f79546565f4eb30137ebbead23396ac671",
+        "history.json": "4799f0ad8dcbc4b1466f7586294abe146f2b4403eb3bc70aba7ecb49bb6c76a7",
+        "metrics.json": "bd67d7a3530f26725343f6e8db7ae62896356c9de9b70817484f092e3927bf9f",
+        "predictions.npz": "6a93e8d07d888feb80a907b23a9ecb5d7feb7a4cac7b64876ee72ee3fbde0558"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_006/forward/history.json": "4799f0ad8dcbc4b1466f7586294abe146f2b4403eb3bc70aba7ecb49bb6c76a7",
+        "FashionMNIST0.3/seed_006/forward/learning_curve.png": "2a8c1547d0efd7599343193fb2ae0a91943c8a64297d49ac30b5d604bc7f0aea",
+        "FashionMNIST0.3/seed_006/forward/metrics.json": "bd67d7a3530f26725343f6e8db7ae62896356c9de9b70817484f092e3927bf9f"
+      },
+      "split_seed": 6,
+      "split_sha256": "1d49283bd809773f64040103c221c74e1f6490f3a4a043a0b8be96372792d2f5",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1006,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 6,
+        "split_sha256": "1d49283bd809773f64040103c221c74e1f6490f3a4a043a0b8be96372792d2f5",
+        "transition_sha256": "b41c9892983bb580bb45cab0a5a9bb7a35fb0fc18f5d888533226d90ad7d28b1"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "fb575bad1e42a8e6c4c96b112dead3b5025d84284ba93c470fef8956bfa359a7",
+        "history.json": "e44a80f951b8bf53653573776a664ee12a3769ffc00d05fae981e407bea67a9c",
+        "metrics.json": "a7d78d2fd255fe7adbc549045a9bdf7369ed183b9a9a82e57f7128e5d02b8ce1",
+        "predictions.npz": "87e8e40b5d98dc3ff050c73da3f59061da6a7a462b8f7d257d2e7a5c5ad67224"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_006/gce/history.json": "e44a80f951b8bf53653573776a664ee12a3769ffc00d05fae981e407bea67a9c",
+        "FashionMNIST0.3/seed_006/gce/learning_curve.png": "b045cd15165c6e434169eb91769e26836cd9049db87de8f17dce4627160ea07b",
+        "FashionMNIST0.3/seed_006/gce/metrics.json": "a7d78d2fd255fe7adbc549045a9bdf7369ed183b9a9a82e57f7128e5d02b8ce1"
+      },
+      "split_seed": 6,
+      "split_sha256": "1d49283bd809773f64040103c221c74e1f6490f3a4a043a0b8be96372792d2f5",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1007,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 7
+      },
+      "original_artifact_sha256": {
+        "best.pt": "e0dbf652c9f953a1d349cbe504a97af8e8b0ec0a6bc28848940cb84272cdee71",
+        "history.json": "97dc3296ac2990e4e36bd6e913606d2befc9a960ef675011b38b6212865c5377",
+        "transition.json": "5c802f5869e6b5f8e386f71c597e409fe0a581e3a0fcc5020e561c31ad3d2b9f"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_007/estimator/history.json": "97dc3296ac2990e4e36bd6e913606d2befc9a960ef675011b38b6212865c5377",
+        "FashionMNIST0.3/seed_007/estimator/transition.json": "5c802f5869e6b5f8e386f71c597e409fe0a581e3a0fcc5020e561c31ad3d2b9f"
+      },
+      "split_seed": 7,
+      "split_sha256": "fa0b85efc829acdd4fd0438cdf480c2380b1fc150bd5b7b110f8f0c104b9bbc1",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1007,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 7,
+        "split_sha256": "fa0b85efc829acdd4fd0438cdf480c2380b1fc150bd5b7b110f8f0c104b9bbc1",
+        "transition_sha256": "5c802f5869e6b5f8e386f71c597e409fe0a581e3a0fcc5020e561c31ad3d2b9f"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "bbfad501bcec07c694979974f5808963fc3a308daf5041077d35bc313e395e94",
+        "history.json": "9a5867a6ae010212d1b31bd6798d0e3154cdf234a4858ec7ca2d026e38ff38ea",
+        "metrics.json": "d04d5c7fb2a7675a97a9b421b1e8bc38d7cc9a0fcbb9d72b32927cd83263d0eb",
+        "predictions.npz": "9647f48be77314d0d5150f7743b1a9b1091f856f5ff1beb15f6f18e95570b3ec"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_007/forward/history.json": "9a5867a6ae010212d1b31bd6798d0e3154cdf234a4858ec7ca2d026e38ff38ea",
+        "FashionMNIST0.3/seed_007/forward/learning_curve.png": "18acba0612f941825a7c3c3cd7f5bf30ea7b9cfc3374d229c8e398f2c37f0dc3",
+        "FashionMNIST0.3/seed_007/forward/metrics.json": "d04d5c7fb2a7675a97a9b421b1e8bc38d7cc9a0fcbb9d72b32927cd83263d0eb"
+      },
+      "split_seed": 7,
+      "split_sha256": "fa0b85efc829acdd4fd0438cdf480c2380b1fc150bd5b7b110f8f0c104b9bbc1",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1007,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 7,
+        "split_sha256": "fa0b85efc829acdd4fd0438cdf480c2380b1fc150bd5b7b110f8f0c104b9bbc1",
+        "transition_sha256": "5c802f5869e6b5f8e386f71c597e409fe0a581e3a0fcc5020e561c31ad3d2b9f"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "677214118a78a5bc6030f3a5bc79d4e7c85f7dd6479045573e44b7d4727d124f",
+        "history.json": "fbce243b7dc775e732ec56d634d4fe8635bcbc859d4545f38a0df91815babca5",
+        "metrics.json": "126ba7ede430832e66b7ab9c26efe0ddd910683d8681aad15614dc7b5884f213",
+        "predictions.npz": "9647f48be77314d0d5150f7743b1a9b1091f856f5ff1beb15f6f18e95570b3ec"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_007/gce/history.json": "fbce243b7dc775e732ec56d634d4fe8635bcbc859d4545f38a0df91815babca5",
+        "FashionMNIST0.3/seed_007/gce/learning_curve.png": "eea9f134b605debf22377b9df89c2394d674f5bd36e3e4bde525b734f9ceaaf1",
+        "FashionMNIST0.3/seed_007/gce/metrics.json": "126ba7ede430832e66b7ab9c26efe0ddd910683d8681aad15614dc7b5884f213"
+      },
+      "split_seed": 7,
+      "split_sha256": "fa0b85efc829acdd4fd0438cdf480c2380b1fc150bd5b7b110f8f0c104b9bbc1",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1008,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 8
+      },
+      "original_artifact_sha256": {
+        "best.pt": "e5069ef177b7a08eb12805ff50c8e90cba27331349bd5899d09bf53cd19025da",
+        "history.json": "a3126bbdabb5923563d672f0e2f53bd4ff91783a17e70541c757ac09a65b9988",
+        "transition.json": "6be73a00fb52014800699b2d93be9b93cac235dad67e49477c224223e7de7ff5"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_008/estimator/history.json": "a3126bbdabb5923563d672f0e2f53bd4ff91783a17e70541c757ac09a65b9988",
+        "FashionMNIST0.3/seed_008/estimator/transition.json": "6be73a00fb52014800699b2d93be9b93cac235dad67e49477c224223e7de7ff5"
+      },
+      "split_seed": 8,
+      "split_sha256": "0c58f81373e219b0acfd2bae610b2d1b44861adaa09d0aff58191fa840e91ee2",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1008,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 8,
+        "split_sha256": "0c58f81373e219b0acfd2bae610b2d1b44861adaa09d0aff58191fa840e91ee2",
+        "transition_sha256": "6be73a00fb52014800699b2d93be9b93cac235dad67e49477c224223e7de7ff5"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "35881827cd880b4635c43bcfb1b82a2bb18dfb556f50d7032f1bfdacaa47c5d9",
+        "history.json": "16ada3cff86836ae1ccbd688d737769e0dbecc86f13fb86f1a51aac2d9369078",
+        "metrics.json": "5bf2e1f32da5bad737bb73a9d109c6a36877a3e9fe6e07b17d655ca45edc7d1a",
+        "predictions.npz": "346d028abf064ceff919bd3b61c1d812ba8fb02c9d94ea002db99de8e4b298f2"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_008/forward/history.json": "16ada3cff86836ae1ccbd688d737769e0dbecc86f13fb86f1a51aac2d9369078",
+        "FashionMNIST0.3/seed_008/forward/learning_curve.png": "4a61110e950bfa6666b20fdd45798832c7f6d3208ac4ac83ad7a6b08af935c66",
+        "FashionMNIST0.3/seed_008/forward/metrics.json": "5bf2e1f32da5bad737bb73a9d109c6a36877a3e9fe6e07b17d655ca45edc7d1a"
+      },
+      "split_seed": 8,
+      "split_sha256": "0c58f81373e219b0acfd2bae610b2d1b44861adaa09d0aff58191fa840e91ee2",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1008,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 8,
+        "split_sha256": "0c58f81373e219b0acfd2bae610b2d1b44861adaa09d0aff58191fa840e91ee2",
+        "transition_sha256": "6be73a00fb52014800699b2d93be9b93cac235dad67e49477c224223e7de7ff5"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "e328683e7bf036ee06458618e3b502829d8747facc9ae5d30c3afc655fb9d386",
+        "history.json": "70b2d1a9658eb1c722ae7e61c1c4f2f917109c6ec7dedb202be928dacac81817",
+        "metrics.json": "79d9ae4603d57979464e6cdf696c959c03dc809ccc026726f5454a3c60b2b316",
+        "predictions.npz": "ae3cf5156652231e708687220229a266f932c86158d4a90a9dc99834aa250c3f"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_008/gce/history.json": "70b2d1a9658eb1c722ae7e61c1c4f2f917109c6ec7dedb202be928dacac81817",
+        "FashionMNIST0.3/seed_008/gce/learning_curve.png": "63664fdeca1d390f4507aeff4d7e330faa6f438f119ccb23d85399e49040e592",
+        "FashionMNIST0.3/seed_008/gce/metrics.json": "79d9ae4603d57979464e6cdf696c959c03dc809ccc026726f5454a3c60b2b316"
+      },
+      "split_seed": 8,
+      "split_sha256": "0c58f81373e219b0acfd2bae610b2d1b44861adaa09d0aff58191fa840e91ee2",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1009,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 9
+      },
+      "original_artifact_sha256": {
+        "best.pt": "a00a9989934acbb1ab59b33902c91fb02cd7a21ee8f9aa9e190791f638aa5a04",
+        "history.json": "2e5b9012ec40a4c69d7fe474f42b3b1e1a3adbe9b0acb0c5339eaaaf4524ff88",
+        "transition.json": "cfc55289a32e74b6c937681022c9d426588e8f4128baac50a5665eef62279382"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_009/estimator/history.json": "2e5b9012ec40a4c69d7fe474f42b3b1e1a3adbe9b0acb0c5339eaaaf4524ff88",
+        "FashionMNIST0.3/seed_009/estimator/transition.json": "cfc55289a32e74b6c937681022c9d426588e8f4128baac50a5665eef62279382"
+      },
+      "split_seed": 9,
+      "split_sha256": "1f2af02666205d51628c8f9bb2c9f73cdd60baf94c65d2c494baa3d642c97696",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1009,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 9,
+        "split_sha256": "1f2af02666205d51628c8f9bb2c9f73cdd60baf94c65d2c494baa3d642c97696",
+        "transition_sha256": "cfc55289a32e74b6c937681022c9d426588e8f4128baac50a5665eef62279382"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "53628c8c2c3606ab20b8f982d18b25c2fbf4ee0cbc4dee0a45e26286b53f4339",
+        "history.json": "2e68345d48c911c2bcdc92ff47b83010f291788067cbc3c2e11d1cc5f19a74ad",
+        "metrics.json": "e63ce8d76332d74b5087f2e78681326a858da270fc0a8755d0192ef4da38d3e2",
+        "predictions.npz": "abff43542709c1059af17ee527ba75d3a43ed9367c3c7910657535da624d18ec"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_009/forward/history.json": "2e68345d48c911c2bcdc92ff47b83010f291788067cbc3c2e11d1cc5f19a74ad",
+        "FashionMNIST0.3/seed_009/forward/learning_curve.png": "92fc53379a8aa8722912ae45f5e40aa2a7ab3c5647bd159b98d3177e0a80d184",
+        "FashionMNIST0.3/seed_009/forward/metrics.json": "e63ce8d76332d74b5087f2e78681326a858da270fc0a8755d0192ef4da38d3e2"
+      },
+      "split_seed": 9,
+      "split_sha256": "1f2af02666205d51628c8f9bb2c9f73cdd60baf94c65d2c494baa3d642c97696",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "FashionMNIST0.3",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.3",
+        "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1009,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 9,
+        "split_sha256": "1f2af02666205d51628c8f9bb2c9f73cdd60baf94c65d2c494baa3d642c97696",
+        "transition_sha256": "cfc55289a32e74b6c937681022c9d426588e8f4128baac50a5665eef62279382"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "a76be2dadf0c97c643b3f0bbe9b9b271699e7bb67a821cd7c3000cc8bb4bb82e",
+        "history.json": "049ebb24bb286aaa1ce30305e1a8fd5e01f9369e5d5e338315694c83c480a6c8",
+        "metrics.json": "966c52e854119ddacb9e469e46c16982dff753483313c9390f0e67e5bff8f9a3",
+        "predictions.npz": "e8985c4cd2755df17af84de51130a211b5043cdb8ad0cd6223332d07bc713c21"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.3/seed_009/gce/history.json": "049ebb24bb286aaa1ce30305e1a8fd5e01f9369e5d5e338315694c83c480a6c8",
+        "FashionMNIST0.3/seed_009/gce/learning_curve.png": "4cd23828d3ef11d4fa23a03fca30985ab4b5f0b282a1897deed994d18d6161e7",
+        "FashionMNIST0.3/seed_009/gce/metrics.json": "966c52e854119ddacb9e469e46c16982dff753483313c9390f0e67e5bff8f9a3"
+      },
+      "split_seed": 9,
+      "split_sha256": "1f2af02666205d51628c8f9bb2c9f73cdd60baf94c65d2c494baa3d642c97696",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1000,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 0
+      },
+      "original_artifact_sha256": {
+        "best.pt": "76f401525234fb2ecd695fff6a7a37c38a10027b115bff3ad06f54acd74b9870",
+        "history.json": "f20d5f7127f7f84c3ab824c57240343d18d883454e957a6d50e9cb1ed3247a1e",
+        "transition.json": "589e3d87b5bdeaa5ee34693627f8e45cd0ebafb95e70cadd22433a1943f7d008"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_000/estimator/history.json": "f20d5f7127f7f84c3ab824c57240343d18d883454e957a6d50e9cb1ed3247a1e",
+        "FashionMNIST0.6/seed_000/estimator/transition.json": "589e3d87b5bdeaa5ee34693627f8e45cd0ebafb95e70cadd22433a1943f7d008"
+      },
+      "split_seed": 0,
+      "split_sha256": "eea30a533f1c7b26a578679d146373a906ecf4ebabe90d32bd7b34591b04353b",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1000,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 0,
+        "split_sha256": "eea30a533f1c7b26a578679d146373a906ecf4ebabe90d32bd7b34591b04353b",
+        "transition_sha256": "589e3d87b5bdeaa5ee34693627f8e45cd0ebafb95e70cadd22433a1943f7d008"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "ded2dafe09b5a15a6e45381a7bd073a4d7ff642855d2b6400f02356a07811a7e",
+        "history.json": "395adff72c93b1f0e654ed7e33c5cb9d4379718a61c812d9b3da89acc2d184ae",
+        "metrics.json": "ee4a74a5fb792d86190bed923dafeb7f2aeb9c18ba046b47a4391202c641ccbf",
+        "predictions.npz": "7f153c9f70f78941ca243935e7a2e222b38ad3200161406a3e0970d139b4b5a7"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_000/forward/history.json": "395adff72c93b1f0e654ed7e33c5cb9d4379718a61c812d9b3da89acc2d184ae",
+        "FashionMNIST0.6/seed_000/forward/learning_curve.png": "acef92952f83ce9ec3e14617061d9435b9532a4154b0e53c2e561f78c8d351c4",
+        "FashionMNIST0.6/seed_000/forward/metrics.json": "ee4a74a5fb792d86190bed923dafeb7f2aeb9c18ba046b47a4391202c641ccbf"
+      },
+      "split_seed": 0,
+      "split_sha256": "eea30a533f1c7b26a578679d146373a906ecf4ebabe90d32bd7b34591b04353b",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1000,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 0,
+        "split_sha256": "eea30a533f1c7b26a578679d146373a906ecf4ebabe90d32bd7b34591b04353b",
+        "transition_sha256": "589e3d87b5bdeaa5ee34693627f8e45cd0ebafb95e70cadd22433a1943f7d008"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "b89fff837e2f3996212ff0b09d316ae801d55eba650ed3003c38d0c268b38077",
+        "history.json": "e2d871c23362d76ac94b68214ca86ee1526a4208177842c887a5f0f86f3f7e59",
+        "metrics.json": "2a15853c8b9453372f95902a0757669a2fb70b17ccf41b899a363addf97097c6",
+        "predictions.npz": "a2e78ce28fa95835d04a186574b17f35b66b4775b12441ce53fa173d4076fa05"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_000/gce/history.json": "e2d871c23362d76ac94b68214ca86ee1526a4208177842c887a5f0f86f3f7e59",
+        "FashionMNIST0.6/seed_000/gce/learning_curve.png": "23b7e64ae2fd6a6ae274c53dec0f068641c8b80fc0a0f157574f0883704f40d2",
+        "FashionMNIST0.6/seed_000/gce/metrics.json": "2a15853c8b9453372f95902a0757669a2fb70b17ccf41b899a363addf97097c6"
+      },
+      "split_seed": 0,
+      "split_sha256": "eea30a533f1c7b26a578679d146373a906ecf4ebabe90d32bd7b34591b04353b",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1001,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 1
+      },
+      "original_artifact_sha256": {
+        "best.pt": "c30986f63fabf62733b707325b86e978a24e90a49a14f29c4a7c97951baef2e1",
+        "history.json": "0f1690c30186e8b963ccce7ad83b0d29a731c87d279ac2909e848cc9a617e728",
+        "transition.json": "9e1b8c76ecaee6e20581788753835c971e9c366f373d46fd90c07b043656a7c6"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_001/estimator/history.json": "0f1690c30186e8b963ccce7ad83b0d29a731c87d279ac2909e848cc9a617e728",
+        "FashionMNIST0.6/seed_001/estimator/transition.json": "9e1b8c76ecaee6e20581788753835c971e9c366f373d46fd90c07b043656a7c6"
+      },
+      "split_seed": 1,
+      "split_sha256": "d91073413e509ad2cfc0a5ea1042095b94435c0a9fb53dd1dcb0005ab51274b4",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1001,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 1,
+        "split_sha256": "d91073413e509ad2cfc0a5ea1042095b94435c0a9fb53dd1dcb0005ab51274b4",
+        "transition_sha256": "9e1b8c76ecaee6e20581788753835c971e9c366f373d46fd90c07b043656a7c6"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "3160a3db5bf6c7a765aa72f9992a9fbe42796d4a87d6f0cf40b67e27fe84c843",
+        "history.json": "aff67e2c838ab139b92dd42b4dfeb70b22990c370329ca5514b441550908b7da",
+        "metrics.json": "10ee1db2b4f6f4f8d8c3d4a33ce36a52b02dde937e6b680e95e72c9bba427c53",
+        "predictions.npz": "1cb07b20b3c23aa72101abed96fdd798528139ebefebba73c1cba88ab0d6468c"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_001/forward/history.json": "aff67e2c838ab139b92dd42b4dfeb70b22990c370329ca5514b441550908b7da",
+        "FashionMNIST0.6/seed_001/forward/learning_curve.png": "c20ec21ee52ae8b95b1b1356d527bf701558e4c03c0588afcb98b38486c2d45a",
+        "FashionMNIST0.6/seed_001/forward/metrics.json": "10ee1db2b4f6f4f8d8c3d4a33ce36a52b02dde937e6b680e95e72c9bba427c53"
+      },
+      "split_seed": 1,
+      "split_sha256": "d91073413e509ad2cfc0a5ea1042095b94435c0a9fb53dd1dcb0005ab51274b4",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1001,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 1,
+        "split_sha256": "d91073413e509ad2cfc0a5ea1042095b94435c0a9fb53dd1dcb0005ab51274b4",
+        "transition_sha256": "9e1b8c76ecaee6e20581788753835c971e9c366f373d46fd90c07b043656a7c6"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "010a2dd1eb27672cd32e0c2cdfde2c884321eaee85cbe856edec7378f9bd2fae",
+        "history.json": "4a7793a889fe0dcb2b560e269c72d569ca585372ff6ce7e09937244232b506e5",
+        "metrics.json": "5fa01db22389b1a876b59a9c288aaef932027edc0cc0338d815781beb4844d62",
+        "predictions.npz": "8c4eca5944a274de1ba61d0009b22a9cfb148fe5668137f8f0e4dc6d2fdff307"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_001/gce/history.json": "4a7793a889fe0dcb2b560e269c72d569ca585372ff6ce7e09937244232b506e5",
+        "FashionMNIST0.6/seed_001/gce/learning_curve.png": "c1e9bd23240d273afd7041cb0a3e574cb86339b8a70ea4e5c1d657cb4a9fe759",
+        "FashionMNIST0.6/seed_001/gce/metrics.json": "5fa01db22389b1a876b59a9c288aaef932027edc0cc0338d815781beb4844d62"
+      },
+      "split_seed": 1,
+      "split_sha256": "d91073413e509ad2cfc0a5ea1042095b94435c0a9fb53dd1dcb0005ab51274b4",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1002,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 2
+      },
+      "original_artifact_sha256": {
+        "best.pt": "deaab66c63109cae0dc214ac8a37baac531ed5110be7914f2935e72e7115779b",
+        "history.json": "6db4e7e1896ea0210b2f541e109d83bc590ca8b12ee3f0edd6a248760081aba1",
+        "transition.json": "1e1cfef8671f5cf16145106beb136783d1a8dc7271bbc5e95d266d480cd09f67"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_002/estimator/history.json": "6db4e7e1896ea0210b2f541e109d83bc590ca8b12ee3f0edd6a248760081aba1",
+        "FashionMNIST0.6/seed_002/estimator/transition.json": "1e1cfef8671f5cf16145106beb136783d1a8dc7271bbc5e95d266d480cd09f67"
+      },
+      "split_seed": 2,
+      "split_sha256": "e3f46699570459e9eb06b6bb4a49d649db1e0e288118b34d5fd298aec79b4d23",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1002,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 2,
+        "split_sha256": "e3f46699570459e9eb06b6bb4a49d649db1e0e288118b34d5fd298aec79b4d23",
+        "transition_sha256": "1e1cfef8671f5cf16145106beb136783d1a8dc7271bbc5e95d266d480cd09f67"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "30c6e8e0f85b895955397bcca45489a3c6bad3e46371da8c90b9340e4422fcf2",
+        "history.json": "40ed2118c9b9533a9255df2d3a73313dfb95e36d6e9418dcb77d353d66fb61c9",
+        "metrics.json": "dd2c739af57096ba1d1682c1f4c865f05d9582981862d8937960c0c7a8ab284d",
+        "predictions.npz": "c1f7ea2cca77eca47540c4e91404b2225b6fb47bd990abd97dd5f1dc9abf5e1c"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_002/forward/history.json": "40ed2118c9b9533a9255df2d3a73313dfb95e36d6e9418dcb77d353d66fb61c9",
+        "FashionMNIST0.6/seed_002/forward/learning_curve.png": "96e86c4921010ce8dc477ce878824dd562efd88ce49c4948a66abb23efcd3ca4",
+        "FashionMNIST0.6/seed_002/forward/metrics.json": "dd2c739af57096ba1d1682c1f4c865f05d9582981862d8937960c0c7a8ab284d"
+      },
+      "split_seed": 2,
+      "split_sha256": "e3f46699570459e9eb06b6bb4a49d649db1e0e288118b34d5fd298aec79b4d23",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1002,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 2,
+        "split_sha256": "e3f46699570459e9eb06b6bb4a49d649db1e0e288118b34d5fd298aec79b4d23",
+        "transition_sha256": "1e1cfef8671f5cf16145106beb136783d1a8dc7271bbc5e95d266d480cd09f67"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "27b1391b859df037010b7cdf45b098b8d060f7809e980780ca526b827991285f",
+        "history.json": "6bdb50fa238c85c4ce1fb9aac73485fdfb7819733823d1558a95f47f31fec82e",
+        "metrics.json": "eb418aa82fc3edc6cd6c24d2e6af754aae13828d1eca5e486f6a2b9dd69b25c6",
+        "predictions.npz": "d20d1313f120feef4ab37df1e5069a5d1b0a08c72c1ef42a06d95a5e7b3c9c05"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_002/gce/history.json": "6bdb50fa238c85c4ce1fb9aac73485fdfb7819733823d1558a95f47f31fec82e",
+        "FashionMNIST0.6/seed_002/gce/learning_curve.png": "20465995abe66085f4a0e01bd84dd2fbab46c443d2b4b3af84c52ef6e70f8970",
+        "FashionMNIST0.6/seed_002/gce/metrics.json": "eb418aa82fc3edc6cd6c24d2e6af754aae13828d1eca5e486f6a2b9dd69b25c6"
+      },
+      "split_seed": 2,
+      "split_sha256": "e3f46699570459e9eb06b6bb4a49d649db1e0e288118b34d5fd298aec79b4d23",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1003,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 3
+      },
+      "original_artifact_sha256": {
+        "best.pt": "f0d8a23df06f4510e7a94fb1a06ef976d7d737a9019db01c3f9d99eca97fe46b",
+        "history.json": "fea48390bfad376754b94b1e8f9549b621515f35c51254d82435354a55df4127",
+        "transition.json": "0f9747373d153fc22e0fc4a6aae8feb043473db765c63b3df211cb2d17961626"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_003/estimator/history.json": "fea48390bfad376754b94b1e8f9549b621515f35c51254d82435354a55df4127",
+        "FashionMNIST0.6/seed_003/estimator/transition.json": "0f9747373d153fc22e0fc4a6aae8feb043473db765c63b3df211cb2d17961626"
+      },
+      "split_seed": 3,
+      "split_sha256": "de71b8916df9d1afc541a1caa1f2aeb411912c2f0941b78b75a3569dcd0d9f5d",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1003,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 3,
+        "split_sha256": "de71b8916df9d1afc541a1caa1f2aeb411912c2f0941b78b75a3569dcd0d9f5d",
+        "transition_sha256": "0f9747373d153fc22e0fc4a6aae8feb043473db765c63b3df211cb2d17961626"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "2742d47a9e68279f1e0e46f701d59bd012662fec074a1f3a30a9eb588427f622",
+        "history.json": "0280710e4745d91d7267948cb52d716baa2f38000133ed34862b6eea62866156",
+        "metrics.json": "60befa7414fe481ab4f2a2c5c064e51cdeb7fbe10930e90b9fc6cbd446ae4e76",
+        "predictions.npz": "e9b58a99ede98aa13174afe96ad77f0670768c4e114da2e5ef1047399264637d"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_003/forward/history.json": "0280710e4745d91d7267948cb52d716baa2f38000133ed34862b6eea62866156",
+        "FashionMNIST0.6/seed_003/forward/learning_curve.png": "284c4ef541a49bcef260a390bd9084c876c6624f1b3875fdedceaa3ca4c6f856",
+        "FashionMNIST0.6/seed_003/forward/metrics.json": "60befa7414fe481ab4f2a2c5c064e51cdeb7fbe10930e90b9fc6cbd446ae4e76"
+      },
+      "split_seed": 3,
+      "split_sha256": "de71b8916df9d1afc541a1caa1f2aeb411912c2f0941b78b75a3569dcd0d9f5d",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1003,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 3,
+        "split_sha256": "de71b8916df9d1afc541a1caa1f2aeb411912c2f0941b78b75a3569dcd0d9f5d",
+        "transition_sha256": "0f9747373d153fc22e0fc4a6aae8feb043473db765c63b3df211cb2d17961626"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "a8147d4a827058bb7ee77b7d3bffffc8afc82412714ea08ef1804569fd5f496e",
+        "history.json": "ac5d1cd42c1cbc3412435b566df512a9988b7db20d3398dc09cc2bbfe604e43d",
+        "metrics.json": "89c7590a810c345d1360ace401f8c7fcb526ef025e4264662e6315d6c482176e",
+        "predictions.npz": "e9b58a99ede98aa13174afe96ad77f0670768c4e114da2e5ef1047399264637d"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_003/gce/history.json": "ac5d1cd42c1cbc3412435b566df512a9988b7db20d3398dc09cc2bbfe604e43d",
+        "FashionMNIST0.6/seed_003/gce/learning_curve.png": "a77c2b38478899381434564c376f49f9186e79764394f0b315fa31d9a1ae58e0",
+        "FashionMNIST0.6/seed_003/gce/metrics.json": "89c7590a810c345d1360ace401f8c7fcb526ef025e4264662e6315d6c482176e"
+      },
+      "split_seed": 3,
+      "split_sha256": "de71b8916df9d1afc541a1caa1f2aeb411912c2f0941b78b75a3569dcd0d9f5d",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1004,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 4
+      },
+      "original_artifact_sha256": {
+        "best.pt": "d6aaffbf0a682380125c4b22d73d61ecb1b6b7c9dca2212dca72c7c4a571c1d0",
+        "history.json": "08aad19bf906d14816d6c1c3ada42e33b522ab2fcbe5bd6cd476a44cc76da9b0",
+        "transition.json": "ff383efffa20b7ca9aaf7a52e519e43152eab9f515a1049de265797f8906a189"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_004/estimator/history.json": "08aad19bf906d14816d6c1c3ada42e33b522ab2fcbe5bd6cd476a44cc76da9b0",
+        "FashionMNIST0.6/seed_004/estimator/transition.json": "ff383efffa20b7ca9aaf7a52e519e43152eab9f515a1049de265797f8906a189"
+      },
+      "split_seed": 4,
+      "split_sha256": "0f74932bb6eb25fc1a4cd12c0394a24936b2131ba5a094bcaebbbae026f97049",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1004,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 4,
+        "split_sha256": "0f74932bb6eb25fc1a4cd12c0394a24936b2131ba5a094bcaebbbae026f97049",
+        "transition_sha256": "ff383efffa20b7ca9aaf7a52e519e43152eab9f515a1049de265797f8906a189"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "8201e5faf9275af98d39dfd9809cfe4fbc6177603d83038736ee950d65e4c5a7",
+        "history.json": "d8ff64ba567d5184094f41c31d8b2e566cc0d6fb23f91ca006fa09de0789ddfa",
+        "metrics.json": "919d6416d268784c2b120cbedbda2454630dbc52b553d00350c412298f58aeab",
+        "predictions.npz": "e3344f215b828001e15672b9aa8806d4d9ba977a4984d985fc4ebce9481dd23e"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_004/forward/history.json": "d8ff64ba567d5184094f41c31d8b2e566cc0d6fb23f91ca006fa09de0789ddfa",
+        "FashionMNIST0.6/seed_004/forward/learning_curve.png": "61a1c9926549e284e25f93ca45c2030c83af207ac61768ac06d17c41a0183768",
+        "FashionMNIST0.6/seed_004/forward/metrics.json": "919d6416d268784c2b120cbedbda2454630dbc52b553d00350c412298f58aeab"
+      },
+      "split_seed": 4,
+      "split_sha256": "0f74932bb6eb25fc1a4cd12c0394a24936b2131ba5a094bcaebbbae026f97049",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1004,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 4,
+        "split_sha256": "0f74932bb6eb25fc1a4cd12c0394a24936b2131ba5a094bcaebbbae026f97049",
+        "transition_sha256": "ff383efffa20b7ca9aaf7a52e519e43152eab9f515a1049de265797f8906a189"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "43182a2ac5eef3150793598fbc12d6ee8fed7ce4d11163885d57aae712562d30",
+        "history.json": "ce8d89064a472736e81e76ed056b12c6df1d34b45c25a1f95874f743f3211db8",
+        "metrics.json": "f9a07dbb26586a49c3b3bf74c6072c919ec715a98b2493e46f21ca2e921ddfd1",
+        "predictions.npz": "ebe5ebedb52151de7b9dd9f6b79d3005493f73eb9aa5bd7c400457c3d30f2e32"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_004/gce/history.json": "ce8d89064a472736e81e76ed056b12c6df1d34b45c25a1f95874f743f3211db8",
+        "FashionMNIST0.6/seed_004/gce/learning_curve.png": "edb8f99e4891ae488be017c43520a89470251ec8280ed6d12d66f698cbe3c73f",
+        "FashionMNIST0.6/seed_004/gce/metrics.json": "f9a07dbb26586a49c3b3bf74c6072c919ec715a98b2493e46f21ca2e921ddfd1"
+      },
+      "split_seed": 4,
+      "split_sha256": "0f74932bb6eb25fc1a4cd12c0394a24936b2131ba5a094bcaebbbae026f97049",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1005,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 5
+      },
+      "original_artifact_sha256": {
+        "best.pt": "5a1cef41568af34ce149c977fdc86784932cb04f994150c60bb9f4accf29660a",
+        "history.json": "7fd28466b059f49c6e0b4d220a6289c73b408062a522b8e5d60439ac9e732c59",
+        "transition.json": "3805eb96d9297ca8185546dddc5d4757fc1a9b6c1755e9d5a7d459f883bffc86"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_005/estimator/history.json": "7fd28466b059f49c6e0b4d220a6289c73b408062a522b8e5d60439ac9e732c59",
+        "FashionMNIST0.6/seed_005/estimator/transition.json": "3805eb96d9297ca8185546dddc5d4757fc1a9b6c1755e9d5a7d459f883bffc86"
+      },
+      "split_seed": 5,
+      "split_sha256": "8baf34e2d6dc8ce372ff95b57138ca596739871a0fd0759cc9a2d632ea7206d5",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1005,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 5,
+        "split_sha256": "8baf34e2d6dc8ce372ff95b57138ca596739871a0fd0759cc9a2d632ea7206d5",
+        "transition_sha256": "3805eb96d9297ca8185546dddc5d4757fc1a9b6c1755e9d5a7d459f883bffc86"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "69e1779e533bc8a4ec43d754e0417b8cc551b5c9cb8fb0dae45f3ce4781fb56c",
+        "history.json": "9e1154aa95d4d71324f677de0e803c6b3e8f818670ed235ead76ff08ed150dc3",
+        "metrics.json": "9796e5d1e161433e121ef04dd940676fc51e7cd3909c976efe2edfcc4ae60bf4",
+        "predictions.npz": "a7e55bff5f8668d46cd5ebd50999f41736cebf4ae6e6787e4083b80b2480ea9b"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_005/forward/history.json": "9e1154aa95d4d71324f677de0e803c6b3e8f818670ed235ead76ff08ed150dc3",
+        "FashionMNIST0.6/seed_005/forward/learning_curve.png": "6a10546e2c99f56da93c09752d65794f77c032427c2872a65be65cf1b4c890bc",
+        "FashionMNIST0.6/seed_005/forward/metrics.json": "9796e5d1e161433e121ef04dd940676fc51e7cd3909c976efe2edfcc4ae60bf4"
+      },
+      "split_seed": 5,
+      "split_sha256": "8baf34e2d6dc8ce372ff95b57138ca596739871a0fd0759cc9a2d632ea7206d5",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1005,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 5,
+        "split_sha256": "8baf34e2d6dc8ce372ff95b57138ca596739871a0fd0759cc9a2d632ea7206d5",
+        "transition_sha256": "3805eb96d9297ca8185546dddc5d4757fc1a9b6c1755e9d5a7d459f883bffc86"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "fcb4bb5d6290f658f1d2415c45ab8e9ec1c491bf60d810842515f5ee52c60c54",
+        "history.json": "f8673f95cf5b10dac32f9d177d2847e41f2c123d2b9a28e8e79ddb9d21fe8fa0",
+        "metrics.json": "5daee2271642edcc330d6dde6b6cb32891b056c95d91cf7918b03e1864adb478",
+        "predictions.npz": "cedf411f5e8ffe127545c96c5d4b4082c715e077094ab942c9178a3fe5278488"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_005/gce/history.json": "f8673f95cf5b10dac32f9d177d2847e41f2c123d2b9a28e8e79ddb9d21fe8fa0",
+        "FashionMNIST0.6/seed_005/gce/learning_curve.png": "431f7ccde294f8004eef6badb862af29fb742247c2c95a360ab6d429592297a9",
+        "FashionMNIST0.6/seed_005/gce/metrics.json": "5daee2271642edcc330d6dde6b6cb32891b056c95d91cf7918b03e1864adb478"
+      },
+      "split_seed": 5,
+      "split_sha256": "8baf34e2d6dc8ce372ff95b57138ca596739871a0fd0759cc9a2d632ea7206d5",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1006,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 6
+      },
+      "original_artifact_sha256": {
+        "best.pt": "9c39bf616aecb1c8a9ac1ab94ab10c42e536b4c4c5459d4e6abe371d96255aec",
+        "history.json": "84dca605bf510f6927dd866d0e93130e894e7040af786053a7277c57c1be228d",
+        "transition.json": "8c14b7d06f9c85e98abed72736bd98b3bde41c7d3974ce449d274f11e0abc94e"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_006/estimator/history.json": "84dca605bf510f6927dd866d0e93130e894e7040af786053a7277c57c1be228d",
+        "FashionMNIST0.6/seed_006/estimator/transition.json": "8c14b7d06f9c85e98abed72736bd98b3bde41c7d3974ce449d274f11e0abc94e"
+      },
+      "split_seed": 6,
+      "split_sha256": "1d49283bd809773f64040103c221c74e1f6490f3a4a043a0b8be96372792d2f5",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1006,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 6,
+        "split_sha256": "1d49283bd809773f64040103c221c74e1f6490f3a4a043a0b8be96372792d2f5",
+        "transition_sha256": "8c14b7d06f9c85e98abed72736bd98b3bde41c7d3974ce449d274f11e0abc94e"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "8b8e8735adfba239536ccc96fb14414b0646720e813f29e81054b0a06f1f4d39",
+        "history.json": "79cb1ad48d481a9b5bc1672314eaef37a616de15365d8fac89fcb69d24237ca0",
+        "metrics.json": "9ad3be0203f44b9a46791cc75e3fc163103ecbdc0883a4f2828671ee22154a4f",
+        "predictions.npz": "03dbc50781b8d00db554a81b0f8f11cc657ee3f112dc5cccde73ca4012e89757"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_006/forward/history.json": "79cb1ad48d481a9b5bc1672314eaef37a616de15365d8fac89fcb69d24237ca0",
+        "FashionMNIST0.6/seed_006/forward/learning_curve.png": "c672c91559fded488cd022993d429af8b1d04cf88b4762b093d64a42be4a0f29",
+        "FashionMNIST0.6/seed_006/forward/metrics.json": "9ad3be0203f44b9a46791cc75e3fc163103ecbdc0883a4f2828671ee22154a4f"
+      },
+      "split_seed": 6,
+      "split_sha256": "1d49283bd809773f64040103c221c74e1f6490f3a4a043a0b8be96372792d2f5",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1006,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 6,
+        "split_sha256": "1d49283bd809773f64040103c221c74e1f6490f3a4a043a0b8be96372792d2f5",
+        "transition_sha256": "8c14b7d06f9c85e98abed72736bd98b3bde41c7d3974ce449d274f11e0abc94e"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "fb22fdb7dc649308ac4553fbdaf5b5c42eab2f7c208d2f5de906e7e29e13443c",
+        "history.json": "f7f1aaa3fd033acd83801602b55f31f1c740a9d1ea6dbeaecef3e4992b8c1e32",
+        "metrics.json": "fe033b57e0e5aa045d6005753fbf09626c84f520ab17446b218abf02228b2edc",
+        "predictions.npz": "03dbc50781b8d00db554a81b0f8f11cc657ee3f112dc5cccde73ca4012e89757"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_006/gce/history.json": "f7f1aaa3fd033acd83801602b55f31f1c740a9d1ea6dbeaecef3e4992b8c1e32",
+        "FashionMNIST0.6/seed_006/gce/learning_curve.png": "5f6f4fb100f2340b8cda2b8109612bf72a6e084319b1462184056b7a74320ced",
+        "FashionMNIST0.6/seed_006/gce/metrics.json": "fe033b57e0e5aa045d6005753fbf09626c84f520ab17446b218abf02228b2edc"
+      },
+      "split_seed": 6,
+      "split_sha256": "1d49283bd809773f64040103c221c74e1f6490f3a4a043a0b8be96372792d2f5",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1007,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 7
+      },
+      "original_artifact_sha256": {
+        "best.pt": "f10136e3c7ef1514f59fcb581bf6b76d9a72e98fa81dc7b20e19a7b249165755",
+        "history.json": "0e2d524f4374079599787ef8816031c5f65c2e1c17c611a7b84acd59982fe53a",
+        "transition.json": "92f622cd8f7404be05e1b6c2d0f2eda33ab3b1733fc44785792aeeda7b8fd685"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_007/estimator/history.json": "0e2d524f4374079599787ef8816031c5f65c2e1c17c611a7b84acd59982fe53a",
+        "FashionMNIST0.6/seed_007/estimator/transition.json": "92f622cd8f7404be05e1b6c2d0f2eda33ab3b1733fc44785792aeeda7b8fd685"
+      },
+      "split_seed": 7,
+      "split_sha256": "fa0b85efc829acdd4fd0438cdf480c2380b1fc150bd5b7b110f8f0c104b9bbc1",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1007,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 7,
+        "split_sha256": "fa0b85efc829acdd4fd0438cdf480c2380b1fc150bd5b7b110f8f0c104b9bbc1",
+        "transition_sha256": "92f622cd8f7404be05e1b6c2d0f2eda33ab3b1733fc44785792aeeda7b8fd685"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "eb90038ccb21d8bb23c824b1de4ce1e729e9196b6081202316903551ffc4e2e2",
+        "history.json": "76910702bba2fade278f114f0ab100f7ed8772205b36b74d850a19fe7ecad3d5",
+        "metrics.json": "319e4d4bf2c3d3c8d7d9adbc2f8aafe51585c17bb231a24b418ae225d0b1f017",
+        "predictions.npz": "cec4f227668ec1f757352d6d8e5cc2031d909bc074912cb8f05a94e40255c9b2"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_007/forward/history.json": "76910702bba2fade278f114f0ab100f7ed8772205b36b74d850a19fe7ecad3d5",
+        "FashionMNIST0.6/seed_007/forward/learning_curve.png": "ecb970fb36070908c8b928d6742f910b602caee6755be3af66ecab9164604057",
+        "FashionMNIST0.6/seed_007/forward/metrics.json": "319e4d4bf2c3d3c8d7d9adbc2f8aafe51585c17bb231a24b418ae225d0b1f017"
+      },
+      "split_seed": 7,
+      "split_sha256": "fa0b85efc829acdd4fd0438cdf480c2380b1fc150bd5b7b110f8f0c104b9bbc1",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1007,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 7,
+        "split_sha256": "fa0b85efc829acdd4fd0438cdf480c2380b1fc150bd5b7b110f8f0c104b9bbc1",
+        "transition_sha256": "92f622cd8f7404be05e1b6c2d0f2eda33ab3b1733fc44785792aeeda7b8fd685"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "05d2f44ada4bf4b97df1d88eca73109320eb5dde7f7582d560f58471bba2779e",
+        "history.json": "51d45c7ae15d682bb94e2457586bd69b34323d2497d1d3519af8e6c0133562d6",
+        "metrics.json": "8c53b19fce41ac3c4a86e8d4fac20861fb8bf6568f27da3b6585a7f546ad4ac1",
+        "predictions.npz": "fcc139b4960e6ad99541f6ea61d3955b8e18b1cc8c88dab46a69ca635d9b9bd5"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_007/gce/history.json": "51d45c7ae15d682bb94e2457586bd69b34323d2497d1d3519af8e6c0133562d6",
+        "FashionMNIST0.6/seed_007/gce/learning_curve.png": "b28bd481b9f7b0971a04451469c3753d9a12be9fd2e258ca7b90edcb677382ba",
+        "FashionMNIST0.6/seed_007/gce/metrics.json": "8c53b19fce41ac3c4a86e8d4fac20861fb8bf6568f27da3b6585a7f546ad4ac1"
+      },
+      "split_seed": 7,
+      "split_sha256": "fa0b85efc829acdd4fd0438cdf480c2380b1fc150bd5b7b110f8f0c104b9bbc1",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1008,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 8
+      },
+      "original_artifact_sha256": {
+        "best.pt": "8c6f1eae313f57fce311b64de756e4b0141b3567f9486e8703824095d29c7b12",
+        "history.json": "457a17bf2866fcdd982d8c31cefde5cf2dc6f3e57843a4747dd2072431f26b2d",
+        "transition.json": "f38f156c8f61cb16e6f3ab885307ec563a8caba4eb6949ad39d735ad59401f60"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_008/estimator/history.json": "457a17bf2866fcdd982d8c31cefde5cf2dc6f3e57843a4747dd2072431f26b2d",
+        "FashionMNIST0.6/seed_008/estimator/transition.json": "f38f156c8f61cb16e6f3ab885307ec563a8caba4eb6949ad39d735ad59401f60"
+      },
+      "split_seed": 8,
+      "split_sha256": "0c58f81373e219b0acfd2bae610b2d1b44861adaa09d0aff58191fa840e91ee2",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1008,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 8,
+        "split_sha256": "0c58f81373e219b0acfd2bae610b2d1b44861adaa09d0aff58191fa840e91ee2",
+        "transition_sha256": "f38f156c8f61cb16e6f3ab885307ec563a8caba4eb6949ad39d735ad59401f60"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "21bcf4a8591b2221dfcb60424e3bc2ad23db679298dbd1270f6956901ac0473a",
+        "history.json": "198baa02622d97601c34f58c9867ba2002ddbf6b61b7870384314f0d1da5391d",
+        "metrics.json": "579bd5d843e1b3a0b70984bf8c47ffa6443f4b601c765eee54f7aedcf6f3daaa",
+        "predictions.npz": "855e91fa52b703496e1d06d60b5918f2773ba5510281cf35bd005adfe03b558c"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_008/forward/history.json": "198baa02622d97601c34f58c9867ba2002ddbf6b61b7870384314f0d1da5391d",
+        "FashionMNIST0.6/seed_008/forward/learning_curve.png": "32cc4906ff70f29e5efdfe26f8d29c8ba0366eab3bfa05f3f0e35dd1b169437c",
+        "FashionMNIST0.6/seed_008/forward/metrics.json": "579bd5d843e1b3a0b70984bf8c47ffa6443f4b601c765eee54f7aedcf6f3daaa"
+      },
+      "split_seed": 8,
+      "split_sha256": "0c58f81373e219b0acfd2bae610b2d1b44861adaa09d0aff58191fa840e91ee2",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1008,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 8,
+        "split_sha256": "0c58f81373e219b0acfd2bae610b2d1b44861adaa09d0aff58191fa840e91ee2",
+        "transition_sha256": "f38f156c8f61cb16e6f3ab885307ec563a8caba4eb6949ad39d735ad59401f60"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "294b992f36845454e393ae9105fbfc29e9ff9ffbd2629cce60d4fb7e623019c9",
+        "history.json": "93ff97275a9d586ac6b6ed72532829630e59d7fe1e4c64d44cebcfe39882f331",
+        "metrics.json": "2af0174a904850c5eca64dd72ac563aa267a38f3a1849f1f064deb56304d1d86",
+        "predictions.npz": "f13f859bf74a6fb354a11169a0f8390da07a852863d0b6b4056c92536d990a5a"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_008/gce/history.json": "93ff97275a9d586ac6b6ed72532829630e59d7fe1e4c64d44cebcfe39882f331",
+        "FashionMNIST0.6/seed_008/gce/learning_curve.png": "db10dae92a629fb9e1259384facba94d3cae9a073c2e038b97221354b634603d",
+        "FashionMNIST0.6/seed_008/gce/metrics.json": "2af0174a904850c5eca64dd72ac563aa267a38f3a1849f1f064deb56304d1d86"
+      },
+      "split_seed": 8,
+      "split_sha256": "0c58f81373e219b0acfd2bae610b2d1b44861adaa09d0aff58191fa840e91ee2",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1009,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 9
+      },
+      "original_artifact_sha256": {
+        "best.pt": "8311fd3aed2a05f71a049a6c082e4f8668b50e006da754c4cc4169a675de2053",
+        "history.json": "9e900169d29cbe752f9ac31bd594d75f3bca6a5c6c1d106fb34e51019c728484",
+        "transition.json": "5c9b1f3167b8e2bc8d883f68334af42c87417a58cb0db07788c7dfe03ea382aa"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_009/estimator/history.json": "9e900169d29cbe752f9ac31bd594d75f3bca6a5c6c1d106fb34e51019c728484",
+        "FashionMNIST0.6/seed_009/estimator/transition.json": "5c9b1f3167b8e2bc8d883f68334af42c87417a58cb0db07788c7dfe03ea382aa"
+      },
+      "split_seed": 9,
+      "split_sha256": "1f2af02666205d51628c8f9bb2c9f73cdd60baf94c65d2c494baa3d642c97696",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1009,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 9,
+        "split_sha256": "1f2af02666205d51628c8f9bb2c9f73cdd60baf94c65d2c494baa3d642c97696",
+        "transition_sha256": "5c9b1f3167b8e2bc8d883f68334af42c87417a58cb0db07788c7dfe03ea382aa"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "ce50ac35063f1b904591fbb0a4e2425a6eea7c2a0dac20e94f7dca0f08dab1c1",
+        "history.json": "cc4c5d105748498effa2382fdaad969299c27fb03a535f82a1ac9550fc80cd10",
+        "metrics.json": "50797a4107126e42d1da29a7271cdedc69e2bede75c7abdf487affcac90dc934",
+        "predictions.npz": "b31c7faed725d7c270fe77283f35fb7ad913784bb91ed07a3cb0b14edd6937df"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_009/forward/history.json": "cc4c5d105748498effa2382fdaad969299c27fb03a535f82a1ac9550fc80cd10",
+        "FashionMNIST0.6/seed_009/forward/learning_curve.png": "a353285eac0cf6ab814e60ef3b0654488e05fad075fea9aed2c138f2644e1fae",
+        "FashionMNIST0.6/seed_009/forward/metrics.json": "50797a4107126e42d1da29a7271cdedc69e2bede75c7abdf487affcac90dc934"
+      },
+      "split_seed": 9,
+      "split_sha256": "1f2af02666205d51628c8f9bb2c9f73cdd60baf94c65d2c494baa3d642c97696",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "FashionMNIST0.6",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "FashionMNIST0.6",
+        "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1009,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 9,
+        "split_sha256": "1f2af02666205d51628c8f9bb2c9f73cdd60baf94c65d2c494baa3d642c97696",
+        "transition_sha256": "5c9b1f3167b8e2bc8d883f68334af42c87417a58cb0db07788c7dfe03ea382aa"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "2820f1f061c1e95e5b3d7dc8fa25aeb55ea42422f7077c61b162869b0dec502a",
+        "history.json": "a440230771f06f7ad7da26e0b668c0640772100c615cc06c49fd45ae53140c97",
+        "metrics.json": "9e45eb5e798bb756ce72db67b6e42f5d4ab82492132d5a0760f1d9f7f899d6bb",
+        "predictions.npz": "f239c04a5e3f83f8af09d172419744630c764a3c9025a31433afdb1bf78a1d8e"
+      },
+      "published_evidence_sha256": {
+        "FashionMNIST0.6/seed_009/gce/history.json": "a440230771f06f7ad7da26e0b668c0640772100c615cc06c49fd45ae53140c97",
+        "FashionMNIST0.6/seed_009/gce/learning_curve.png": "345ccb4d22ecbbf9873517a097ca4d3daeaacc2a5ec5526ce053ec0f316d70f5",
+        "FashionMNIST0.6/seed_009/gce/metrics.json": "9e45eb5e798bb756ce72db67b6e42f5d4ab82492132d5a0760f1d9f7f899d6bb"
+      },
+      "split_seed": 9,
+      "split_sha256": "1f2af02666205d51628c8f9bb2c9f73cdd60baf94c65d2c494baa3d642c97696",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1000,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 0
+      },
+      "original_artifact_sha256": {
+        "best.pt": "4dc6d9668ee004a195d2289c6f61bc5e5192faa5fba39ff0dc2e154154f6bf54",
+        "history.json": "03a60f4df71a429dbeb630ed9627cfdabc7feccd1875bb19573b4b426a857567",
+        "transition.json": "3632accb8753cfb304f8abca5e7df544aca4cda4c3a93668d39c84c35c5c9e39"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_000/estimator/history.json": "03a60f4df71a429dbeb630ed9627cfdabc7feccd1875bb19573b4b426a857567",
+        "CIFAR/seed_000/estimator/transition.json": "3632accb8753cfb304f8abca5e7df544aca4cda4c3a93668d39c84c35c5c9e39"
+      },
+      "split_seed": 0,
+      "split_sha256": "e5625dacc12f38b42410029c770b99c8c04a933f60d9e91ce5e456a0c879e05b",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1000,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 0,
+        "split_sha256": "e5625dacc12f38b42410029c770b99c8c04a933f60d9e91ce5e456a0c879e05b",
+        "transition_sha256": "3632accb8753cfb304f8abca5e7df544aca4cda4c3a93668d39c84c35c5c9e39"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "e927f938c2c6a7d67cf0b69ef5f8fd3f952d3301c3198434a934b478b999edb3",
+        "history.json": "d213c57153a60a2799cb2d9558432f0b565b35c10b3864ef858ef8dc28f99af1",
+        "metrics.json": "c77d4f6c2b9797d294951d5250e5065d53d3dbb4fd495cbcd1248ace5cf39d24",
+        "predictions.npz": "cb0749b85f5b018d3cecd134dfa7f735b78ef800db531b2e7cf15152662ad5f2"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_000/forward/history.json": "d213c57153a60a2799cb2d9558432f0b565b35c10b3864ef858ef8dc28f99af1",
+        "CIFAR/seed_000/forward/learning_curve.png": "d66fc52a0464bbc6c3f54a7b4b79b667d934c8191de184b664198dc37e596c0f",
+        "CIFAR/seed_000/forward/metrics.json": "c77d4f6c2b9797d294951d5250e5065d53d3dbb4fd495cbcd1248ace5cf39d24"
+      },
+      "split_seed": 0,
+      "split_sha256": "e5625dacc12f38b42410029c770b99c8c04a933f60d9e91ce5e456a0c879e05b",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1000,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 0,
+        "split_sha256": "e5625dacc12f38b42410029c770b99c8c04a933f60d9e91ce5e456a0c879e05b",
+        "transition_sha256": "3632accb8753cfb304f8abca5e7df544aca4cda4c3a93668d39c84c35c5c9e39"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "0968a990ae9460fe40ae8a7f92ea061a5d5acfd89ec49d05c22291f9bd819aa0",
+        "history.json": "43db1aa543adb1d1904c0e9a410dd12005d5ab833cd4c1cc6316dd5e1c711271",
+        "metrics.json": "7f79e3cd308a081fe970c5470ad449a052af1704a77a15d382dbe30c5780c8c5",
+        "predictions.npz": "2ae929e7335564390cec1527144cc64a128741f029831a80e3d861abc63ac240"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_000/gce/history.json": "43db1aa543adb1d1904c0e9a410dd12005d5ab833cd4c1cc6316dd5e1c711271",
+        "CIFAR/seed_000/gce/learning_curve.png": "6ec4bb672a86fcbeb980ed140def780b7c680eea89f2ff526ea958cb177e68e6",
+        "CIFAR/seed_000/gce/metrics.json": "7f79e3cd308a081fe970c5470ad449a052af1704a77a15d382dbe30c5780c8c5"
+      },
+      "split_seed": 0,
+      "split_sha256": "e5625dacc12f38b42410029c770b99c8c04a933f60d9e91ce5e456a0c879e05b",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1001,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 1
+      },
+      "original_artifact_sha256": {
+        "best.pt": "b69c940919f830509658522271cfbd5309a62a8725bebcfd5e5046e65a4fe904",
+        "history.json": "10288ff2949e6f0c58ea2fa49432997c58449c72c4c07d1088f9b65b3d73f016",
+        "transition.json": "4fa3629d37471bd4471591b748f0fd312ede9acb88b9d5ecc7b758dcbd7f9a35"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_001/estimator/history.json": "10288ff2949e6f0c58ea2fa49432997c58449c72c4c07d1088f9b65b3d73f016",
+        "CIFAR/seed_001/estimator/transition.json": "4fa3629d37471bd4471591b748f0fd312ede9acb88b9d5ecc7b758dcbd7f9a35"
+      },
+      "split_seed": 1,
+      "split_sha256": "fdd3c2ce5e4563c118b3f1d821527c5a5f6a1eafba8ae3787c88311d2f1e51e3",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1001,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 1,
+        "split_sha256": "fdd3c2ce5e4563c118b3f1d821527c5a5f6a1eafba8ae3787c88311d2f1e51e3",
+        "transition_sha256": "4fa3629d37471bd4471591b748f0fd312ede9acb88b9d5ecc7b758dcbd7f9a35"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "156de51b75c0594c3377ccab8def9e1be6ca2c5ae63b4be33e1e98fb4f6076e0",
+        "history.json": "5b2291456034de280f5e76a5c46e5196e30a81288767da5d234f42535e4bd88a",
+        "metrics.json": "3c75b4035a3b19e49d3350d38cede1afb7bbe45a467fa23549770183f5d00e23",
+        "predictions.npz": "6818ef3fa97e2f39a425916eb54c28cb5e3933480fc920a89b85a0e8e9b5ce2d"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_001/forward/history.json": "5b2291456034de280f5e76a5c46e5196e30a81288767da5d234f42535e4bd88a",
+        "CIFAR/seed_001/forward/learning_curve.png": "2963baa75b0f6675ec75068e6b45c0eec53fe7498ac3478bf6094d8193ee988b",
+        "CIFAR/seed_001/forward/metrics.json": "3c75b4035a3b19e49d3350d38cede1afb7bbe45a467fa23549770183f5d00e23"
+      },
+      "split_seed": 1,
+      "split_sha256": "fdd3c2ce5e4563c118b3f1d821527c5a5f6a1eafba8ae3787c88311d2f1e51e3",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1001,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 1,
+        "split_sha256": "fdd3c2ce5e4563c118b3f1d821527c5a5f6a1eafba8ae3787c88311d2f1e51e3",
+        "transition_sha256": "4fa3629d37471bd4471591b748f0fd312ede9acb88b9d5ecc7b758dcbd7f9a35"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "ae751a3ed8fb9a490cefd98d6c1b792b9c4805f94a72db34ab0a73101d2a29be",
+        "history.json": "7786922609cc68590fa61e4f5ee9cf695cf6fdfaed32596db0f22caa4ffb8109",
+        "metrics.json": "7f2807d08633d8ddf5b8c0136ec81c4c8c20140954f9aedf6add022c3082ed8e",
+        "predictions.npz": "8435a53b6b7b17273820fe62f9d420ffdbd366321e11ffa364af7049e743980f"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_001/gce/history.json": "7786922609cc68590fa61e4f5ee9cf695cf6fdfaed32596db0f22caa4ffb8109",
+        "CIFAR/seed_001/gce/learning_curve.png": "dd96f672f7cdfdcaa94d8cacf7b8c79d7cbc32ae46af7e2cc93f691df8dd0d84",
+        "CIFAR/seed_001/gce/metrics.json": "7f2807d08633d8ddf5b8c0136ec81c4c8c20140954f9aedf6add022c3082ed8e"
+      },
+      "split_seed": 1,
+      "split_sha256": "fdd3c2ce5e4563c118b3f1d821527c5a5f6a1eafba8ae3787c88311d2f1e51e3",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1002,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 2
+      },
+      "original_artifact_sha256": {
+        "best.pt": "549c94d7a28bfbf744ec20d928706b8bf9c4630eabd8bde5b639318dabe24ad3",
+        "history.json": "2d5c825ff6578a6035565e1d2cb3820a7b87d9ef5a5e6fad92118ea69897ec26",
+        "transition.json": "600ff86ddd417d7352285e22204c695a740a38c6e85c9166073fc86e41a4b1d7"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_002/estimator/history.json": "2d5c825ff6578a6035565e1d2cb3820a7b87d9ef5a5e6fad92118ea69897ec26",
+        "CIFAR/seed_002/estimator/transition.json": "600ff86ddd417d7352285e22204c695a740a38c6e85c9166073fc86e41a4b1d7"
+      },
+      "split_seed": 2,
+      "split_sha256": "eac04fb1c9308014d12650f0e2ff3e9759b155d7cfac36ceb8e578f48cf39ff9",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1002,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 2,
+        "split_sha256": "eac04fb1c9308014d12650f0e2ff3e9759b155d7cfac36ceb8e578f48cf39ff9",
+        "transition_sha256": "600ff86ddd417d7352285e22204c695a740a38c6e85c9166073fc86e41a4b1d7"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "3b88a0ac254a7d978b5d923c260bead81568013127f6bcae4c66a0c3d2486276",
+        "history.json": "3afbf92c37882d5b49a80dba485fd5a1d12cbd4b38a0a920fec6d8987bc418a4",
+        "metrics.json": "11121b40ecf7c3fb02b865478cefaf2278a0928038711346a46a348537d4e23d",
+        "predictions.npz": "488bd9d86222de4f2d576c73dbd273cf2eb20d0f379e0dcce960354a405bb709"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_002/forward/history.json": "3afbf92c37882d5b49a80dba485fd5a1d12cbd4b38a0a920fec6d8987bc418a4",
+        "CIFAR/seed_002/forward/learning_curve.png": "fb435cb635099149ca813d2f6b483f664732b74b5adb8a46f42377bf977e8672",
+        "CIFAR/seed_002/forward/metrics.json": "11121b40ecf7c3fb02b865478cefaf2278a0928038711346a46a348537d4e23d"
+      },
+      "split_seed": 2,
+      "split_sha256": "eac04fb1c9308014d12650f0e2ff3e9759b155d7cfac36ceb8e578f48cf39ff9",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1002,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 2,
+        "split_sha256": "eac04fb1c9308014d12650f0e2ff3e9759b155d7cfac36ceb8e578f48cf39ff9",
+        "transition_sha256": "600ff86ddd417d7352285e22204c695a740a38c6e85c9166073fc86e41a4b1d7"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "0d0ae6a7275bd63db63089b93916d274048b03313fac40d43682716e41d5e84e",
+        "history.json": "a00513148ea20e86ed08e925afcde293e4e93d11df43895d0d0deb7515c41432",
+        "metrics.json": "20616d3090dc1e0828f2ced7c86833c302c6a5f1822c80d5f6349df2fcf2059c",
+        "predictions.npz": "486e95ed812475627e8575cddc6bd7e6c0a03ae7ad485c46f9a76533c5977cf6"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_002/gce/history.json": "a00513148ea20e86ed08e925afcde293e4e93d11df43895d0d0deb7515c41432",
+        "CIFAR/seed_002/gce/learning_curve.png": "034230598ef6d6609930103ca15bbbce1b285893a661943334e9a0ba24495dd9",
+        "CIFAR/seed_002/gce/metrics.json": "20616d3090dc1e0828f2ced7c86833c302c6a5f1822c80d5f6349df2fcf2059c"
+      },
+      "split_seed": 2,
+      "split_sha256": "eac04fb1c9308014d12650f0e2ff3e9759b155d7cfac36ceb8e578f48cf39ff9",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1003,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 3
+      },
+      "original_artifact_sha256": {
+        "best.pt": "b80427b8f2858462853aafaa267facb4cde6a0102ae7f14bb944406618e6eaff",
+        "history.json": "f1181e46ab1182eee4ed86ed5f479ea7a230786bd1d55589ccefdef2622d3472",
+        "transition.json": "1b2ea84ea7d9a5374566b9a9652bb0fc4006adc8e4074103cf285c8a3b2a3cb1"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_003/estimator/history.json": "f1181e46ab1182eee4ed86ed5f479ea7a230786bd1d55589ccefdef2622d3472",
+        "CIFAR/seed_003/estimator/transition.json": "1b2ea84ea7d9a5374566b9a9652bb0fc4006adc8e4074103cf285c8a3b2a3cb1"
+      },
+      "split_seed": 3,
+      "split_sha256": "d246dbb997442f194cced8357d21266b10f6392bddb533804c77689d937ff4c8",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1003,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 3,
+        "split_sha256": "d246dbb997442f194cced8357d21266b10f6392bddb533804c77689d937ff4c8",
+        "transition_sha256": "1b2ea84ea7d9a5374566b9a9652bb0fc4006adc8e4074103cf285c8a3b2a3cb1"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "a51b727e6d1350b8075774abbeef5a93f5bf79fcb679fefefe34783ddbc94922",
+        "history.json": "790165f070619ab38761a3e6741d9b389931654bc9c558fc0291f57b52f23b35",
+        "metrics.json": "0f0770070e55983e99138f56de151706993571f2375517131096d7f45c3138e6",
+        "predictions.npz": "1f1b8e0d1f6830f6d36f5469773e154d1c5ee786e0197ac4fafa45a34f60860b"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_003/forward/history.json": "790165f070619ab38761a3e6741d9b389931654bc9c558fc0291f57b52f23b35",
+        "CIFAR/seed_003/forward/learning_curve.png": "4e53703d9397adfb0783c95936c2846e76ae8534bd4277372b62ea79afeb222f",
+        "CIFAR/seed_003/forward/metrics.json": "0f0770070e55983e99138f56de151706993571f2375517131096d7f45c3138e6"
+      },
+      "split_seed": 3,
+      "split_sha256": "d246dbb997442f194cced8357d21266b10f6392bddb533804c77689d937ff4c8",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1003,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 3,
+        "split_sha256": "d246dbb997442f194cced8357d21266b10f6392bddb533804c77689d937ff4c8",
+        "transition_sha256": "1b2ea84ea7d9a5374566b9a9652bb0fc4006adc8e4074103cf285c8a3b2a3cb1"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "3427a9a74f946bcbd2654ea30f75b0acd7acc02276e9dac83170a87f7016056d",
+        "history.json": "e71537e70462b8d3a83819d27e81c6eaa88e86e41717c2fb064ede184ce8a541",
+        "metrics.json": "8fbd99afa6fbbf83f1d9cdbd36588fe0acb26b16bb6a3927addd0822d4c7899f",
+        "predictions.npz": "ce14cf560860623b29fd7ba4311055630074b8402b217076ca812922a208aee6"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_003/gce/history.json": "e71537e70462b8d3a83819d27e81c6eaa88e86e41717c2fb064ede184ce8a541",
+        "CIFAR/seed_003/gce/learning_curve.png": "692dd309484ac23987335c6c32c2418497036acc75fca62b8fe7788a49dacbce",
+        "CIFAR/seed_003/gce/metrics.json": "8fbd99afa6fbbf83f1d9cdbd36588fe0acb26b16bb6a3927addd0822d4c7899f"
+      },
+      "split_seed": 3,
+      "split_sha256": "d246dbb997442f194cced8357d21266b10f6392bddb533804c77689d937ff4c8",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1004,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 4
+      },
+      "original_artifact_sha256": {
+        "best.pt": "ae4a5ea2637f8f2dd00dcdb62a2b7f2781a121803e79c1ca9a2bdb43f75da3f8",
+        "history.json": "6bb8c4b939c81cde4cb2ac69b0b1f956cc93deccfc486b68fe00012ad014c622",
+        "transition.json": "c3b832429cc3f69029dc291c953b391810b561a1d6f0cdac36cd9cb831e29c63"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_004/estimator/history.json": "6bb8c4b939c81cde4cb2ac69b0b1f956cc93deccfc486b68fe00012ad014c622",
+        "CIFAR/seed_004/estimator/transition.json": "c3b832429cc3f69029dc291c953b391810b561a1d6f0cdac36cd9cb831e29c63"
+      },
+      "split_seed": 4,
+      "split_sha256": "41dc3b4d614052da4e7ec7e7cf1380aa7bf722a225af64b8c210698c7d1ea9e2",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1004,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 4,
+        "split_sha256": "41dc3b4d614052da4e7ec7e7cf1380aa7bf722a225af64b8c210698c7d1ea9e2",
+        "transition_sha256": "c3b832429cc3f69029dc291c953b391810b561a1d6f0cdac36cd9cb831e29c63"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "6f715c1c61b8d4d2b0643b060634bf298ea61999a69e0004dfd97e516764db11",
+        "history.json": "de3fad5985ece31df013ec1b9642e58b5103f5f24a409ae53836d3e0a5c071a8",
+        "metrics.json": "16a3c7a1aa8791455f76a2d54c439237e162867579058a35dd1232778e77e725",
+        "predictions.npz": "4cdf208079d6ba5dffedb885dba3a0274047426a43cb988753985c8160b2a366"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_004/forward/history.json": "de3fad5985ece31df013ec1b9642e58b5103f5f24a409ae53836d3e0a5c071a8",
+        "CIFAR/seed_004/forward/learning_curve.png": "0a1e2e9f31edcaf2f3f9b7f37233e6f5b236ed45d004f6c58baa677eca5302e0",
+        "CIFAR/seed_004/forward/metrics.json": "16a3c7a1aa8791455f76a2d54c439237e162867579058a35dd1232778e77e725"
+      },
+      "split_seed": 4,
+      "split_sha256": "41dc3b4d614052da4e7ec7e7cf1380aa7bf722a225af64b8c210698c7d1ea9e2",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1004,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 4,
+        "split_sha256": "41dc3b4d614052da4e7ec7e7cf1380aa7bf722a225af64b8c210698c7d1ea9e2",
+        "transition_sha256": "c3b832429cc3f69029dc291c953b391810b561a1d6f0cdac36cd9cb831e29c63"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "21d207a7d4c93c02ce2494d436b96cf930506f368ce4a614baaced3cbf9e6db2",
+        "history.json": "6262641a346dee9ae6d0ed5d58ab944bad999838f3be9f4bb3d43ae21dc2aaa5",
+        "metrics.json": "82ddc3c96bd584e444796ba5d371a9448f9d550150d904540b75bbf07067cd4a",
+        "predictions.npz": "5e76c38346af9b9e1b044b9a26c835d7a3222b2ad75ec3786c2fc38538700343"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_004/gce/history.json": "6262641a346dee9ae6d0ed5d58ab944bad999838f3be9f4bb3d43ae21dc2aaa5",
+        "CIFAR/seed_004/gce/learning_curve.png": "208f0c8e8ad8bb5435446dd58bf2033fdccd35a69a99f279d69c366d9beb6ea0",
+        "CIFAR/seed_004/gce/metrics.json": "82ddc3c96bd584e444796ba5d371a9448f9d550150d904540b75bbf07067cd4a"
+      },
+      "split_seed": 4,
+      "split_sha256": "41dc3b4d614052da4e7ec7e7cf1380aa7bf722a225af64b8c210698c7d1ea9e2",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1005,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 5
+      },
+      "original_artifact_sha256": {
+        "best.pt": "8a22be1514dca4c8e669a838762f4cc046ca03f49c834792378becf0b4bc0709",
+        "history.json": "b29ca507e64f850148b7ef22225909314faafa2ed2b0743db31115f85c67b6ed",
+        "transition.json": "a37cf9c32d0a4eadc213574e1f376e349abc51e799073d683af07c005d8f8098"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_005/estimator/history.json": "b29ca507e64f850148b7ef22225909314faafa2ed2b0743db31115f85c67b6ed",
+        "CIFAR/seed_005/estimator/transition.json": "a37cf9c32d0a4eadc213574e1f376e349abc51e799073d683af07c005d8f8098"
+      },
+      "split_seed": 5,
+      "split_sha256": "cf1382423d877d1294284a8041762f8300a17c0813e383ebeee238263b78ca50",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1005,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 5,
+        "split_sha256": "cf1382423d877d1294284a8041762f8300a17c0813e383ebeee238263b78ca50",
+        "transition_sha256": "a37cf9c32d0a4eadc213574e1f376e349abc51e799073d683af07c005d8f8098"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "961e4ae655082a7fa129ecd09bd41d9ba509fab7da8c40173c631e2de52983dc",
+        "history.json": "9278faf3597efd32053515277a839b9a7af2c605cd4e8be4c496b01ee5ad559d",
+        "metrics.json": "9fa374a202acccc310e1b1530f95f2b33f3497977e3f7cc0354073bafb468f1c",
+        "predictions.npz": "3229e1ac09de7623ce9191d8babe7bee8a0eab1122907a9d72b3827bcda3c7c2"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_005/forward/history.json": "9278faf3597efd32053515277a839b9a7af2c605cd4e8be4c496b01ee5ad559d",
+        "CIFAR/seed_005/forward/learning_curve.png": "84487c92292ca8166b6bec4b6f73f1b20eeb5517f1954b9a62e4ba6dda6240cf",
+        "CIFAR/seed_005/forward/metrics.json": "9fa374a202acccc310e1b1530f95f2b33f3497977e3f7cc0354073bafb468f1c"
+      },
+      "split_seed": 5,
+      "split_sha256": "cf1382423d877d1294284a8041762f8300a17c0813e383ebeee238263b78ca50",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1005,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 5,
+        "split_sha256": "cf1382423d877d1294284a8041762f8300a17c0813e383ebeee238263b78ca50",
+        "transition_sha256": "a37cf9c32d0a4eadc213574e1f376e349abc51e799073d683af07c005d8f8098"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "6e3079c80ed6e7020186348b3193dc7c2ab2a78ff4cd808a68bf045c8836ffc7",
+        "history.json": "a9aef6d06567edeef70d0cac9e23c4b277ffd6ec845059e3ab5cecf2bef18c13",
+        "metrics.json": "ba623e6569c05be8b616f58e3791b3af280b461948ca0f9cf10ff0f4db630be0",
+        "predictions.npz": "3803394d64d431bf2821661f1590445b1f5413d5853f1c7dccc2c7eeaf9a7749"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_005/gce/history.json": "a9aef6d06567edeef70d0cac9e23c4b277ffd6ec845059e3ab5cecf2bef18c13",
+        "CIFAR/seed_005/gce/learning_curve.png": "2c657714d9fe2aafd88943551b9bb5d5c0bdc70eea9e48679e7936bd4e467bbf",
+        "CIFAR/seed_005/gce/metrics.json": "ba623e6569c05be8b616f58e3791b3af280b461948ca0f9cf10ff0f4db630be0"
+      },
+      "split_seed": 5,
+      "split_sha256": "cf1382423d877d1294284a8041762f8300a17c0813e383ebeee238263b78ca50",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1006,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 6
+      },
+      "original_artifact_sha256": {
+        "best.pt": "feebe348c81884e0d468e31456e74bb43a16c2bdc803deb8580c0f4b7b384e41",
+        "history.json": "f412c574f6faf81ea40b59e0618201f83e0ae9ea59bfa708144dcde85484c82d",
+        "transition.json": "475f79685c896c395b8193bb18c202a3efe6c08c03964128d21f03f61147fb82"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_006/estimator/history.json": "f412c574f6faf81ea40b59e0618201f83e0ae9ea59bfa708144dcde85484c82d",
+        "CIFAR/seed_006/estimator/transition.json": "475f79685c896c395b8193bb18c202a3efe6c08c03964128d21f03f61147fb82"
+      },
+      "split_seed": 6,
+      "split_sha256": "ef1c84c696c7ed0ea480104adecfb00ed62e92816fb0e46acda7bf88c302b5bd",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1006,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 6,
+        "split_sha256": "ef1c84c696c7ed0ea480104adecfb00ed62e92816fb0e46acda7bf88c302b5bd",
+        "transition_sha256": "475f79685c896c395b8193bb18c202a3efe6c08c03964128d21f03f61147fb82"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "b419964911c30836e8bdb8e079888087862692e8c39a9a0478a12c8366c84ede",
+        "history.json": "068c3cf17805ecbb1b341548bdbca2039fe83c7ae2f7973fe09783deb1da4307",
+        "metrics.json": "b3497b556ffa5123c9dc7ff61a55043d8e9f8b0d9d1e65908d70f32b5defa4ea",
+        "predictions.npz": "7b5a7af5080c1f2d463f6daeda05cb629bc6f94917901dceaf0bbcab1f1b0378"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_006/forward/history.json": "068c3cf17805ecbb1b341548bdbca2039fe83c7ae2f7973fe09783deb1da4307",
+        "CIFAR/seed_006/forward/learning_curve.png": "83a6c1f320fdf42f1409cca70d977dc5549d7a51c2c47cf1eb6e3c3fc008025a",
+        "CIFAR/seed_006/forward/metrics.json": "b3497b556ffa5123c9dc7ff61a55043d8e9f8b0d9d1e65908d70f32b5defa4ea"
+      },
+      "split_seed": 6,
+      "split_sha256": "ef1c84c696c7ed0ea480104adecfb00ed62e92816fb0e46acda7bf88c302b5bd",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1006,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 6,
+        "split_sha256": "ef1c84c696c7ed0ea480104adecfb00ed62e92816fb0e46acda7bf88c302b5bd",
+        "transition_sha256": "475f79685c896c395b8193bb18c202a3efe6c08c03964128d21f03f61147fb82"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "6505f8194e97b1fb7d373bc2ae0fad90a7372de1fd268bf99f8976be8df2f7cf",
+        "history.json": "5b81498863d4f02aaa398681b7456fbb981366e5ff19527704b534be2583cf49",
+        "metrics.json": "fe860dc19e9146c93f6da2d4a7d1023fa7e84498e84ac7fc09595c74ff227d29",
+        "predictions.npz": "ffc2586446dd9c39a49910ea1ae3a6d6302d11e90bf94b21825acc907ee98f36"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_006/gce/history.json": "5b81498863d4f02aaa398681b7456fbb981366e5ff19527704b534be2583cf49",
+        "CIFAR/seed_006/gce/learning_curve.png": "9a49fce482bc080baa0df1585bf47f1af63540401506625b02454d497fa3ad24",
+        "CIFAR/seed_006/gce/metrics.json": "fe860dc19e9146c93f6da2d4a7d1023fa7e84498e84ac7fc09595c74ff227d29"
+      },
+      "split_seed": 6,
+      "split_sha256": "ef1c84c696c7ed0ea480104adecfb00ed62e92816fb0e46acda7bf88c302b5bd",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1007,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 7
+      },
+      "original_artifact_sha256": {
+        "best.pt": "f73e548a61092cb5efa9ec573ab3282ee31404dc7a63ece0a23bee144adfab5c",
+        "history.json": "05bcd0bdf1bddcfc88e6ddb8ce98fbbbf14de71389120c8c5bbd1f58c4497bae",
+        "transition.json": "e8b77ecb977765d41ba5119e94bb4a57a08c1b098d07fe7cb9d62c1a645c5042"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_007/estimator/history.json": "05bcd0bdf1bddcfc88e6ddb8ce98fbbbf14de71389120c8c5bbd1f58c4497bae",
+        "CIFAR/seed_007/estimator/transition.json": "e8b77ecb977765d41ba5119e94bb4a57a08c1b098d07fe7cb9d62c1a645c5042"
+      },
+      "split_seed": 7,
+      "split_sha256": "a8a9d94ff06ef5458900520a887fa0a1044a317d2ef98651ad9ca64e7e6890fc",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1007,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 7,
+        "split_sha256": "a8a9d94ff06ef5458900520a887fa0a1044a317d2ef98651ad9ca64e7e6890fc",
+        "transition_sha256": "e8b77ecb977765d41ba5119e94bb4a57a08c1b098d07fe7cb9d62c1a645c5042"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "09421bc58caaaacecfc2d08d6267eeec525f3ed2a26b42918f1b02b429b9bc37",
+        "history.json": "8fb554588fc604df84708c5a6ada5e128aaa6aed8e7b1d20b0948ca664dae3f5",
+        "metrics.json": "cdf92dce5863430f2a317098a4d34e35784821e4e8cc361abbc6ecb84a3bc2c7",
+        "predictions.npz": "1276099d9b02be232e838e2b4b8a8effc363bf777216982e7b6acdffd99c1df2"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_007/forward/history.json": "8fb554588fc604df84708c5a6ada5e128aaa6aed8e7b1d20b0948ca664dae3f5",
+        "CIFAR/seed_007/forward/learning_curve.png": "94333e55f73c14c66ed044e9d39cd0efcd5c5d490a667031ff30d832c13932c4",
+        "CIFAR/seed_007/forward/metrics.json": "cdf92dce5863430f2a317098a4d34e35784821e4e8cc361abbc6ecb84a3bc2c7"
+      },
+      "split_seed": 7,
+      "split_sha256": "a8a9d94ff06ef5458900520a887fa0a1044a317d2ef98651ad9ca64e7e6890fc",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1007,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 7,
+        "split_sha256": "a8a9d94ff06ef5458900520a887fa0a1044a317d2ef98651ad9ca64e7e6890fc",
+        "transition_sha256": "e8b77ecb977765d41ba5119e94bb4a57a08c1b098d07fe7cb9d62c1a645c5042"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "bed606aa5fab737a56d8535aac6a3488fb465e131182d1a552ddbdb96f002756",
+        "history.json": "7351f5ce501b65272844f7c13c69a43763c27207f2dca569878b2bea5a3f71aa",
+        "metrics.json": "d6a8cf18d5aad7389ad8d54544540ea41be54ba3d96376c493f2e9c323b406c3",
+        "predictions.npz": "d27d37c4d0641fa2e4f0142247f83ad08ec434264d1e565a2d31d56b48e701c1"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_007/gce/history.json": "7351f5ce501b65272844f7c13c69a43763c27207f2dca569878b2bea5a3f71aa",
+        "CIFAR/seed_007/gce/learning_curve.png": "8ac5a60f55ebcbf03e2a2d14ce7ee77147b449a52c63ba7510bdf78e9886dfb2",
+        "CIFAR/seed_007/gce/metrics.json": "d6a8cf18d5aad7389ad8d54544540ea41be54ba3d96376c493f2e9c323b406c3"
+      },
+      "split_seed": 7,
+      "split_sha256": "a8a9d94ff06ef5458900520a887fa0a1044a317d2ef98651ad9ca64e7e6890fc",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1008,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 8
+      },
+      "original_artifact_sha256": {
+        "best.pt": "0d2bdfa7dea4520050c3d326bb124d0dd6f3d6de05525bfc7fea5d19f77b8f98",
+        "history.json": "d23b49a9a7351d6ccbd9b20253075fb504b48e845943706f5d681f93e68e63a0",
+        "transition.json": "6f8cd7938c793093c09db7904a066d3ed205605f47f31901ab82af7385633dc5"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_008/estimator/history.json": "d23b49a9a7351d6ccbd9b20253075fb504b48e845943706f5d681f93e68e63a0",
+        "CIFAR/seed_008/estimator/transition.json": "6f8cd7938c793093c09db7904a066d3ed205605f47f31901ab82af7385633dc5"
+      },
+      "split_seed": 8,
+      "split_sha256": "bd60f6abe12727acace8e8445d2e0cde1065a11adcd6226dc6132fc0b10a1007",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1008,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 8,
+        "split_sha256": "bd60f6abe12727acace8e8445d2e0cde1065a11adcd6226dc6132fc0b10a1007",
+        "transition_sha256": "6f8cd7938c793093c09db7904a066d3ed205605f47f31901ab82af7385633dc5"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "909682323a8c061ddc36c208bee726e7b943128f407b82430d46022b5c2ee8b7",
+        "history.json": "cfa2f71ba69bc514122cf9df141505cbb931ee3af180de97d6e5ad70a3922a7c",
+        "metrics.json": "49ebf35038aafcb53ba63ae0b47e103f1c9a1629a3587259355a5a39787094e5",
+        "predictions.npz": "6a1a1eea3b4fcd9b6e800a239881e6e5105fbc1126daab7e046ba49c36dbdb18"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_008/forward/history.json": "cfa2f71ba69bc514122cf9df141505cbb931ee3af180de97d6e5ad70a3922a7c",
+        "CIFAR/seed_008/forward/learning_curve.png": "2147d26dd41f48d6b8bdaf220982c62492238406ef9bbe010769c318d5bd5e26",
+        "CIFAR/seed_008/forward/metrics.json": "49ebf35038aafcb53ba63ae0b47e103f1c9a1629a3587259355a5a39787094e5"
+      },
+      "split_seed": 8,
+      "split_sha256": "bd60f6abe12727acace8e8445d2e0cde1065a11adcd6226dc6132fc0b10a1007",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1008,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 8,
+        "split_sha256": "bd60f6abe12727acace8e8445d2e0cde1065a11adcd6226dc6132fc0b10a1007",
+        "transition_sha256": "6f8cd7938c793093c09db7904a066d3ed205605f47f31901ab82af7385633dc5"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "c04a672571d4f6aa078e9f370b6fde03bcda782fda4721effef83a8969ee7a0e",
+        "history.json": "af64cbfa4166008d88ca69e5dace468dedf437487cdb5e60df0959200b2c6c25",
+        "metrics.json": "40fc5d7a329c6870c2dc011039d364618b1e9e8d0925588544b1709ade4ae82b",
+        "predictions.npz": "5f757e843f35a1bb9b5adacab25d57bad85c560310819f53f1718b2e7ef0a274"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_008/gce/history.json": "af64cbfa4166008d88ca69e5dace468dedf437487cdb5e60df0959200b2c6c25",
+        "CIFAR/seed_008/gce/learning_curve.png": "66b10424e63df4302fa0ac3a46de2bcd365d99c76258f964f8514421d8c6e88f",
+        "CIFAR/seed_008/gce/metrics.json": "40fc5d7a329c6870c2dc011039d364618b1e9e8d0925588544b1709ade4ae82b"
+      },
+      "split_seed": 8,
+      "split_sha256": "bd60f6abe12727acace8e8445d2e0cde1065a11adcd6226dc6132fc0b10a1007",
+      "status": "completed_training"
+    },
+    {
+      "component": "estimator",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "estimator",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1009,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 9
+      },
+      "original_artifact_sha256": {
+        "best.pt": "4991f78a01cb2abb20c2b91b0a38698a8208eea3243788e2fdeae99dafecf996",
+        "history.json": "528725031a1f3aaaf49c2db767a881dc02d5475fbd5462175e363a9ccb0f3d87",
+        "transition.json": "7f6bf04f3c9058b86322a7330985125d664fc6613a77565fe17fc87b800a7384"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_009/estimator/history.json": "528725031a1f3aaaf49c2db767a881dc02d5475fbd5462175e363a9ccb0f3d87",
+        "CIFAR/seed_009/estimator/transition.json": "7f6bf04f3c9058b86322a7330985125d664fc6613a77565fe17fc87b800a7384"
+      },
+      "split_seed": 9,
+      "split_sha256": "e0099575ccf0acc5485c48e880aefe3d595c970d2831597ce449e302497e9410",
+      "status": "completed_estimator"
+    },
+    {
+      "component": "forward",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "forward",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1009,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 9,
+        "split_sha256": "e0099575ccf0acc5485c48e880aefe3d595c970d2831597ce449e302497e9410",
+        "transition_sha256": "7f6bf04f3c9058b86322a7330985125d664fc6613a77565fe17fc87b800a7384"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "98930923dd05d1dd0721e1c5e1f8336afa936c2151c23b89b2277e867899e935",
+        "history.json": "d82d7bb2f99045cbe57e407ae84926e88aca56b04b41193e9d93e56cb0a12492",
+        "metrics.json": "63beb20d720b194971c44a13c6a2d9d462ac54acc9706dc7e996d283ed3c089a",
+        "predictions.npz": "1708ce1ab0526bdb835a0569399c0e58bab3e66ec2e34e4e893b296cade764f1"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_009/forward/history.json": "d82d7bb2f99045cbe57e407ae84926e88aca56b04b41193e9d93e56cb0a12492",
+        "CIFAR/seed_009/forward/learning_curve.png": "1fbda3973b08def8d64845a0d5a239ed1f0bca23312e21de6e7a65a75fd801c4",
+        "CIFAR/seed_009/forward/metrics.json": "63beb20d720b194971c44a13c6a2d9d462ac54acc9706dc7e996d283ed3c089a"
+      },
+      "split_seed": 9,
+      "split_sha256": "e0099575ccf0acc5485c48e880aefe3d595c970d2831597ce449e302497e9410",
+      "status": "completed_training"
+    },
+    {
+      "component": "gce",
+      "dataset": "CIFAR",
+      "identity": {
+        "component": "gce",
+        "config_sha256": "3cab17ee7350b3fbf6d9ee334ebbc073ef3f6402c965c241b6d37c82b2ad0f80",
+        "dataset": "CIFAR",
+        "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+        "environment": {
+          "cuda_runtime": "12.8",
+          "device": "cuda",
+          "gpu": "NVIDIA A100-SXM4-80GB",
+          "numpy": "2.1.2",
+          "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+          "python": "3.12.3",
+          "torch": "2.8.0+cu128"
+        },
+        "initialization_seed": 1009,
+        "source_sha256": "d8ce20eefd1ee55629f36bf7c5e0d771efa784a9992425f0628e1c3323af2270",
+        "split_seed": 9,
+        "split_sha256": "e0099575ccf0acc5485c48e880aefe3d595c970d2831597ce449e302497e9410",
+        "transition_sha256": "7f6bf04f3c9058b86322a7330985125d664fc6613a77565fe17fc87b800a7384"
+      },
+      "original_artifact_sha256": {
+        "best.pt": "e34607b974bffb5ce53fe1f9a6b75d45930694f9cd4e8c341b6f814561809700",
+        "history.json": "220c658d169e3efa42c468b2151bff3c87317078c2e61165814588c23f011c8d",
+        "metrics.json": "d4e1ed1228136717e81d477b91c99c96afe0b84db4dfecfda111a7fa2dbfeebd",
+        "predictions.npz": "1708ce1ab0526bdb835a0569399c0e58bab3e66ec2e34e4e893b296cade764f1"
+      },
+      "published_evidence_sha256": {
+        "CIFAR/seed_009/gce/history.json": "220c658d169e3efa42c468b2151bff3c87317078c2e61165814588c23f011c8d",
+        "CIFAR/seed_009/gce/learning_curve.png": "d95f1287bb51a7a7e86b68cad8e64a88c2e9f0942cf42b98627240ecf4035302",
+        "CIFAR/seed_009/gce/metrics.json": "d4e1ed1228136717e81d477b91c99c96afe0b84db4dfecfda111a7fa2dbfeebd"
+      },
+      "split_seed": 9,
+      "split_sha256": "e0099575ccf0acc5485c48e880aefe3d595c970d2831597ce449e302497e9410",
+      "status": "completed_training"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "best_epoch": 2,
+  "confusion_matrix": [
+    [
+      288,
+      640,
+      72
+    ],
+    [
+      11,
+      966,
+      23
+    ],
+    [
+      9,
+      439,
+      552
+    ]
+  ],
+  "dataset": "CIFAR",
+  "debug": false,
+  "elapsed_seconds": 8.937992095947266,
+  "epochs_trained": 10,
+  "initialization_seed": 1004,
+  "method": "gce",
+  "split_seed": 4,
+  "test_accuracy": 0.602,
+  "test_count": 3000,
+  "test_top1_percent": 60.199999999999996,
+  "training_examples": 12000,
+  "transition": [
+    [
+      0.4270402821401755,
+      0.28571881329019866,
+      0.2872409013410409
+    ],
+    [
+      0.23219677942494552,
+      0.4343081479271253,
+      0.3334950709094604
+    ],
+    [
+      0.33887514372666677,
+      0.21738544777035712,
+      0.44373940750956536
+    ]
+  ],
+  "transition_source": "estimated",
+  "validation_examples": 3000,
+  "validation_noisy_nll": 1.0911807737350463
+}

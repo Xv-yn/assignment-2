@@ -1,0 +1,132 @@
+{
+  "best_epoch": 10,
+  "epochs": [
+    {
+      "epoch": 1,
+      "learning_rate": 0.001,
+      "train_loss": 1.096395214928521,
+      "validation_noisy_accuracy": 0.3663888888888889,
+      "validation_noisy_nll": 1.0957854567633736
+    },
+    {
+      "epoch": 2,
+      "learning_rate": 0.0009972609476841367,
+      "train_loss": 1.0929573080274795,
+      "validation_noisy_accuracy": 0.3636111111111111,
+      "validation_noisy_nll": 1.0968657112121583
+    },
+    {
+      "epoch": 3,
+      "learning_rate": 0.0009890738003669028,
+      "train_loss": 1.0920786751641167,
+      "validation_noisy_accuracy": 0.37555555555555553,
+      "validation_noisy_nll": 1.094704392751058
+    },
+    {
+      "epoch": 4,
+      "learning_rate": 0.0009755282581475768,
+      "train_loss": 1.0915037208133274,
+      "validation_noisy_accuracy": 0.375,
+      "validation_noisy_nll": 1.0951911730236477
+    },
+    {
+      "epoch": 5,
+      "learning_rate": 0.0009567727288213003,
+      "train_loss": 1.09119709332784,
+      "validation_noisy_accuracy": 0.37444444444444447,
+      "validation_noisy_nll": 1.095359287791782
+    },
+    {
+      "epoch": 6,
+      "learning_rate": 0.0009330127018922195,
+      "train_loss": 1.091649701330397,
+      "validation_noisy_accuracy": 0.37444444444444447,
+      "validation_noisy_nll": 1.0948366779751249
+    },
+    {
+      "epoch": 7,
+      "learning_rate": 0.0009045084971874739,
+      "train_loss": 1.090833338101705,
+      "validation_noisy_accuracy": 0.37666666666666665,
+      "validation_noisy_nll": 1.0940652073754205
+    },
+    {
+      "epoch": 8,
+      "learning_rate": 0.0008715724127386972,
+      "train_loss": 1.0913787767622205,
+      "validation_noisy_accuracy": 0.37805555555555553,
+      "validation_noisy_nll": 1.0947108586629233
+    },
+    {
+      "epoch": 9,
+      "learning_rate": 0.0008345653031794292,
+      "train_loss": 1.0906796964009602,
+      "validation_noisy_accuracy": 0.37083333333333335,
+      "validation_noisy_nll": 1.0954905324512059
+    },
+    {
+      "epoch": 10,
+      "learning_rate": 0.0007938926261462366,
+      "train_loss": 1.0908137480417888,
+      "validation_noisy_accuracy": 0.3836111111111111,
+      "validation_noisy_nll": 1.0933571508195665
+    },
+    {
+      "epoch": 11,
+      "learning_rate": 0.00075,
+      "train_loss": 1.0903377442889743,
+      "validation_noisy_accuracy": 0.37305555555555553,
+      "validation_noisy_nll": 1.0954636849297417
+    },
+    {
+      "epoch": 12,
+      "learning_rate": 0.0007033683215379003,
+      "train_loss": 1.0915602355533176,
+      "validation_noisy_accuracy": 0.37833333333333335,
+      "validation_noisy_nll": 1.0949766074286567
+    },
+    {
+      "epoch": 13,
+      "learning_rate": 0.0006545084971874739,
+      "train_loss": 1.0901717461480034,
+      "validation_noisy_accuracy": 0.3819444444444444,
+      "validation_noisy_nll": 1.093845641877916
+    },
+    {
+      "epoch": 14,
+      "learning_rate": 0.0006039558454088797,
+      "train_loss": 1.0894508711496989,
+      "validation_noisy_accuracy": 0.36694444444444446,
+      "validation_noisy_nll": 1.096106742752923
+    },
+    {
+      "epoch": 15,
+      "learning_rate": 0.0005522642316338269,
+      "train_loss": 1.0891587363349067,
+      "validation_noisy_accuracy": 0.3738888888888889,
+      "validation_noisy_nll": 1.0947199032041761
+    },
+    {
+      "epoch": 16,
+      "learning_rate": 0.0005000000000000002,
+      "train_loss": 1.0881068293253582,
+      "validation_noisy_accuracy": 0.3675,
+      "validation_noisy_nll": 1.0975263743930392
+    },
+    {
+      "epoch": 17,
+      "learning_rate": 0.0004477357683661734,
+      "train_loss": 1.0871937444474962,
+      "validation_noisy_accuracy": 0.37805555555555553,
+      "validation_noisy_nll": 1.093690898153517
+    },
+    {
+      "epoch": 18,
+      "learning_rate": 0.00039604415459112036,
+      "train_loss": 1.086733929846022,
+      "validation_noisy_accuracy": 0.3761111111111111,
+      "validation_noisy_nll": 1.0949842919243706
+    }
+  ],
+  "method": "forward"
+}

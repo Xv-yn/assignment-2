@@ -1,0 +1,2 @@
+# Preserve byte hashes of exported experiment evidence on every platform.
+experiment_results/** -text

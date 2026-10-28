@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "stage": "data_smoke",
-  "purpose": "Parts 1-5 data integrity and preprocessing only; no model training or test accuracy",
+  "purpose": "Data integrity and preprocessing only; no model training or test accuracy",
   "datasets": ["FashionMNIST0.3", "FashionMNIST0.6", "CIFAR"],
   "data_dir": "data",
   "results_dir": "results/smoke",

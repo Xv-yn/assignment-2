@@ -1,0 +1,51 @@
+{
+  "best_epoch": 10,
+  "confusion_matrix": [
+    [
+      979,
+      0,
+      21
+    ],
+    [
+      0,
+      1000,
+      0
+    ],
+    [
+      9,
+      3,
+      988
+    ]
+  ],
+  "dataset": "FashionMNIST0.3",
+  "debug": false,
+  "elapsed_seconds": 16.668418903951533,
+  "epochs_trained": 18,
+  "initialization_seed": 1008,
+  "method": "gce",
+  "split_seed": 8,
+  "test_accuracy": 0.989,
+  "test_count": 3000,
+  "test_top1_percent": 98.9,
+  "training_examples": 14400,
+  "transition": [
+    [
+      0.7,
+      0.3,
+      0.0
+    ],
+    [
+      0.0,
+      0.7,
+      0.3
+    ],
+    [
+      0.3,
+      0.0,
+      0.7
+    ]
+  ],
+  "transition_source": "known",
+  "validation_examples": 3600,
+  "validation_noisy_nll": 0.6296809895833333
+}

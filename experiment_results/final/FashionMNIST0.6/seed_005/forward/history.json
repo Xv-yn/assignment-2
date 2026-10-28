@@ -1,0 +1,132 @@
+{
+  "best_epoch": 10,
+  "epochs": [
+    {
+      "epoch": 1,
+      "learning_rate": 0.001,
+      "train_loss": 1.0945897393756443,
+      "validation_noisy_accuracy": 0.37972222222222224,
+      "validation_noisy_nll": 1.0921746794382732
+    },
+    {
+      "epoch": 2,
+      "learning_rate": 0.0009972609476841367,
+      "train_loss": 1.093111277686225,
+      "validation_noisy_accuracy": 0.3636111111111111,
+      "validation_noisy_nll": 1.0973155117034912
+    },
+    {
+      "epoch": 3,
+      "learning_rate": 0.0009890738003669028,
+      "train_loss": 1.0975719420115153,
+      "validation_noisy_accuracy": 0.3875,
+      "validation_noisy_nll": 1.0923602782355415
+    },
+    {
+      "epoch": 4,
+      "learning_rate": 0.0009755282581475768,
+      "train_loss": 1.0921366220050388,
+      "validation_noisy_accuracy": 0.3825,
+      "validation_noisy_nll": 1.0924502266777887
+    },
+    {
+      "epoch": 5,
+      "learning_rate": 0.0009567727288213003,
+      "train_loss": 1.0918499935997856,
+      "validation_noisy_accuracy": 0.3861111111111111,
+      "validation_noisy_nll": 1.0922719558080038
+    },
+    {
+      "epoch": 6,
+      "learning_rate": 0.0009330127018922195,
+      "train_loss": 1.0922439379162259,
+      "validation_noisy_accuracy": 0.38666666666666666,
+      "validation_noisy_nll": 1.0923304642571343
+    },
+    {
+      "epoch": 7,
+      "learning_rate": 0.0009045084971874739,
+      "train_loss": 1.0922861109839546,
+      "validation_noisy_accuracy": 0.38805555555555554,
+      "validation_noisy_nll": 1.0917881531185574
+    },
+    {
+      "epoch": 8,
+      "learning_rate": 0.0008715724127386972,
+      "train_loss": 1.0916457430521647,
+      "validation_noisy_accuracy": 0.3858333333333333,
+      "validation_noisy_nll": 1.092029545572069
+    },
+    {
+      "epoch": 9,
+      "learning_rate": 0.0008345653031794292,
+      "train_loss": 1.0910920386844212,
+      "validation_noisy_accuracy": 0.38805555555555554,
+      "validation_noisy_nll": 1.0917881298065186
+    },
+    {
+      "epoch": 10,
+      "learning_rate": 0.0007938926261462366,
+      "train_loss": 1.0910691621568467,
+      "validation_noisy_accuracy": 0.3883333333333333,
+      "validation_noisy_nll": 1.091558304892646
+    },
+    {
+      "epoch": 11,
+      "learning_rate": 0.00075,
+      "train_loss": 1.09106718911065,
+      "validation_noisy_accuracy": 0.38555555555555554,
+      "validation_noisy_nll": 1.0918909666273329
+    },
+    {
+      "epoch": 12,
+      "learning_rate": 0.0007033683215379003,
+      "train_loss": 1.090939638349745,
+      "validation_noisy_accuracy": 0.385,
+      "validation_noisy_nll": 1.0920402913623386
+    },
+    {
+      "epoch": 13,
+      "learning_rate": 0.0006545084971874739,
+      "train_loss": 1.0905984454684787,
+      "validation_noisy_accuracy": 0.38555555555555554,
+      "validation_noisy_nll": 1.0922915882534452
+    },
+    {
+      "epoch": 14,
+      "learning_rate": 0.0006039558454088797,
+      "train_loss": 1.0903071880340576,
+      "validation_noisy_accuracy": 0.3811111111111111,
+      "validation_noisy_nll": 1.0935793092515733
+    },
+    {
+      "epoch": 15,
+      "learning_rate": 0.0005522642316338269,
+      "train_loss": 1.0902394119898478,
+      "validation_noisy_accuracy": 0.3788888888888889,
+      "validation_noisy_nll": 1.0928363588121202
+    },
+    {
+      "epoch": 16,
+      "learning_rate": 0.0005000000000000002,
+      "train_loss": 1.0895515441894532,
+      "validation_noisy_accuracy": 0.38083333333333336,
+      "validation_noisy_nll": 1.0934684387842815
+    },
+    {
+      "epoch": 17,
+      "learning_rate": 0.0004477357683661734,
+      "train_loss": 1.0888817771275838,
+      "validation_noisy_accuracy": 0.3819444444444444,
+      "validation_noisy_nll": 1.0934671995374892
+    },
+    {
+      "epoch": 18,
+      "learning_rate": 0.00039604415459112036,
+      "train_loss": 1.0878142484029134,
+      "validation_noisy_accuracy": 0.3825,
+      "validation_noisy_nll": 1.092420253223843
+    }
+  ],
+  "method": "forward"
+}

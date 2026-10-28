@@ -1,1 +1,1 @@
-"""Assignment 2: validated data preparation (TODO Parts 1–5)."""
+"""Assignment 2: noise-robust classification and transition estimation."""

@@ -1,0 +1,46 @@
+test_color_channel_order (test_data.DataTests.test_color_channel_order) ... ok
+test_deterministic_transform_and_no_double_scaling (test_data.DataTests.test_deterministic_transform_and_no_double_scaling) ... ok
+test_extra_archive_keys_rejected (test_data.DataTests.test_extra_archive_keys_rejected) ... ok
+test_full_shape_validation_and_missing_classes (test_data.DataTests.test_full_shape_validation_and_missing_classes) ... ok
+test_grayscale_spatial_order_scale_and_dtype (test_data.DataTests.test_grayscale_spatial_order_scale_and_dtype) ... ok
+test_integer_label_conversion_preserves_ids (test_data.DataTests.test_integer_label_conversion_preserves_ids) ... ok
+test_invalid_layout (test_data.DataTests.test_invalid_layout) ... ok
+test_training_loader_does_not_read_clean_arrays (test_data.DataTests.test_training_loader_does_not_read_clean_arrays) ... ok
+test_unknown_dataset_rejected (test_data.DataTests.test_unknown_dataset_rejected) ... ok
+test_duplicate_final_seeds_rejected (test_data.ReproducibilityTests.test_duplicate_final_seeds_rejected) ... ok
+test_final_plan_has_sixty_jobs (test_data.ReproducibilityTests.test_final_plan_has_sixty_jobs) ... ok
+test_hash_independent_of_config_key_order (test_data.ReproducibilityTests.test_hash_independent_of_config_key_order) ... ok
+test_resume_checks_identity_completion_and_artifact_content (test_data.ReproducibilityTests.test_resume_checks_identity_completion_and_artifact_content) ... ok
+test_extreme_forward_logits_have_finite_gradients (test_learning.LossTests.test_extreme_forward_logits_have_finite_gradients) ... ok
+test_forward_identity_equals_cross_entropy (test_learning.LossTests.test_forward_identity_equals_cross_entropy) ... ok
+test_forward_orientation_matches_hand_calculation (test_learning.LossTests.test_forward_orientation_matches_hand_calculation) ... ok
+test_gce_q_one_is_mae_half (test_learning.LossTests.test_gce_q_one_is_mae_half) ... ok
+test_importance_weight_gradient_is_detached (test_learning.LossTests.test_importance_weight_gradient_is_detached) ... ok
+test_invalid_q_rejected (test_learning.LossTests.test_invalid_q_rejected) ... ok
+test_reweighted_gce_identity (test_learning.LossTests.test_reweighted_gce_identity) ... ok
+test_checkpoint_selected_by_noisy_validation_nll (test_learning.TrainingTests.test_checkpoint_selected_by_noisy_validation_nll) ... CIFAR ce epoch 1/3: train=1.0732, val_nll=1.0000
+CIFAR ce epoch 2/3: train=1.0724, val_nll=0.5000
+CIFAR ce epoch 3/3: train=1.0720, val_nll=2.0000
+ok
+test_clean_metrics_top1_and_confusion (test_learning.TrainingTests.test_clean_metrics_top1_and_confusion) ... ok
+test_deterministic_pool_matches_adaptive_values_and_gradients (test_learning.TrainingTests.test_deterministic_pool_matches_adaptive_values_and_gradients) ... ok
+test_final_config_rejects_under_ten_splits (test_learning.TrainingTests.test_final_config_rejects_under_ten_splits) ... ok
+test_model_shapes_and_initialization (test_learning.TrainingTests.test_model_shapes_and_initialization) ... ok
+test_random_splits_are_exact_disjoint_reproducible_and_change (test_learning.TrainingTests.test_random_splits_are_exact_disjoint_reproducible_and_change) ... ok
+test_resume_requires_artifact_integrity (test_learning.TrainingTests.test_resume_requires_artifact_integrity) ... ok
+test_anchor_averaging_and_quantile (test_learning.TransitionTests.test_anchor_averaging_and_quantile) ... ok
+test_anchor_recovers_known_rows_at_pure_points (test_learning.TransitionTests.test_anchor_recovers_known_rows_at_pure_points) ... ok
+test_invalid_transition_and_posteriors (test_learning.TransitionTests.test_invalid_transition_and_posteriors) ... ok
+test_singular_estimate_serializable (test_learning.TransitionTests.test_singular_estimate_serializable) ... ok
+test_debug_cannot_become_final (test_results.ResultsTests.test_debug_cannot_become_final) ... ok
+test_final_grid_and_paired_difference (test_results.ResultsTests.test_final_grid_and_paired_difference) ... ok
+test_mixed_sources_rejected (test_results.ResultsTests.test_mixed_sources_rejected) ... ok
+test_package_has_empty_data_and_all_runtime_modules (test_results.ResultsTests.test_package_has_empty_data_and_all_runtime_modules) ... ok
+test_partial_grid_is_provisional_only (test_results.ResultsTests.test_partial_grid_is_provisional_only) ... ok
+test_sample_standard_deviation_and_single_run (test_results.ResultsTests.test_sample_standard_deviation_and_single_run) ... ok
+test_tampered_artifact_rejected (test_results.ResultsTests.test_tampered_artifact_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 38 tests in 8.708s
+
+OK

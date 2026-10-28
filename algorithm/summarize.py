@@ -1,4 +1,4 @@
-"""Regenerate an audit table from verified data-smoke records (no accuracy)."""
+"""Aggregate verified data audits or classifier accuracies and transitions."""
 
 import argparse
 import json
@@ -10,10 +10,16 @@ from .provenance import sha256_file, write_json
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--results-dir", type=Path, required=True)
+    parser.add_argument("--allow-incomplete", action="store_true")
     args = parser.parse_args()
+    if list(args.results_dir.glob("*/seed_*/*/run.json")):
+        from .results import aggregate
+        summary = aggregate(args.results_dir, args.allow_incomplete)
+        print((args.results_dir / "summary.md").read_text(encoding="utf-8"))
+        return
     paths = sorted(args.results_dir.glob("*/run.json"))
     if not paths:
-        parser.error("No data-smoke records found; classifier aggregation is deferred to Part 11")
+        parser.error("No experiment or data-smoke records found")
     rows = []
     for path in paths:
         run = json.loads(path.read_text())

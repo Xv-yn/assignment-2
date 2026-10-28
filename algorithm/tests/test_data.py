@@ -119,9 +119,9 @@ class ReproducibilityTests(unittest.TestCase):
             write_json(destination / "run.json", record)
             self.assertFalse(reusable_record(destination, identity))
 
-    def test_draft_final_plan_has_sixty_jobs(self):
+    def test_final_plan_has_sixty_jobs(self):
         config = read_config(ROOT / "algorithm/configs/final.json")
-        self.assertFalse(config["final_ready"])
+        self.assertTrue(config["final_ready"])
         self.assertEqual(len(config["datasets"]) * len(config["methods"]) * len(config["split_seeds"]), 60)
 
     def test_duplicate_final_seeds_rejected(self):

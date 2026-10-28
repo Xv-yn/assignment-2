@@ -1,0 +1,132 @@
+{
+  "best_epoch": 10,
+  "epochs": [
+    {
+      "epoch": 1,
+      "learning_rate": 0.001,
+      "train_loss": 0.6750367914305793,
+      "validation_noisy_accuracy": 0.7030555555555555,
+      "validation_noisy_nll": 0.6253184662924872
+    },
+    {
+      "epoch": 2,
+      "learning_rate": 0.0009972609476841367,
+      "train_loss": 0.635507296456231,
+      "validation_noisy_accuracy": 0.7044444444444444,
+      "validation_noisy_nll": 0.6216122256384955
+    },
+    {
+      "epoch": 3,
+      "learning_rate": 0.0009890738003669028,
+      "train_loss": 0.6335857990052965,
+      "validation_noisy_accuracy": 0.705,
+      "validation_noisy_nll": 0.6170914355913798
+    },
+    {
+      "epoch": 4,
+      "learning_rate": 0.0009755282581475768,
+      "train_loss": 0.007952018561643652,
+      "validation_noisy_accuracy": 0.7052777777777778,
+      "validation_noisy_nll": 0.646916077931722
+    },
+    {
+      "epoch": 5,
+      "learning_rate": 0.0009567727288213003,
+      "train_loss": 0.009877425536720288,
+      "validation_noisy_accuracy": 0.7063888888888888,
+      "validation_noisy_nll": 0.618920554584927
+    },
+    {
+      "epoch": 6,
+      "learning_rate": 0.0009330127018922195,
+      "train_loss": 0.007871849921599883,
+      "validation_noisy_accuracy": 0.7077777777777777,
+      "validation_noisy_nll": 0.6140484404563904
+    },
+    {
+      "epoch": 7,
+      "learning_rate": 0.0009045084971874739,
+      "train_loss": 0.005363808633669072,
+      "validation_noisy_accuracy": 0.7080555555555555,
+      "validation_noisy_nll": 0.621387021806505
+    },
+    {
+      "epoch": 8,
+      "learning_rate": 0.0008715724127386972,
+      "train_loss": 0.00497607575559717,
+      "validation_noisy_accuracy": 0.7063888888888888,
+      "validation_noisy_nll": 0.6224671358532375
+    },
+    {
+      "epoch": 9,
+      "learning_rate": 0.0008345653031794292,
+      "train_loss": 0.004618299546386374,
+      "validation_noisy_accuracy": 0.7066666666666667,
+      "validation_noisy_nll": 0.6109201595518324
+    },
+    {
+      "epoch": 10,
+      "learning_rate": 0.0007938926261462366,
+      "train_loss": 0.003532218208189685,
+      "validation_noisy_accuracy": 0.7088888888888889,
+      "validation_noisy_nll": 0.6091119225819905
+    },
+    {
+      "epoch": 11,
+      "learning_rate": 0.00075,
+      "train_loss": 0.0036394986804174955,
+      "validation_noisy_accuracy": 0.7088888888888889,
+      "validation_noisy_nll": 0.6160213237338595
+    },
+    {
+      "epoch": 12,
+      "learning_rate": 0.0007033683215379003,
+      "train_loss": 0.0038680860964814203,
+      "validation_noisy_accuracy": 0.7077777777777777,
+      "validation_noisy_nll": 0.6173671529028151
+    },
+    {
+      "epoch": 13,
+      "learning_rate": 0.0006545084971874739,
+      "train_loss": 0.0041130543766161685,
+      "validation_noisy_accuracy": 0.7066666666666667,
+      "validation_noisy_nll": 0.6207374307844374
+    },
+    {
+      "epoch": 14,
+      "learning_rate": 0.0006039558454088797,
+      "train_loss": 0.0052126080376223806,
+      "validation_noisy_accuracy": 0.7086111111111111,
+      "validation_noisy_nll": 0.6237670453389486
+    },
+    {
+      "epoch": 15,
+      "learning_rate": 0.0005522642316338269,
+      "train_loss": 0.003947898898772514,
+      "validation_noisy_accuracy": 0.7063888888888888,
+      "validation_noisy_nll": 0.6337797474861145
+    },
+    {
+      "epoch": 16,
+      "learning_rate": 0.0005000000000000002,
+      "train_loss": 0.00189030251646222,
+      "validation_noisy_accuracy": 0.7075,
+      "validation_noisy_nll": 0.6339396537674797
+    },
+    {
+      "epoch": 17,
+      "learning_rate": 0.0004477357683661734,
+      "train_loss": 0.002577513997714252,
+      "validation_noisy_accuracy": 0.7080555555555555,
+      "validation_noisy_nll": 0.6217574130164253
+    },
+    {
+      "epoch": 18,
+      "learning_rate": 0.00039604415459112036,
+      "train_loss": 0.002407084100792013,
+      "validation_noisy_accuracy": 0.7047222222222222,
+      "validation_noisy_nll": 0.6447076956431071
+    }
+  ],
+  "method": "gce"
+}

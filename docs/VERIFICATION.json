@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-28",
+  "classifier_runs": 60,
+  "estimator_runs": 30,
+  "unit_tests_passed": 38,
+  "training_and_aggregation_seconds": 1121.1349918,
+  "download": {
+    "archive_sha256": "4a93a5cd524ff66c9b92f145fbbbde54047dc099000e099ea162b09b37cb904d",
+    "verified_files": 556,
+    "datasets_match_original": true,
+    "training_source_matches_local": true,
+    "classifier_runs": 60,
+    "estimator_runs": 30,
+    "verified": true
+  },
+  "packages": {
+    "COMP5328_A2_code.zip": {
+      "entries": 24,
+      "crc_ok": true,
+      "bytes": 38452
+    },
+    "COMP5328_A2_results.zip": {
+      "entries": 522,
+      "crc_ok": true,
+      "bytes": 151184826
+    }
+  },
+  "checkpoint_checks": {
+    "checks": [
+      {
+        "dataset": "FashionMNIST0.3",
+        "method": "forward",
+        "examples": 8,
+        "argmax_matches_server": true,
+        "max_probability_difference": 4.76837158203125e-06
+      },
+      {
+        "dataset": "FashionMNIST0.3",
+        "method": "gce",
+        "examples": 8,
+        "argmax_matches_server": true,
+        "max_probability_difference": 3.5762786865234375e-07
+      },
+      {
+        "dataset": "FashionMNIST0.6",
+        "method": "forward",
+        "examples": 8,
+        "argmax_matches_server": true,
+        "max_probability_difference": 0.00013142824172973633
+      },
+      {
+        "dataset": "FashionMNIST0.6",
+        "method": "gce",
+        "examples": 8,
+        "argmax_matches_server": true,
+        "max_probability_difference": 2.6395544409751892e-05
+      },
+      {
+        "dataset": "CIFAR",
+        "method": "forward",
+        "examples": 8,
+        "argmax_matches_server": true,
+        "max_probability_difference": 1.0251998901367188e-05
+      },
+      {
+        "dataset": "CIFAR",
+        "method": "gce",
+        "examples": 8,
+        "argmax_matches_server": true,
+        "max_probability_difference": 1.7017126083374023e-05
+      }
+    ],
+    "passed": true
+  },
+  "server_cleanup": {
+    "removed_directory": "/root/comp5328_a2_20261028_01a181d7",
+    "confirmed_absent": true,
+    "other_paths_changed": false
+  }
+}

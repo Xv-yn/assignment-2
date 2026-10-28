@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "stage": "training_pilot",
+  "purpose": "Full noisy holdout integration; no clean-test evaluation or final results",
+  "datasets": [
+    "FashionMNIST0.3",
+    "FashionMNIST0.6"
+  ],
+  "methods": [
+    "forward"
+  ],
+  "split_seeds": [
+    0
+  ],
+  "initialization_seeds": [
+    1000
+  ],
+  "shuffle_seeds": [
+    2000
+  ],
+  "data_dir": "data",
+  "results_dir": "results/pilot-forward",
+  "splits_dir": "results/splits",
+  "device": "cpu",
+  "train_fraction": 0.8,
+  "batch_size": 128,
+  "epochs": 2,
+  "patience": 5,
+  "min_delta": 0.0,
+  "optimizer": "adam",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "num_threads": 2,
+  "architecture": {
+    "name": "small_cnn",
+    "channels": [
+      32,
+      64
+    ],
+    "num_classes": 3
+  },
+  "method_parameters": {
+    "gce": {
+      "gamma": 0.7
+    }
+  },
+  "preprocessing": {
+    "scaling": "divide_by_255",
+    "standardization": false,
+    "augmentation": "none"
+  },
+  "test_evaluation": "disabled"
+}

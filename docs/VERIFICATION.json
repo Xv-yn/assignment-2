@@ -15,9 +15,9 @@
   },
   "packages": {
     "COMP5328_A2_code.zip": {
-      "entries": 24,
+      "entries": 32,
       "crc_ok": true,
-      "bytes": 38452
+      "bytes": 53596
     },
     "COMP5328_A2_results.zip": {
       "entries": 522,
@@ -76,5 +76,11 @@
     "removed_directory": "/root/comp5328_a2_20261028_01a181d7",
     "confirmed_absent": true,
     "other_paths_changed": false
+  },
+  "formal_training_commit": "c57a81792756d1754ca2dda47c6c9a10af2c30e5",
+  "post_merge_integration": {
+    "tests_passed": 51,
+    "preserved_remote_pilot": true,
+    "formal_model_loss_training_and_final_config_unchanged": true
   }
 }

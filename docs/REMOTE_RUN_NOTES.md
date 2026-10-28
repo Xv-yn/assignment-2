@@ -75,6 +75,8 @@ Python source, requirements and the formal configuration were frozen for the exp
 
 The final result tables were generated after the full grid passed the aggregation checks. Means, sample standard deviations and estimated transition matrices come from the formal records, rather than the smoke configuration or preflight timing run. The publication preparation checked all original run artifact hashes, split and transition provenance, frozen configuration consistency, and the summary statistics against the per-run metrics.
 
+The formal training implementation is preserved in commit `c57a81792756d1754ca2dda47c6c9a10af2c30e5` and in the full session archive. Remote changes made during training were subsequently merged by retaining their CPU pilot as separate modules and adding configuration routing. The formal model, loss, estimator, training loop and final configuration were preserved. All 51 combined formal/pilot tests passed after integration. Resuming archived runs requires the archived source and recorded environment because adding pilot modules changes the complete source fingerprint.
+
 ## Delivery files
 
 - `dist/COMP5328_A2_code.zip`: submission source and an empty data directory.

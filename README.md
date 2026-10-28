@@ -171,3 +171,16 @@ python -m algorithm.package_submission --output dist/GroupIDXX_StudentIDxxxxxxxx
 | CIFAR | 70.513 ± 6.684 | 64.440 ± 6.714 |
 
 [正式结果与矩阵估计](experiment_results/final/summary.md)、[逐次精度](experiment_results/final/runs.csv)及[运行与备份记录](docs/REMOTE_RUN_NOTES.md)已保存。`experiment_results/final/` 提供精简公开证据，包含完整来源与产物哈希记录；模型权重、预测数组、数据和完整运行日志保留在本地 `dist/COMP5328_A2_server_backup.tar.gz` 及其校验后的解包目录中，不纳入 GitHub 精简结果。下载备份的 556 个文件均已通过 SHA-256 校验。
+
+## 10. 保留远端已有的 pilot 流程
+
+训练期间远端新增的 CPU pilot 代码已整合保留。统一入口会根据配置的 `stage` 选择流程：
+
+```bash
+python -m algorithm.run_experiments --config algorithm/configs/pilot.json --data-dir ../datasets
+python -m algorithm.run_experiments --config algorithm/configs/pilot_forward.json --data-dir ../datasets
+```
+
+Pilot 使用独立的 `pilot_models.py`、`pilot_losses.py` 和 `train.py`，只评估带噪验证集。`splits.py` 和原有 pilot 测试一并保留。正式训练继续使用 `models.py`、`losses.py`、`training.py` 和 `experiments.py`；整合后的 **51 项测试全部通过**。
+
+本次 90 个正式任务对应[训练版本 c57a817](https://github.com/Xv-yn/assignment-2/commit/c57a81792756d1754ca2dda47c6c9a10af2c30e5)。后续合并只增加 pilot 兼容入口和保留模块，未改动正式模型、损失、训练循环或最终配置。完整备份保留运行时的精确源码；恢复旧结果时使用备份源码，以满足来源哈希校验。

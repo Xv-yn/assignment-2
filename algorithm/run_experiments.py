@@ -16,6 +16,9 @@ def resolve_path(value: str) -> Path:
 
 def read_config(path: Path) -> dict:
     config = json.loads(path.read_text(encoding="utf-8"))
+    if config.get("stage") == "training_pilot":
+        from .run_pilots import read_config as read_pilot_config
+        return read_pilot_config(path)
     if config.get("schema_version") != 1:
         raise ValueError("Expected configuration schema_version 1")
     datasets = config.get("datasets", [])
@@ -101,7 +104,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", type=Path, required=True)
     parser.add_argument("--dataset", choices=DATASETS)
-    parser.add_argument("--method", choices=("forward", "gce"))
+    parser.add_argument("--method", choices=("forward", "gce", "ce"))
     parser.add_argument("--seed", type=int)
     parser.add_argument("--device", choices=("cpu", "cuda", "auto"))
     parser.add_argument("--data-dir", type=Path)
@@ -119,16 +122,27 @@ def main():
     selected = [args.dataset] if args.dataset else config["datasets"]
     if not set(selected) <= set(config["datasets"]):
         parser.error("Selected dataset is not present in the configuration")
-    if config["stage"] == "training":
+    if config["stage"] in ("training", "training_pilot"):
         seeds = [args.seed] if args.seed is not None else config["split_seeds"]
         if not set(seeds) <= set(config["split_seeds"]):
             parser.error("Selected seed is not in split_seeds")
         methods = [args.method] if args.method else config["methods"]
+        if not set(methods) <= set(config["methods"]):
+            parser.error("Selected method is not present in the configuration")
         jobs = [{"dataset": d, "method": m, "split_seed": s,
                  "initialization_seed": config["initialization_seeds"][config["split_seeds"].index(s)]}
                 for d in selected for m in methods for s in seeds]
         if args.plan:
             print(json.dumps({"status": "planned_only", "debug": config.get("debug", False), "job_count": len(jobs), "jobs": jobs}, indent=2))
+            return
+        if config["stage"] == "training_pilot":
+            if config.get("device") != "cpu":
+                parser.error("The preserved pilot implementation supports CPU only")
+            if any(job["dataset"] == "CIFAR" and job["method"] == "forward" for job in jobs):
+                parser.error("Pilot Forward uses known matrices only; use final.json for estimated CIFAR matrices")
+            from .train import run_training_job
+            for job in jobs:
+                run_training_job(config, job["dataset"], job["method"], job["split_seed"], resume=args.resume)
             return
         from .experiments import run_training
         run_training(config, selected, methods, seeds, resolve_path(config["results_dir"]),

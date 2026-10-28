@@ -97,6 +97,20 @@ class DataTests(unittest.TestCase):
 
 
 class ReproducibilityTests(unittest.TestCase):
+    def test_preserved_pilot_config_routes_through_unified_reader(self):
+        config = read_config(ROOT / "algorithm/configs/pilot.json")
+        self.assertEqual(config["stage"], "training_pilot")
+        self.assertEqual(config["test_evaluation"], "disabled")
+
+    def test_pilot_selection_routes_to_preserved_backend(self):
+        from algorithm.run_experiments import main
+        with patch("sys.argv", ["run_experiments", "--config", "algorithm/configs/pilot.json",
+                                "--dataset", "FashionMNIST0.3", "--seed", "0"]), \
+                patch("algorithm.train.run_training_job") as run_job:
+            main()
+        self.assertEqual(run_job.call_count, 1)
+        self.assertEqual(run_job.call_args.args[1:], ("FashionMNIST0.3", "gce", 0))
+
     def test_hash_independent_of_config_key_order(self):
         self.assertEqual(config_hash({"a": 1, "b": 2}), config_hash({"b": 2, "a": 1}))
         self.assertNotEqual(config_hash({"a": 1}), config_hash({"a": 2}))

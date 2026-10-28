@@ -1,1 +1,1 @@
-"""Assignment 2: validated data preparation (TODO Parts 1–5)."""
+"""Assignment 2: validated data preparation and noisy-validation training pilots."""

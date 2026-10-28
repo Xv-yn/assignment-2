@@ -1,0 +1,6 @@
+# Install in addition to the team's original requirements.txt.
+# Versions depend on Python/CUDA environment; validated locally for CPU unit tests.
+torch
+scikit-learn
+scikit-image
+scipy

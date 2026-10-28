@@ -1,0 +1,62 @@
+{
+  "v3_known_matrix_validation": {
+    "FashionMNIST0.3": {
+      "files": 10,
+      "MAE_mean": {
+        "anchor25": 0.07774106996657146,
+        "hard_all": 0.02001057432486971,
+        "hard_top50": 0.012597481698332224
+      },
+      "MAE_sample_SD": {
+        "anchor25": 0.009150350693818974,
+        "hard_all": 0.004100118013929401,
+        "hard_top50": 0.006068494090385359
+      }
+    },
+    "FashionMNIST0.6": {
+      "files": 10,
+      "MAE_mean": {
+        "anchor25": 0.01964195111428741,
+        "hard_all": 0.01483779009703203,
+        "hard_top50": 0.018401791905752175
+      },
+      "MAE_sample_SD": {
+        "anchor25": 0.008517392957805105,
+        "hard_all": 0.003445551595058501,
+        "hard_top50": 0.0028992382006935886
+      }
+    }
+  },
+  "cifar_v5": {
+    "n_seeds": 10,
+    "v5_noisy_audit_accuracy_pct_mean": 37.6,
+    "v5_noisy_IG_nats_mean": 0.00835720950517167,
+    "v5_forward_clean_accuracy_pct_mean": 58.166666666666664,
+    "v5_forward_clean_accuracy_pp_SD": 8.527833876036983,
+    "v5_minus_anchor_pp_mean": -4.413333333333334,
+    "seeds_v5_better": 3,
+    "v5_T_mean": [
+      [
+        0.38081134104423386,
+        0.31256982356797275,
+        0.30661883538779333
+      ],
+      [
+        0.3087122952804534,
+        0.38413880281551754,
+        0.30714890190402905
+      ],
+      [
+        0.3252268502837355,
+        0.3053988399370127,
+        0.36937430977925184
+      ]
+    ]
+  },
+  "notes": [
+    "FashionMNIST0.3 and 0.6 known T values used for posthoc validation, not to train estimator",
+    "CIFAR true transition matrix unavailable; V5 is not proven accurate",
+    "CIFAR Forward with V5 estimated T underperformed older matrix in ten paired splits",
+    "Raw data, model weights and generated intermediate files intentionally excluded"
+  ]
+}

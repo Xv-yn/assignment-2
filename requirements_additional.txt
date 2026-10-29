@@ -1,0 +1,5 @@
+# Optional feature-based/HOG studies; includes the shared core environment.
+-r requirements.txt
+scikit-learn
+scikit-image
+scipy

@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-29",
+  "merged_refs": {
+    "main": "ced6eab58c2e92f9ec0c6760482f4e07fa454069",
+    "hao_lu_transition_estimation": "ce19d1a2351fede70b57e7f92be3c0bf5d871bdb"
+  },
+  "tests": {
+    "command": "python -m unittest discover -s algorithm/tests -v",
+    "passed": 107,
+    "failed": 0,
+    "skipped": 0,
+    "log_sha256": "d56adeffcf2d6b2df0ef5d1477078114e9bf9d916d56a29e976e237d34ddf15a",
+    "log_retained_locally": "dist/merge_validation_final_20261029.log"
+  },
+  "real_data_debug": {
+    "classifier_jobs": 6,
+    "datasets": 3,
+    "epochs_per_fit": 1,
+    "debug_only": true,
+    "results_dir": "results/merge_smoke_20261029"
+  },
+  "optional_import_check": {
+    "modules": 28,
+    "blocked": [
+      "sklearn",
+      "skimage"
+    ],
+    "passed": true
+  },
+  "formal_evidence": {
+    "files_verified": 252,
+    "unchanged": true,
+    "formal_core_defaults_preserved": true,
+    "retrained": false
+  },
+  "environment": {
+    "python": "3.10.19",
+    "torch": "2.5.1",
+    "numpy": "2.0.1",
+    "scikit-learn": "1.7.2",
+    "scikit-image": "0.25.2",
+    "scientific_test_deps_isolated": true
+  },
+  "old_diagnostic_caches_require_new_output_directory": true
+}

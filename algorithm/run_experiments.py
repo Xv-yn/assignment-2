@@ -5,6 +5,7 @@ from pathlib import Path
 
 from .audit_data import audit_dataset, environment
 from .data import DATASETS, ROOT, dataset_path
+from .pilot_config import validate_pilot_config, validate_pilot_training_fields
 from .provenance import config_hash, sha256_file, source_hash, write_json
 import json
 
@@ -16,21 +17,20 @@ def resolve_path(value: str) -> Path:
 
 def read_config(path: Path) -> dict:
     config = json.loads(path.read_text(encoding="utf-8"))
-    if config.get("stage") == "training_pilot":
-        from .run_pilots import read_config as read_pilot_config
-        return read_pilot_config(path)
     if config.get("schema_version") != 1:
         raise ValueError("Expected configuration schema_version 1")
     datasets = config.get("datasets", [])
     if not datasets or len(set(datasets)) != len(datasets) or not set(datasets) <= set(DATASETS):
         raise ValueError("datasets must contain unique supported dataset names")
-    if config.get("stage") not in ("data_smoke", "training"):
-        raise ValueError("stage must be data_smoke or training")
+    if config.get("stage") not in ("data_smoke", "training_pilot", "training"):
+        raise ValueError("stage must be data_smoke, training_pilot or training")
     if type(config.get("batch_size")) is not int or config["batch_size"] <= 0:
         raise ValueError("batch_size must be a positive integer")
     if config.get("preprocessing") != {"scaling": "divide_by_255", "standardization": False, "augmentation": "none"}:
         raise ValueError("Only the documented deterministic preprocessing is implemented")
-    if config["stage"] == "training":
+    if config["stage"] == "training_pilot":
+        validate_pilot_training_fields(config)
+    elif config["stage"] == "training":
         seeds = config.get("split_seeds", [])
         minimum = 1 if config.get("debug", False) else 10
         if len(seeds) < minimum or len(set(seeds)) != len(seeds) or any(type(s) is not int or s < 0 for s in seeds):
@@ -100,18 +100,18 @@ def reusable_record(destination: Path, expected: dict) -> bool:
     return set(record.get("artifacts", {})) == {"audit.json", "training_grid.png"}
 
 
-def main():
+def main(argv=None, *, pilot_only=False):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", type=Path, required=True)
     parser.add_argument("--dataset", choices=DATASETS)
     parser.add_argument("--method", choices=("forward", "gce", "ce"))
     parser.add_argument("--seed", type=int)
-    parser.add_argument("--device", choices=("cpu", "cuda", "auto"))
+    parser.add_argument("--device", choices=("cpu",) if pilot_only else ("cpu", "cuda", "auto"))
     parser.add_argument("--data-dir", type=Path)
     parser.add_argument("--results-dir", type=Path)
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--plan", action="store_true")
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     config = read_config(resolve_path(str(args.config)))
     if args.device:
         config["device"] = args.device
@@ -119,6 +119,8 @@ def main():
         config["data_dir"] = str(args.data_dir.resolve())
     if args.results_dir:
         config["results_dir"] = str(args.results_dir)
+    if pilot_only and config.get("device") != "cpu":
+        parser.error("The preserved pilot entry point supports CPU only")
     selected = [args.dataset] if args.dataset else config["datasets"]
     if not set(selected) <= set(config["datasets"]):
         parser.error("Selected dataset is not present in the configuration")
@@ -133,8 +135,13 @@ def main():
                  "initialization_seed": config["initialization_seeds"][config["split_seeds"].index(s)]}
                 for d in selected for m in methods for s in seeds]
         if args.plan:
-            print(json.dumps({"status": "planned_only", "debug": config.get("debug", False), "job_count": len(jobs), "jobs": jobs}, indent=2))
+            plan = {"status": "planned_only", "debug": config.get("debug", False), "job_count": len(jobs), "jobs": jobs}
+            if pilot_only:
+                plan["stage"] = config["stage"]
+            print(json.dumps(plan, indent=2))
             return
+        if pilot_only and config["stage"] == "training":
+            parser.error("Use algorithm.run_experiments for formal training; algorithm.run_pilots is the CPU pilot compatibility entry point")
         if config["stage"] == "training_pilot":
             if config.get("device") != "cpu":
                 parser.error("The preserved pilot implementation supports CPU only")

@@ -112,6 +112,9 @@ class ResultsTests(unittest.TestCase):
                 self.assertIn("algorithm/experiments.py", names)
                 self.assertIn("algorithm/configs/final.json", names)
                 self.assertIn("requirements.txt", names)
+                self.assertIn("requirements_additional.txt", names)
+                self.assertIn("docs/RUNNING.md", names)
+                self.assertIn("docs/HaoLu_Transition_README.md", names)
                 self.assertFalse(any(n.endswith((".npz", ".pt", ".pyc")) or "/.git/" in n for n in names))
                 self.assertEqual([n for n in names if n.startswith("data/")], ["data/"])
 

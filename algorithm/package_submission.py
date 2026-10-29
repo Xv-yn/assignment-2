@@ -11,7 +11,9 @@ def package(output):
     output.parent.mkdir(parents=True, exist_ok=True)
     files = sorted(p for p in (ROOT / "algorithm").rglob("*")
                    if p.is_file() and "__pycache__" not in p.parts and p.suffix in (".py", ".json", ".md"))
-    files += [ROOT / "README.md", ROOT / "requirements.txt"]
+    files += [ROOT / "README.md"] + sorted(ROOT.glob("requirements*.txt"))
+    files += sorted(p for p in (ROOT / "docs").rglob("*")
+                    if p.is_file() and p.suffix in (".md", ".json"))
     with zipfile.ZipFile(output, "w", compression=zipfile.ZIP_DEFLATED) as archive:
         archive.writestr("data/", "")
         for path in files:

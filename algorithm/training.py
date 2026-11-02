@@ -43,10 +43,27 @@ def make_loader(images, labels, name, indices, batch_size, *, shuffle=False, see
                       generator=torch.Generator().manual_seed(seed), num_workers=0)
 
 
+def gce_uses_transition(params):
+    """Standard GCE is matrix-free; only the optional extensions read T."""
+    return bool(params.get("reweight", False)) or params.get("warmup_epochs", 0) > 0
+
+
+def selection_metric(method, params, transition):
+    """Name of the noisy-validation loss used for early stopping/checkpointing."""
+    if method == "gce" and transition is None:
+        return "noisy_gce"
+    return "noisy_ce" if transition is None else "noisy_forward_nll"
+
+
 @torch.no_grad()
-def evaluate(model, loader, device, transition=None):
+def evaluate(model, loader, device, transition=None, gce_gamma=None):
+    """Noisy NLL, noisy accuracy and clean-class probabilities for one loader.
+
+    With ``gce_gamma`` set, also returns the mean (unweighted) GCE loss of the
+    observed labels, which is the matrix-free selection criterion for GCE.
+    """
     model.eval()
-    total, correct, nll = 0, 0, 0.0
+    total, correct, nll, gce = 0, 0, 0.0, 0.0
     probabilities, targets = [], []
     for images, labels in loader:
         images, labels = images.to(device), labels.to(device)
@@ -55,12 +72,17 @@ def evaluate(model, loader, device, transition=None):
         p = logits.softmax(1)
         observed = p if transition is None else p @ transition
         nll += float(loss) * len(labels)
+        if gce_gamma is not None:
+            gce += float(gce_loss(logits, labels, gce_gamma)) * len(labels)
         correct += int((observed.argmax(1) == labels).sum())
         total += len(labels)
         probabilities.append(p.cpu().numpy())
         targets.append(labels.cpu().numpy())
-    return {"nll": nll / total, "accuracy": correct / total,
-            "probabilities": np.concatenate(probabilities), "targets": np.concatenate(targets)}
+    result = {"nll": nll / total, "accuracy": correct / total,
+              "probabilities": np.concatenate(probabilities), "targets": np.concatenate(targets)}
+    if gce_gamma is not None:
+        result["gce"] = gce / total
+    return result
 
 
 def fit(name, config, train_loader, val_loader, device, seed, method, transition,
@@ -74,6 +96,12 @@ def fit(name, config, train_loader, val_loader, device, seed, method, transition
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs)
     best_loss, best_state, best_epoch, stale, history = float("inf"), None, 0, 0, []
     params = config["method_parameters"]["gce"]
+    if method == "gce" and gce_uses_transition(params) and t is None:
+        raise ValueError("GCE reweighting/warm-up needs a transition matrix")
+    if method == "gce" and not gce_uses_transition(params) and t is not None:
+        raise ValueError("Standard GCE is matrix-free; do not pass a transition matrix")
+    metric = selection_metric(method, params, t)
+    gce_gamma = params["gamma"] if metric == "noisy_gce" else None
     for epoch in range(1, epochs + 1):
         model.train()
         loss_sum, count = 0.0, 0
@@ -83,7 +111,7 @@ def fit(name, config, train_loader, val_loader, device, seed, method, transition
             logits = model(images)
             if method == "ce":
                 loss = F.cross_entropy(logits, labels)
-            elif method == "forward" or epoch <= params.get("warmup_epochs", 0):
+            elif method == "forward" or (method == "gce" and epoch <= params.get("warmup_epochs", 0)):
                 loss = forward_loss(logits, labels, t)
             elif method == "gce":
                 loss = gce_loss(logits, labels, params["gamma"], t,
@@ -96,27 +124,34 @@ def fit(name, config, train_loader, val_loader, device, seed, method, transition
             optimizer.step()
             loss_sum += float(loss.detach()) * len(labels)
             count += len(labels)
-        score = evaluate(model, val_loader, device, t)
+        score = evaluate(model, val_loader, device, t, gce_gamma)
+        selection_loss = score["gce"] if metric == "noisy_gce" else score["nll"]
         row = {"epoch": epoch, "train_loss": loss_sum / count,
                "validation_noisy_nll": score["nll"], "validation_noisy_accuracy": score["accuracy"],
+               "validation_selection_loss": selection_loss,
                "learning_rate": optimizer.param_groups[0]["lr"]}
         history.append(row)
-        print(f"{name} {method} epoch {epoch}/{epochs}: train={row['train_loss']:.4f}, val_nll={score['nll']:.4f}", flush=True)
-        if score["nll"] < best_loss:
-            best_loss, best_epoch, stale = score["nll"], epoch, 0
+        print(f"{name} {method} epoch {epoch}/{epochs}: train={row['train_loss']:.4f}, "
+              f"val_{metric}={selection_loss:.4f}", flush=True)
+        if selection_loss < best_loss:
+            best_loss, best_epoch, stale = selection_loss, epoch, 0
             best_state = {key: value.detach().cpu().clone() for key, value in model.state_dict().items()}
         else:
             stale += 1
         write_json(output / "history.json", {"method": method, "epochs": history,
-                                            "best_epoch": best_epoch})
+                                            "best_epoch": best_epoch, "selection_metric": metric})
         scheduler.step()
         if stale >= config["patience"]:
             break
     model.load_state_dict(best_state)
     torch.save({"model_state_dict": best_state, "dataset": name, "method": method,
                 "architecture": copy.deepcopy(config["architecture"]), "transition": transition,
-                "best_epoch": best_epoch, "validation_noisy_nll": best_loss}, output / "best.pt")
-    return model, {"best_epoch": best_epoch, "validation_noisy_nll": best_loss,
+                "best_epoch": best_epoch, "selection_metric": metric,
+                "validation_selection_loss": best_loss}, output / "best.pt")
+    best_row = history[best_epoch - 1]
+    return model, {"best_epoch": best_epoch, "selection_metric": metric,
+                   "validation_selection_loss": best_loss,
+                   "validation_noisy_nll": best_row["validation_noisy_nll"],
                    "epochs_trained": len(history)}
 
 

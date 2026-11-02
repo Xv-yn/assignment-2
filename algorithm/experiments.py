@@ -11,7 +11,7 @@ import torch
 from .data import dataset_path, load_noisy_pool, load_clean_test
 from .provenance import config_hash, sha256_file, source_hash, write_json
 from .training import (seed_everything, random_split_indices, make_loader,
-                       fit, evaluate, clean_metrics)
+                       fit, evaluate, clean_metrics, gce_uses_transition)
 from .transition import KNOWN, estimate_anchor, validate_transition
 
 
@@ -117,17 +117,19 @@ def run_training(config, datasets, methods, seeds, output_root, data_dir, resume
                     raise ValueError(f"Existing classifier: {job_dir}; use --resume")
                 write_json(job_dir / "run.json", {"identity": identity, "status": "running_training", "config": config})
                 start = time.perf_counter()
+                uses_t = method == "forward" or (method == "gce" and gce_uses_transition(config["method_parameters"]["gce"]))
                 try:
                     train_loader, val_loader = loaders(init_seed)
                     model, fit_info = fit(name, config, train_loader, val_loader, device, init_seed,
-                                          method, transition.tolist(), job_dir)
+                                          method, transition.tolist() if uses_t else None, job_dir)
                     # Test API is reached only after validation-only checkpoint selection.
                     test = load_clean_test(name, data_dir)
                     test_loader = make_loader(test.images, test.clean_labels, name, np.arange(len(test.images)), config["batch_size"])
                     evaluation = evaluate(model, test_loader, device)
                     metrics = dict(clean_metrics(evaluation), **fit_info, dataset=name, method=method,
                                    split_seed=split_seed, initialization_seed=init_seed, debug=debug,
-                                   transition=transition.tolist(), transition_source="known" if name in KNOWN else "estimated",
+                                   transition=transition.tolist() if uses_t else None,
+                                   transition_source=("known" if name in KNOWN else "estimated") if uses_t else "unused",
                                    training_examples=len(used_train), validation_examples=len(used_val),
                                    elapsed_seconds=time.perf_counter() - start)
                     write_json(job_dir / "metrics.json", metrics)

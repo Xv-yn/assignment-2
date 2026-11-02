@@ -37,7 +37,7 @@
     1009
   ],
   "data_dir": "data",
-  "results_dir": "results/final",
+  "results_dir": "results/final_standard_gce",
   "device": "auto",
   "train_fraction": 0.8,
   "batch_size": 128,
@@ -57,9 +57,9 @@
   "method_parameters": {
     "gce": {
       "gamma": 0.7,
-      "reweight": true,
+      "reweight": false,
       "max_weight": 10.0,
-      "warmup_epochs": 3
+      "warmup_epochs": 0
     },
     "forward": {
       "transition_convention": "T[i,j]=P(S=j|Y=i)"

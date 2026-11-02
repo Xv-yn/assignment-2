@@ -1,0 +1,336 @@
+{
+  "classifier_runs_completed": 0,
+  "datasets": {
+    "CIFAR": {
+      "arrays": {
+        "Str": {
+          "all_finite": true,
+          "dtype": "int64",
+          "max": 2,
+          "min": 0,
+          "shape": [
+            15000
+          ]
+        },
+        "Xtr": {
+          "all_finite": true,
+          "dtype": "uint8",
+          "max": 255,
+          "min": 0,
+          "shape": [
+            15000,
+            32,
+            32,
+            3
+          ]
+        },
+        "Xts": {
+          "all_finite": true,
+          "dtype": "uint8",
+          "max": 255,
+          "min": 0,
+          "shape": [
+            3000,
+            32,
+            32,
+            3
+          ]
+        },
+        "Yts": {
+          "all_finite": true,
+          "dtype": "int64",
+          "max": 2,
+          "min": 0,
+          "shape": [
+            3000
+          ]
+        }
+      },
+      "batch": {
+        "contiguous": true,
+        "image_dtype": "float32",
+        "label_dtype": "int64",
+        "max": 1.0,
+        "min": 0.0,
+        "shape": [
+          32,
+          3,
+          32,
+          32
+        ]
+      },
+      "dataset": "CIFAR",
+      "dataset_sha256": "1c38a86896df4f97cfa13338f6c44d4dae898ac949796ec41f75f0d0ac23565a",
+      "deterministic_pool_transform": true,
+      "deterministic_test_transform": true,
+      "grid_indices": [
+        388,
+        12840,
+        9646,
+        2597,
+        5528,
+        9595,
+        5311,
+        12377,
+        2693,
+        12877,
+        9805,
+        10793
+      ],
+      "grid_sampling_seed": 2026,
+      "grid_sha256": "946439e51515a42ba9b294475296b781a3cf55a4c26d82e83a4f79d5f4070a39",
+      "noisy_pool_class_counts": {
+        "0": 5000,
+        "1": 5000,
+        "2": 5000
+      },
+      "noisy_pool_class_proportions": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "preprocessing": {
+        "augmentation": null,
+        "class_ids": [
+          0,
+          1,
+          2
+        ],
+        "fitted_statistics": null,
+        "image_dtype": "float32",
+        "label_dtype": "int64",
+        "layout": "NCHW",
+        "pixel_range": [
+          0,
+          1
+        ],
+        "resize": null,
+        "scale_divisor": 255,
+        "standardization": null,
+        "statistics_note": "No fitted transform; identical deterministic scaling for all methods and partitions."
+      },
+      "test_access": "array integrity and deterministic transform only; no performance evaluation"
+    },
+    "FashionMNIST0.3": {
+      "arrays": {
+        "Str": {
+          "all_finite": true,
+          "dtype": "uint8",
+          "max": 2,
+          "min": 0,
+          "shape": [
+            18000
+          ]
+        },
+        "Xtr": {
+          "all_finite": true,
+          "dtype": "uint8",
+          "max": 255,
+          "min": 0,
+          "shape": [
+            18000,
+            784
+          ]
+        },
+        "Xts": {
+          "all_finite": true,
+          "dtype": "uint8",
+          "max": 255,
+          "min": 0,
+          "shape": [
+            3000,
+            784
+          ]
+        },
+        "Yts": {
+          "all_finite": true,
+          "dtype": "uint8",
+          "max": 2,
+          "min": 0,
+          "shape": [
+            3000
+          ]
+        }
+      },
+      "batch": {
+        "contiguous": true,
+        "image_dtype": "float32",
+        "label_dtype": "int64",
+        "max": 1.0,
+        "min": 0.0,
+        "shape": [
+          32,
+          1,
+          28,
+          28
+        ]
+      },
+      "dataset": "FashionMNIST0.3",
+      "dataset_sha256": "9141a8c362b5d87b5db3905fd3117587eb1cbdcfcd9cc6269eb921f885f5f6c1",
+      "deterministic_pool_transform": true,
+      "deterministic_test_transform": true,
+      "grid_indices": [
+        237,
+        15134,
+        5538,
+        1592,
+        6618,
+        8925,
+        6489,
+        10558,
+        9545,
+        16734,
+        14965,
+        15566
+      ],
+      "grid_sampling_seed": 2026,
+      "grid_sha256": "c08c94357ffcd04389fe0fc4281363f626506556534d4be810fe0a6b12cfa2c9",
+      "noisy_pool_class_counts": {
+        "0": 6092,
+        "1": 5930,
+        "2": 5978
+      },
+      "noisy_pool_class_proportions": [
+        0.33844444444444444,
+        0.32944444444444443,
+        0.33211111111111113
+      ],
+      "preprocessing": {
+        "augmentation": null,
+        "class_ids": [
+          0,
+          1,
+          2
+        ],
+        "fitted_statistics": null,
+        "image_dtype": "float32",
+        "label_dtype": "int64",
+        "layout": "NCHW",
+        "pixel_range": [
+          0,
+          1
+        ],
+        "resize": null,
+        "scale_divisor": 255,
+        "standardization": null,
+        "statistics_note": "No fitted transform; identical deterministic scaling for all methods and partitions."
+      },
+      "test_access": "array integrity and deterministic transform only; no performance evaluation"
+    },
+    "FashionMNIST0.6": {
+      "arrays": {
+        "Str": {
+          "all_finite": true,
+          "dtype": "uint8",
+          "max": 2,
+          "min": 0,
+          "shape": [
+            18000
+          ]
+        },
+        "Xtr": {
+          "all_finite": true,
+          "dtype": "uint8",
+          "max": 255,
+          "min": 0,
+          "shape": [
+            18000,
+            784
+          ]
+        },
+        "Xts": {
+          "all_finite": true,
+          "dtype": "uint8",
+          "max": 255,
+          "min": 0,
+          "shape": [
+            3000,
+            784
+          ]
+        },
+        "Yts": {
+          "all_finite": true,
+          "dtype": "uint8",
+          "max": 2,
+          "min": 0,
+          "shape": [
+            3000
+          ]
+        }
+      },
+      "batch": {
+        "contiguous": true,
+        "image_dtype": "float32",
+        "label_dtype": "int64",
+        "max": 1.0,
+        "min": 0.0,
+        "shape": [
+          32,
+          1,
+          28,
+          28
+        ]
+      },
+      "dataset": "FashionMNIST0.6",
+      "dataset_sha256": "8e7613fb618acac31d8d31c9a00f4ac740bb48a8952598a34ae848aaabbb57a9",
+      "deterministic_pool_transform": true,
+      "deterministic_test_transform": true,
+      "grid_indices": [
+        415,
+        14964,
+        10888,
+        2718,
+        6847,
+        11009,
+        6611,
+        14634,
+        3685,
+        15879,
+        12778,
+        13781
+      ],
+      "grid_sampling_seed": 2026,
+      "grid_sha256": "f2af6d9a461c96c8b9fb5a72de773f6ae9a5298075fe04291c58c8239f3d110f",
+      "noisy_pool_class_counts": {
+        "0": 5918,
+        "1": 5970,
+        "2": 6112
+      },
+      "noisy_pool_class_proportions": [
+        0.3287777777777778,
+        0.33166666666666667,
+        0.33955555555555555
+      ],
+      "preprocessing": {
+        "augmentation": null,
+        "class_ids": [
+          0,
+          1,
+          2
+        ],
+        "fitted_statistics": null,
+        "image_dtype": "float32",
+        "label_dtype": "int64",
+        "layout": "NCHW",
+        "pixel_range": [
+          0,
+          1
+        ],
+        "resize": null,
+        "scale_divisor": 255,
+        "standardization": null,
+        "statistics_note": "No fitted transform; identical deterministic scaling for all methods and partitions."
+      },
+      "test_access": "array integrity and deterministic transform only; no performance evaluation"
+    }
+  },
+  "environment": {
+    "Pillow": "12.3.0",
+    "device": "cpu",
+    "framework": "NumPy data pipeline; neural framework deferred to Part 7",
+    "numpy": "2.5.2",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "python": "3.14.7"
+  },
+  "stage": "parts_1_to_5"
+}

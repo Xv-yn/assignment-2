@@ -1,5 +1,11 @@
 # Remote training notes
 
+> **Superseded (3 Nov 2026).** These results used the importance-weighted GCE
+> extension with a forward-correction warm-up; every CIFAR GCE run selected a
+> warm-up checkpoint. The `gce` method is now standard GCE and the grid must be
+> rerun ([docs/RERUN.md](RERUN.md)). Keep these files as an archive only; do not
+> report them as standard GCE or mix them with the new results.
+
 The formal experiment completed on 28 October 2026. All 60 classifier runs and 30 transition-estimator runs finished, and the complete grid passed aggregation checks. Training and aggregation took 1,121.135 seconds (approximately 18 minutes 41 seconds). The complete session was downloaded and verified locally before preparing the compact publication evidence.
 
 ## Isolation and file handling

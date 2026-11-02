@@ -38,7 +38,7 @@
   "method_parameters": {
     "gce": {
       "gamma": 0.7,
-      "reweight": true,
+      "reweight": false,
       "max_weight": 10.0,
       "warmup_epochs": 0
     },

@@ -34,7 +34,7 @@ python -m algorithm.cifar_gpu_v5_summary --help
 - Across ten seeds, FashionMNIST0.3 V3 top-50% pseudo-label estimate had MAE 0.0126, vs 0.0777 for prior anchor-25.
 - For FashionMNIST0.6, V3 all-pseudo-label estimate had MAE 0.0148, vs 0.0196 for prior anchor-25.
 - CIFAR V5 ten-seed noisy-label audit accuracy was 37.60% on average. The estimated matrix has **unknown true accuracy**, and the alternative V5 matrix did not improve the existing Forward classifier (58.17% vs 62.58% mean clean test accuracy in archived ten-split comparison).
-- That 58.17%/62.58% comparison is a separate study, not the group's [formal CIFAR result](../experiment_results/final/summary.md), whose Forward mean is 70.513%. The matrix candidates and classifier protocols must not be combined into the same result table.
+- That 58.17%/62.58% comparison is a separate study, not the group's [formal CIFAR result](../experiment_results/final/summary.md), whose (now superseded, see [RERUN.md](RERUN.md)) 28 October Forward mean was 70.513%. The matrix candidates and classifier protocols must not be combined into the same result table.
 - Do not tune on clean test labels. V5 quality-gate failures must remain visible.
 
 ## Cache and completion integrity

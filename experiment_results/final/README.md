@@ -1,5 +1,11 @@
 # Formal experiment evidence
 
+> **Superseded (3 Nov 2026).** These results used the importance-weighted GCE
+> extension with a forward-correction warm-up; every CIFAR GCE run selected a
+> warm-up checkpoint. The `gce` method is now standard GCE and the grid must be
+> rerun ([docs/RERUN.md](../../docs/RERUN.md)). Keep these files as an archive only; do not
+> report them as standard GCE or mix them with the new results.
+
 This directory contains the compact evidence for 60 classifier runs and 30
 transition-estimator runs over the complete ten-split grid. All original run
 artifact hashes were checked against the downloaded session before publication.

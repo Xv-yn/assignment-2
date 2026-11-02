@@ -32,16 +32,18 @@ def curve_plot(history, output):
     rows = history["epochs"]
     canvas = Image.new("RGB", (760, 400), "white")
     draw = ImageDraw.Draw(canvas)
-    draw.text((50, 10), "Training objective (blue) / noisy validation NLL (red)", fill="black")
-    ymax = max(max(r["train_loss"], r["validation_noisy_nll"]) for r in rows) * 1.05
+    metric = history.get("selection_metric", "noisy_forward_nll")
+    key = "validation_selection_loss" if all("validation_selection_loss" in r for r in rows) else "validation_noisy_nll"
+    draw.text((50, 10), f"Training objective (blue) / validation {metric} used for selection (red)", fill="black")
+    ymax = max(max(r["train_loss"], r[key]) for r in rows) * 1.05
     ymax = max(ymax, 0.01)
     draw.line((60, 40, 60, 345, 730, 345), fill="black", width=2)
     for i in range(6):
         y = 345 - 300 * i / 5
         draw.text((5, y - 5), f"{ymax * i / 5:.2f}", fill="black")
         draw.line((60, y, 730, y), fill="#dddddd")
-    for key, color in (("train_loss", "#1261a0"), ("validation_noisy_nll", "#c03434")):
-        points = [(60 + 665 * i / max(1, len(rows) - 1), 345 - 300 * r[key] / ymax) for i, r in enumerate(rows)]
+    for series, color in (("train_loss", "#1261a0"), (key, "#c03434")):
+        points = [(60 + 665 * i / max(1, len(rows) - 1), 345 - 300 * r[series] / ymax) for i, r in enumerate(rows)]
         if len(points) > 1:
             draw.line(points, fill=color, width=2)
         for x, y in points:
@@ -165,7 +167,7 @@ def aggregate(results_dir, allow_incomplete=False):
                "standard_deviation": "sample standard deviation, ddof=1; null for n=1",
                "course_coverage_confirmed": config.get("course_coverage_confirmed", False)}
     write_json(results_dir / "summary.json", summary)
-    fields = ["dataset", "method", "split_seed", "test_top1_percent", "best_epoch", "validation_noisy_nll", "elapsed_seconds", "debug"]
+    fields = ["dataset", "method", "split_seed", "test_top1_percent", "best_epoch", "selection_metric", "validation_selection_loss", "validation_noisy_nll", "elapsed_seconds", "debug"]
     with (results_dir / "runs.csv").open("w", newline="", encoding="utf-8") as stream:
         writer = csv.DictWriter(stream, fields, extrasaction="ignore")
         writer.writeheader()

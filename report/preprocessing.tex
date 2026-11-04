@@ -1,0 +1,20 @@
+% Initial Part 5 table; include from the future report source.
+\begin{table}[ht]
+\centering
+\caption{Initial shared preprocessing for both proposed methods and all partitions.}
+\label{tab:preprocessing}
+\begin{tabular}{lll}
+\hline
+Operation & FashionMNIST & CIFAR \\
+\hline
+Image layout & $N\times1\times28\times28$ & $N\times3\times32\times32$ \\
+Image dtype & float32 & float32 \\
+Scaling & Divide by 255 & Divide by 255 \\
+Resize & None & None \\
+Standardization & None & None \\
+Augmentation & None & None \\
+Labels & int64, IDs 0--2 & int64, IDs 0--2 \\
+Fitted statistics & None required & None required \\
+\hline
+\end{tabular}
+\end{table}
